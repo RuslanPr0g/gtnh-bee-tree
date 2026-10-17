@@ -8,6 +8,7 @@ import {
   useMatch,
   useNavigate,
   useParams,
+  useSearchParams,
 } from 'react-router';
 import { Header } from './components/Header';
 import { Sidebar, useVisibleRows } from './components/Sidebar';
@@ -15,6 +16,7 @@ import { BeeDetail } from './components/BeeDetail';
 import { QuestView } from './components/QuestView';
 import { searchWords } from './lib/graph';
 import { questMatches } from './lib/quests';
+import { decodeSettings, writeSettings } from './lib/settings';
 import { useHistoryNav } from './hooks/useHistoryNav';
 import { DEFAULT_BEE, beePath, legacyTarget, questPath } from './routes';
 import { g, ql, useStore } from './store';
@@ -163,6 +165,28 @@ function QuestRoute() {
   return ok ? <QuestView id={id} /> : <NotFound />;
 }
 
+/** #/import?d=…: saves the settings from a "Copy settings link" and reloads so the store picks them up */
+function ImportRoute() {
+  const [params] = useSearchParams();
+  const d = params.get('d') ?? '';
+  const ok = decodeSettings(d) != null;
+  useEffect(() => {
+    const settings = decodeSettings(d);
+    if (!settings) return;
+    writeSettings(settings);
+    window.location.replace(`${window.location.pathname}#/`);
+    window.location.reload();
+  }, [d]);
+  return (
+    <div className="notfound">
+      {ok ? 'Importing your settings…' : 'This settings link is broken.'}{' '}
+      <Link className="qlink" to={beePath(DEFAULT_BEE)}>
+        Go to the bee list
+      </Link>
+    </div>
+  );
+}
+
 /** unknown paths: old single-file links (#b:<uid>, #q:<id>, #<uid>) redirect, the rest is "not found" */
 function Fallback() {
   const { pathname } = useLocation();
@@ -181,6 +205,7 @@ export const router = createHashRouter([
       { index: true, element: <Navigate to={beePath(DEFAULT_BEE)} replace /> },
       { path: 'bee/:uid', element: <BeeRoute /> },
       { path: 'quest/:id', element: <QuestRoute /> },
+      { path: 'import', element: <ImportRoute /> },
       { path: '*', element: <Fallback /> },
     ],
   },

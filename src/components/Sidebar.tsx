@@ -4,6 +4,7 @@ import { MODS, matchesSearch, searchWords, type Species } from '../lib/graph';
 import { BeeImg } from './Bee';
 import { MOD_KEYS, VIEWS, g, useStore, type Filters, type View } from '../store';
 import { beePath } from '../routes';
+import { settingsLink } from '../lib/settings';
 
 /** the bees the list shows, in order (also used for arrow-key navigation) */
 export function useVisibleRows(): Species[] {
@@ -127,7 +128,31 @@ function FilterPanel() {
       >
         Reset all filters
       </button>
+      <CopySettings />
     </div>
+  );
+}
+
+/** copies a link that brings your marks and filters to another browser or device */
+function CopySettings() {
+  const [state, setState] = useState<'idle' | 'copied' | 'failed'>('idle');
+  return (
+    <button
+      className="btn"
+      title="Open this link in another browser or on your phone to bring your bookmarks, marks and filters there"
+      onClick={() =>
+        navigator.clipboard.writeText(settingsLink()).then(
+          () => setState('copied'),
+          () => setState('failed'),
+        )
+      }
+    >
+      {state === 'copied'
+        ? '✓ Link copied'
+        : state === 'failed'
+          ? "Couldn't copy"
+          : '🔗 Copy settings link'}
+    </button>
   );
 }
 
