@@ -1420,7 +1420,8 @@ a.btn {
   width: 100%;
   height: 100%;
 }
-.particle.rev .hex {
+/* the icon faces left: flip the ones flying left-to-right so they look where they go */
+.particle:not(.rev) .hex {
   transform: scaleX(-1);
 }
 @keyframes particle-fly {
