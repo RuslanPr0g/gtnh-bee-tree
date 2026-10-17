@@ -40,6 +40,20 @@ export const writeSettings = (s: Settings) => {
   for (const [k, v] of Object.entries(s)) save(k, v);
 };
 
+/**
+ * Applies an import link (#/import?d=…) before the app starts, so the store loads the new values
+ * (the store saves its state when it mounts, which would overwrite settings written later).
+ * Returns false when there is no valid link; the import route then shows an error.
+ */
+export function consumeImportLink(): boolean {
+  const m = /^#\/import\?(.*)$/.exec(location.hash);
+  const settings = m && decodeSettings(new URLSearchParams(m[1]).get('d') ?? '');
+  if (!settings) return false;
+  writeSettings(settings);
+  history.replaceState(null, '', `${location.pathname}${location.search}#/`);
+  return true;
+}
+
 /** link that imports this browser's settings when opened */
 export const settingsLink = () =>
   `${location.origin}${location.pathname}#/import?d=${encodeSettings(readSettings())}`;
