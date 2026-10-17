@@ -1,8 +1,11 @@
 import { useEffect, useRef } from 'react';
 import { Outlet, useLocation, useMatch, useNavigate } from 'react-router';
+import { BottomNav } from '../components/BottomNav';
 import { Header } from '../components/Header';
+import { Particles } from '../components/Particles';
 import { useHistoryNav } from '../hooks/useHistoryNav';
 import { useKeys } from '../hooks/useKeys';
+import { PaneProvider } from '../hooks/usePane';
 import { legacyTarget } from '../lib/paths';
 import { DEFAULT_BEE } from '../links';
 import { g, ql } from '../store';
@@ -18,7 +21,8 @@ function useCurrentBee(): string | null {
 export default function Shell() {
   const searchRef = useRef<HTMLInputElement>(null);
   const nav = useHistoryNav();
-  useKeys(searchRef, nav, useCurrentBee());
+  const current = useCurrentBee();
+  useKeys(searchRef, nav, current);
 
   // links from the hash-router versions (#/bee/<uid>, #b:<uid>, …) still work
   const { hash } = useLocation();
@@ -29,9 +33,11 @@ export default function Shell() {
   }, [hash, navigate]);
 
   return (
-    <>
+    <PaneProvider>
+      <Particles />
       <Header searchRef={searchRef} nav={nav} />
       <Outlet />
-    </>
+      <BottomNav current={current} searchRef={searchRef} />
+    </PaneProvider>
   );
 }

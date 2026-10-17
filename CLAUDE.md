@@ -25,9 +25,9 @@ React Router 8 **framework mode** with `ssr: false` and full prerendering (`reac
 - `tools/build-icons.mjs` → `src/assets/generated/bees.png` (gitignored): every bee icon tinted at build time into one sprite. It runs before dev, build and test. `BeeImg` shows one row of it.
 - `src/root.tsx` (document, providers, error boundary), `src/routes.ts` (route config), `src/routes/*.tsx` (route modules with `meta` for titles and descriptions; `shell.tsx` is the layout with header, keys and old-link redirect).
 - `src/store.tsx`: React context with the user's marks (have / nope / fav), filters and search query, persisted to localStorage. **Prerender-safe:** state starts empty to match the HTML, then saved values load in a layout effect after hydration, and saving only starts after that.
-- `src/hooks/`: `useKeys` (keyboard), `useHistoryNav` (back/forward buttons, using `history.state.idx`), `useHydrated` (browser-only UI: the bee list isn't prerendered, so each page stays small).
-- `src/components/`: `Header`, `Sidebar` (filters + list), `BeeScreen` (list + detail, with the phone pane switching), `BeeDetail`, `RecipeTree`, `QuestView`, `NotFound`, and shared `Bee` (BeeImg, Chip link).
-- `src/styles.css`: one stylesheet, dark theme, with a phone layout under 760px.
+- `src/hooks/`: `useKeys` (keyboard), `useHistoryNav` (back/forward buttons, using `history.state.idx`), `useHydrated` (browser-only UI: the bee list isn't prerendered, so each page stays small), `useMedia` (`PHONE` query; false until hydrated), `usePane` (phone list/detail pane, provided by the shell; links with `LIST_STATE` open the list).
+- `src/components/`: `Header`, `Sidebar` (filters + list, and the phone filter sheet), `BeeScreen` (list + detail), `BeeDetail`, `RecipeTree`, `QuestView` (phone: Map / Both / Details split), `BottomNav` (phone tab bar: Bees list · bee · Quests · Search), `NotFound`, and shared `Bee` (BeeImg, Chip link).
+- `src/styles.css`: one stylesheet, dark theme, with a phone layout under 760px (sticky search header, bottom tab bar, safe-area insets). Phone-only elements are `display: none` and phone-only wrappers (`.acts`, `.pair`, `.res`, …) are `display: contents` outside it, so the desktop layout doesn't change.
 - `tools/`: scripts that regenerate the JSON (see `tools/README.md`).
 
 **Prerendering rule:** code that runs during render must not touch `window`, `document` or `localStorage`. Use effects, `useHydrated`, or `typeof window` guards.

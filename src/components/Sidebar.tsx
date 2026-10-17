@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { Link } from 'react-router';
 import { MODS, matchesSearch, searchWords, type Species } from '../lib/graph';
 import { BeeImg } from './Bee';
@@ -6,6 +7,7 @@ import { MOD_KEYS, VIEWS, g, useStore, type Filters, type View } from '../store'
 import { beePath } from '../links';
 import { settingsLink } from '../lib/settings';
 import { useHydrated } from '../hooks/useHydrated';
+import { PHONE, useMedia } from '../hooks/useMedia';
 
 /** the bees the list shows, in order (also used for arrow-key navigation) */
 export function useVisibleRows(): Species[] {
@@ -157,13 +159,68 @@ function CopySettings() {
   );
 }
 
+/** phone: the filters in a sheet that slides up from the bottom */
+function FilterSheet({ onClose }: { onClose: () => void }) {
+  const { filters, setFilters } = useStore();
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('keydown', onKey);
+    document.documentElement.classList.add('sheet-open');
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.documentElement.classList.remove('sheet-open');
+    };
+  }, [onClose]);
+  return (
+    <div className="sheet-bg" onClick={onClose}>
+      <div
+        className="sheet"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Filters"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="sheet-head">
+          <b>Filters</b>
+          <button className="btn" onClick={onClose}>
+            Done
+          </button>
+        </div>
+        <div className="fsec">
+          <div className="fhead">Show</div>
+          <div className="fchips views">
+            {Object.entries(VIEWS).map(([k, v]) => (
+              <button
+                key={k}
+                className={filters.view === k ? 'on' : ''}
+                aria-pressed={filters.view === k}
+                onClick={() => setFilters((f) => ({ ...f, view: k as View }))}
+              >
+                {v}
+              </button>
+            ))}
+          </div>
+        </div>
+        <FilterPanel />
+      </div>
+    </div>
+  );
+}
+
 function FilterBar() {
   const { filters, setFilters } = useStore();
+  const phone = useMedia(PHONE);
+  const [sheet, setSheet] = useState(false);
+  const closeSheet = useCallback(() => setSheet(false), []);
+  const shown = useVisibleRows().length;
   const modsOff = filters.mods.size < MOD_KEYS.length;
   const n = (modsOff ? 1 : 0) + filters.branches.size;
   return (
     <div id="filters">
       <div className="frow">
+        <span className="fcount">{shown} bees</span>
         <select
           id="view"
           value={filters.view}
@@ -177,16 +234,34 @@ function FilterBar() {
           ))}
         </select>
         <button
-          className={'fbtn' + (n ? ' act' : '')}
-          aria-expanded={filters.open}
-          onClick={() => setFilters((f) => ({ ...f, open: !f.open }))}
+          className={'fbtn' + (n || (phone && filters.view !== 'all') ? ' act' : '')}
+          aria-expanded={phone ? sheet : filters.open}
+          onClick={() =>
+            // phones open the sheet; the inline panel stays a desktop thing
+            window.matchMedia(PHONE).matches
+              ? setSheet(true)
+              : setFilters((f) => ({ ...f, open: !f.open }))
+          }
         >
-          Filters{n ? ` (${n})` : ''} {filters.open ? '▴' : '▾'}
+          Filters{n ? ` (${n})` : ''} <span className="arr">{filters.open ? '▴' : '▾'}</span>
         </button>
       </div>
-      {filters.open && <FilterPanel />}
-      {(modsOff || filters.branches.size > 0) && (
+      {filters.open && !phone && <FilterPanel />}
+      {/* a portal, so the sticky toolbar's stacking doesn't keep the sheet under the bars
+          (only rendered after a tap, never in prerendered HTML) */}
+      {phone && sheet && createPortal(<FilterSheet onClose={closeSheet} />, document.body)}
+      {(modsOff || filters.branches.size > 0 || (phone && filters.view !== 'all')) && (
         <div id="active">
+          {/* phones have no view dropdown, so the view shows as a chip */}
+          {phone && filters.view !== 'all' && (
+            <button
+              className="vchip"
+              title="Show all bees"
+              onClick={() => setFilters((f) => ({ ...f, view: 'all' }))}
+            >
+              {VIEWS[filters.view]} ×
+            </button>
+          )}
           {modsOff && (
             <button
               title="Show all mods"
@@ -227,7 +302,7 @@ function BeeList({ current, onPick }: { current: string; onPick: () => void }) {
   }, [current, hydrated]);
   return (
     <div id="list" ref={listRef}>
-      <div className="count">
+      <div className={'count' + (rows.length ? '' : ' none')}>
         {rows.length} bees
         {filters.view === 'have' && !rows.length ? ' — open a bee and press "I have this"' : ''}
         {filters.view === 'fav' && !rows.length ? ' — open a bee and press "Bookmark"' : ''}
@@ -237,21 +312,31 @@ function BeeList({ current, onPick }: { current: string; onPick: () => void }) {
           <Link
             key={s.uid}
             className={
-              'row' + (current === s.uid ? ' sel' : '') + (unwanted.has(s.uid) ? ' no' : '')
+              'row' +
+              (current === s.uid ? ' sel' : '') +
+              (unwanted.has(s.uid) ? ' no' : '') +
+              (have.has(s.uid) ? ' own' : '')
             }
             to={beePath(s.uid)}
             onClick={onPick}
           >
             <BeeImg s={s} />
-            <span>
+            <span className="rname">
               {s.name}
               {!g.makes[s.uid].length && <span className="base"> ● base</span>}
               {have.has(s.uid) && <span className="have"> ✓</span>}
               {unwanted.has(s.uid) && <span className="nope"> ✗</span>}
+              <span className="rsub">
+                {MODS[s.mod] ?? s.mod}
+                {s.branch ? ` · ${s.branch}` : ''}
+              </span>
             </span>
             <span className="tag">{MODS[s.mod] ?? s.mod}</span>
             <span
               className={'star' + (fav.has(s.uid) ? ' on' : '')}
+              role="button"
+              aria-label="Bookmark"
+              aria-pressed={fav.has(s.uid)}
               title="Bookmark (F)"
               onClick={(e) => {
                 // the star sits inside the row link: don't navigate
@@ -270,14 +355,8 @@ function BeeList({ current, onPick }: { current: string; onPick: () => void }) {
 
 /** onClose: back to the bee (phone layout, where the list replaces the detail) */
 export function Sidebar({ current, onClose }: { current: string; onClose: () => void }) {
-  const s = g.byId[current];
   return (
     <aside id="side">
-      <div className="mbar">
-        <button className="btn" onClick={onClose}>
-          ← <BeeImg s={s} /> {s.name}
-        </button>
-      </div>
       <FilterBar />
       <BeeList current={current} onPick={onClose} />
     </aside>

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router';
 import { searchWords } from '../lib/graph';
 import { questDone, questMatches, questPath as pathTo, type Quest } from '../lib/quests';
@@ -8,7 +8,15 @@ import { g, ql, useStore } from '../store';
 
 const center = (n: Quest) => [n.px + n.ps / 2, n.py + n.ps / 2] as const;
 
-function QuestMap({ id, path }: { id: string; path: Set<string> }) {
+/** phone: how the screen is split between the map and the panel */
+type Mode = 'map' | 'split' | 'info';
+const MODES: [Mode, string][] = [
+  ['map', 'Map'],
+  ['split', 'Both'],
+  ['info', 'Details'],
+];
+
+function QuestMap({ id, path, mode }: { id: string; path: Set<string>; mode: Mode }) {
   const { have, unwanted, query } = useStore();
   const words = useMemo(() => searchWords(query), [query]);
   const ref = useRef<HTMLDivElement>(null);
@@ -16,7 +24,8 @@ function QuestMap({ id, path }: { id: string; path: Set<string> }) {
     ref.current
       ?.querySelector('.qn.sel')
       ?.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
-  }, [id]);
+    // also when the phone map is shown again or resized
+  }, [id, mode]);
   return (
     <div id="qmap" ref={ref}>
       <div className="qinner" style={{ width: ql.width, height: ql.height }}>
@@ -90,7 +99,14 @@ function QuestItem({ id }: { id: string }) {
   );
 }
 
-function QuestPanel({ id, path }: { id: string; path: string[] }) {
+interface PanelProps {
+  id: string;
+  path: string[];
+  mode: Mode;
+  setMode: (m: Mode) => void;
+}
+
+function QuestPanel({ id, path, mode, setMode }: PanelProps) {
   const { have } = useStore();
   const n = ql.byId[id];
   const ref = useRef<HTMLDivElement>(null);
@@ -99,6 +115,26 @@ function QuestPanel({ id, path }: { id: string; path: string[] }) {
   }, [id]);
   return (
     <div id="qpanel" ref={ref}>
+      {/* phone only: the picked quest and the map / details switch */}
+      <div className="qhead">
+        <span className="qname">
+          {n.main && <BeeImg s={g.byId[n.main]} />}
+          <b>{n.name}</b>
+          {questDone(n, have) && <span className="have"> ✓</span>}
+        </span>
+        <span className="seg" role="group" aria-label="Show">
+          {MODES.map(([m, label]) => (
+            <button
+              key={m}
+              className={mode === m ? 'on' : ''}
+              aria-pressed={mode === m}
+              onClick={() => setMode(m)}
+            >
+              {label}
+            </button>
+          ))}
+        </span>
+      </div>
       <div className="sub">{ql.name}</div>
       <h2>{n.name}</h2>
       {n.bees.length > 0 && (
@@ -152,10 +188,11 @@ function QuestPanel({ id, path }: { id: string; path: string[] }) {
 export function QuestView({ id }: { id: string }) {
   const path = useMemo(() => pathTo(ql, id), [id]);
   const pathSet = useMemo(() => new Set(path), [path]);
+  const [mode, setMode] = useState<Mode>('split');
   return (
-    <section id="questView">
-      <QuestMap id={id} path={pathSet} />
-      <QuestPanel id={id} path={path} />
+    <section id="questView" className={'m-' + mode}>
+      <QuestMap id={id} path={pathSet} mode={mode} />
+      <QuestPanel id={id} path={path} mode={mode} setMode={setMode} />
     </section>
   );
 }

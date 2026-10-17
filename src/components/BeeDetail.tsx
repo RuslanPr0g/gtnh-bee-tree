@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 import { MODS, type Product } from '../lib/graph';
 import { BeeImg, Chip, Conditions, pct } from './Bee';
 import { RecipeTree, useTreeState } from './RecipeTree';
-import { useVisibleRows } from './Sidebar';
 import { g, ql, useStore } from '../store';
 import { questPath } from '../links';
 
@@ -28,7 +27,6 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
   const { have, fav, unwanted, toggleFav, toggleHave, toggleNope, isCanBreed, setFilters } =
     useStore();
   const s = g.byId[uid];
-  const rows = useVisibleRows();
   const tree = useTreeState(uid);
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -42,11 +40,6 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
 
   return (
     <div id="detail" ref={ref}>
-      <div className="mbar">
-        <button className="btn" onClick={onList}>
-          ☰ Bees <span className="sub">{rows.length}</span>
-        </button>
-      </div>
       <div className="head">
         <BeeImg s={s} big />
         <div className="title">
@@ -72,47 +65,56 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
             )}
           </div>
         </div>
-        <button
-          className={'btn' + (fav.has(uid) ? ' fav' : '')}
-          onClick={() => toggleFav(uid)}
-          title="Bookmark this bee (F)"
-        >
-          {fav.has(uid) ? '★ Bookmarked' : '☆ Bookmark'}
-        </button>
-        <button
-          className={'btn' + (owned ? ' on' : '')}
-          onClick={() => toggleHave(uid)}
-          title="Mark bees you own (H)"
-        >
-          {owned ? '✓ I have this' : '☐ I have this'}
-        </button>
-        {owned ? (
+        {/* phones lay the actions out as an even row (desktop: display: contents) */}
+        <div className="acts">
           <button
-            className="btn"
-            disabled
-            style={{ opacity: 0.4, cursor: 'default' }}
-            title="You have this bee, so it can't be not wanted"
+            className={'btn' + (fav.has(uid) ? ' fav' : '')}
+            onClick={() => toggleFav(uid)}
+            aria-pressed={fav.has(uid)}
+            title="Bookmark this bee (F)"
           >
-            ☐ Not wanted
+            <span className="ico">{fav.has(uid) ? '★' : '☆'}</span>{' '}
+            <span className="lbl">{fav.has(uid) ? 'Bookmarked' : 'Bookmark'}</span>
           </button>
-        ) : (
           <button
-            className={'btn' + (nope ? ' off' : '')}
-            onClick={() => toggleNope(uid)}
-            title={
-              nope
-                ? 'Click to want it again (also unmarks the bees that caused it)'
-                : 'Not wanted: also marks bees that can only be bred from it (N)'
-            }
+            className={'btn' + (owned ? ' on' : '')}
+            onClick={() => toggleHave(uid)}
+            aria-pressed={owned}
+            title="Mark bees you own (H)"
           >
-            {nope ? '✗ Not wanted' : '☐ Not wanted'}
+            <span className="ico">{owned ? '✓' : '☐'}</span>{' '}
+            <span className="lbl">I have this</span>
           </button>
-        )}
-        {(ql.questOf[uid] ?? []).map((id) => (
-          <Link key={id} className="btn" to={questPath(id)} title="Show this bee's quest">
-            📖 {ql.byId[id].name}
-          </Link>
-        ))}
+          {owned ? (
+            <button
+              className="btn"
+              disabled
+              style={{ opacity: 0.4, cursor: 'default' }}
+              title="You have this bee, so it can't be not wanted"
+            >
+              <span className="ico">☐</span> <span className="lbl">Not wanted</span>
+            </button>
+          ) : (
+            <button
+              className={'btn' + (nope ? ' off' : '')}
+              onClick={() => toggleNope(uid)}
+              aria-pressed={!!nope}
+              title={
+                nope
+                  ? 'Click to want it again (also unmarks the bees that caused it)'
+                  : 'Not wanted: also marks bees that can only be bred from it (N)'
+              }
+            >
+              <span className="ico">{nope ? '✗' : '☐'}</span>{' '}
+              <span className="lbl">Not wanted</span>
+            </button>
+          )}
+          {(ql.questOf[uid] ?? []).map((id) => (
+            <Link key={id} className="btn" to={questPath(id)} title="Show this bee's quest">
+              <span className="ico">📖</span> <span className="lbl">{ql.byId[id].name}</span>
+            </Link>
+          ))}
+        </div>
       </div>
 
       <div className="facts">
@@ -124,11 +126,11 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
           <b>Humidity</b>
           {cap(s.humidity)}
         </div>
-        <div className="fact">
+        <div className="fact wide">
           <b>Products</b>
           <Products list={s.products} />
         </div>
-        <div className="fact">
+        <div className="fact wide">
           <b>Specialty</b>
           <Products list={s.specialty} />
         </div>
@@ -199,13 +201,17 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
           {g.usedIn[uid].map((m, i) => (
             <div key={i}>
               <span className="recipe">
-                <Chip uid={uid} />
-                <span className="plus">+</span>
-                <Chip uid={m.a === uid ? m.b : m.a} />
-                <span className="arrow">→</span>
-                <Chip uid={m.result} />
-                <span className="chance">{pct(m.chance)}</span>
-                <Conditions list={m.conditions} />
+                <span className="pair">
+                  <Chip uid={uid} />
+                  <span className="plus">+</span>
+                  <Chip uid={m.a === uid ? m.b : m.a} />
+                </span>
+                <span className="res">
+                  <span className="arrow">→</span>
+                  <Chip uid={m.result} />
+                  <span className="chance">{pct(m.chance)}</span>
+                  <Conditions list={m.conditions} />
+                </span>
               </span>
             </div>
           ))}

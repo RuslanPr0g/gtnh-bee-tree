@@ -32,7 +32,7 @@ export function Chip({ uid }: { uid: string }) {
   return (
     <Link className={cls} title={`${MODS[s.mod] ?? s.mod} · ${s.branch ?? ''}`} to={beePath(uid)}>
       <BeeImg s={s} />
-      {beeLabel(s)}
+      <span className="cl">{beeLabel(s)}</span>
     </Link>
   );
 }

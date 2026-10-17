@@ -16,11 +16,15 @@ const defaultOpen = (rootUid: string) =>
     ),
   );
 
-/** open every node breadth-first; capped so huge trees stay fast */
-function allOpen(rootUid: string, cap = 300): Set<string> {
+/**
+ * Open nodes breadth-first, nearest first. Capped by the recipe rows it would show (each open node
+ * renders all its recipes), so deep trees like Naquadah stay fast instead of rendering thousands.
+ */
+function allOpen(rootUid: string, maxRows = 250): Set<string> {
   const open = new Set<string>();
   const queue: string[][] = [[rootUid]];
-  while (queue.length && open.size < cap) {
+  let rows = g.makes[rootUid].length;
+  while (queue.length) {
     const path = queue.shift()!;
     for (const m of g.makes[path[path.length - 1]]) {
       for (const p of new Set([m.a, m.b])) {
@@ -28,6 +32,8 @@ function allOpen(rootUid: string, cap = 300): Set<string> {
         const next = [...path, p];
         const k = keyOf(next);
         if (open.has(k)) continue;
+        rows += g.makes[p].length;
+        if (rows > maxRows) return open;
         open.add(k);
         queue.push(next);
       }
@@ -38,7 +44,7 @@ function allOpen(rootUid: string, cap = 300): Set<string> {
 
 function Parent({ uid, path }: { uid: string; path: string[] }) {
   return (
-    <>
+    <span className="par">
       <Chip uid={uid} />
       {!g.makes[uid].length ? (
         <span className="leaf" title="Cannot be bred: found in the world or traded">
@@ -49,7 +55,7 @@ function Parent({ uid, path }: { uid: string; path: string[] }) {
           ↺
         </span>
       ) : null}
-    </>
+    </span>
   );
 }
 
@@ -63,12 +69,16 @@ function Recipe({ m, path, ...t }: { m: Mutation; path: string[] } & TreeProps) 
   return (
     <li>
       <span className="recipe">
-        <Parent uid={m.a} path={path} />
-        <span className="plus">+</span>
-        <Parent uid={m.b} path={path} />
-        <span className="arrow">→</span>
-        <span className="chance">{pct(m.chance)}</span>
-        <Conditions list={m.conditions} />
+        <span className="pair">
+          <Parent uid={m.a} path={path} />
+          <span className="plus">+</span>
+          <Parent uid={m.b} path={path} />
+        </span>
+        <span className="res">
+          <span className="arrow">→</span>
+          <span className="chance">{pct(m.chance)}</span>
+          <Conditions list={m.conditions} />
+        </span>
       </span>
       {kids.length > 0 && (
         <ul>
@@ -86,7 +96,12 @@ function Node({ uid, path, open, toggle }: { uid: string; path: string[] } & Tre
   const isOpen = open.has(k);
   return (
     <li>
-      <button className="tog" onClick={() => toggle(k)}>
+      <button
+        className="tog"
+        onClick={() => toggle(k)}
+        aria-expanded={isOpen}
+        aria-label={isOpen ? 'Hide recipes' : 'Show recipes'}
+      >
         {isOpen ? '−' : '+'}
       </button>{' '}
       <span className="sub">how to make</span> <Chip uid={uid} />

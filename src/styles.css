@@ -652,8 +652,21 @@ kbd {
   font: 12px monospace;
   color: var(--text);
 }
-.mbar {
+/* phone-only parts: hidden on desktop, and wrappers that don't change the desktop layout */
+#bnav,
+.qhead,
+.rsub,
+.fcount,
+.qclear,
+.sheet-bg {
   display: none;
+}
+.qwrap,
+.acts,
+.pair,
+.par,
+.res {
+  display: contents;
 }
 /* touch screens have no hover: keep the list star visible */
 @media (hover: none) and (pointer: coarse) {
@@ -662,16 +675,150 @@ kbd {
   }
 }
 @media (max-width: 760px) {
-  /* phone: the page scrolls as one column, and shows the bee list OR the bee detail (main.list) */
+  /* phone: a sticky search header, a tab bar at the bottom (BottomNav), and the page scrolls as
+     one column showing the bee list OR the bee detail (main.list) */
+  :root {
+    --hdr: calc(59px + env(safe-area-inset-top));
+    --bnav: calc(58px + env(safe-area-inset-bottom));
+    --gutter: 14px;
+  }
   /* clip, not hidden: hidden makes body a scroll container and breaks the sticky bars */
   body {
     height: auto;
     min-height: 100%;
     overflow-x: clip;
+    padding-bottom: var(--bnav);
+    -webkit-tap-highlight-color: transparent;
+  }
+  html.sheet-open,
+  html.sheet-open body {
+    overflow: hidden;
   }
   #root {
     flex: none;
   }
+
+  /* header: logo + search only (the tabs live in the bottom bar, back/forward in the browser) */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: calc(8px + env(safe-area-inset-top)) calc(12px + env(safe-area-inset-right)) 8px
+      calc(12px + env(safe-area-inset-left));
+  }
+  header .nav,
+  header .tabs,
+  h1 .name,
+  h1 .cnt {
+    display: none;
+  }
+  h1 {
+    font-size: 22px;
+    line-height: 1;
+  }
+  .qwrap {
+    display: block;
+    position: relative;
+    flex: 1;
+    min-width: 0;
+  }
+  #q {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    height: 42px;
+    padding: 0 40px 0 14px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+  .qclear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 11px;
+    background: none;
+    color: var(--muted);
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  /* bottom tab bar */
+  #bnav {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    height: var(--bnav);
+    padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    background: rgb(28 31 37 / 0.94);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--line);
+  }
+  #bnav > * {
+    position: relative;
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 6px 4px;
+    border: 0;
+    background: none;
+    color: var(--muted);
+    font: inherit;
+    font-size: 11px;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.15s;
+  }
+  #bnav > *:active {
+    background: var(--panel2);
+  }
+  #bnav .ico {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  #bnav .lbl {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #bnav .on {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  #bnav .on::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 28%;
+    right: 28%;
+    height: 3px;
+    border-radius: 0 0 3px 3px;
+    background: var(--accent);
+  }
+
+  /* bee screen: one pane at a time */
   main {
     display: flex;
     flex-direction: column;
@@ -680,127 +827,240 @@ kbd {
   main:not(.list) #side {
     display: none;
   }
+  main.list #side {
+    animation: pane-in 0.18s ease-out;
+  }
+
+  /* list: a sticky toolbar (count, filters button, active filter chips) and big rows */
   #side {
     border-right: 0;
+  }
+  #filters {
+    position: sticky;
+    top: var(--hdr);
+    z-index: 10;
+    padding: 8px var(--gutter);
+    background: var(--panel);
+  }
+  .frow {
+    align-items: center;
+  }
+  #view,
+  .fbtn .arr {
+    display: none;
+  }
+  .fcount {
+    display: block;
+    flex: 1;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .fbtn {
+    min-height: 40px;
+    padding: 0 16px;
+    border-radius: 999px;
+    font-size: 14px;
+  }
+  #active {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 0 calc(-1 * var(--gutter));
+    padding: 0 var(--gutter) 2px;
+  }
+  #active::-webkit-scrollbar {
+    display: none;
+  }
+  #active button {
+    flex: none;
+    min-height: 32px;
+    padding: 4px 12px;
+    font-size: 13px;
+    white-space: nowrap;
   }
   #list {
     flex: none;
     overflow: visible;
   }
-  #detail {
-    padding: 0 14px 40px;
-    overflow: visible;
-  }
-  .mbar {
-    display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 5;
-    margin: 0 -14px 12px;
-    padding: 8px 14px;
-    background: var(--panel2);
-    border-bottom: 1px solid var(--line);
-  }
-  #side .mbar {
-    margin: 0;
-  }
-  .mbar .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    min-width: 0;
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .mbar .hex {
-    width: 20px;
-    height: 20px;
-  }
-  /* header: back/forward, logo and tabs on one row, search below */
-  header {
-    gap: 8px;
-    padding: 8px 12px;
-  }
-  h1 {
-    font-size: 20px;
-  }
-  h1 .name,
-  h1 .cnt,
-  .tabs .long {
+  #list .count {
     display: none;
   }
-  .tabs {
-    margin-left: auto;
-  }
-  #q {
-    min-width: 0;
-    flex-basis: 100%;
-    font-size: 16px;
-  }
-  /* touch targets */
-  .nav button,
-  .btn,
-  .fbtn,
-  #view,
-  .tabs a {
-    min-height: 40px;
-  }
-  .nav button {
-    min-width: 44px;
-  }
-  .tabs a {
-    display: inline-flex;
-    align-items: center;
-    padding: 6px 14px;
+  #list .count.none {
+    display: block;
+    padding: 32px 20px;
+    text-align: center;
+    font-size: 14px;
   }
   #list .row {
-    min-height: 44px;
+    position: relative;
+    min-height: 56px;
+    gap: 12px;
+    padding: 4px 4px 4px var(--gutter);
+  }
+  #list .row:active {
+    background: var(--panel2);
+  }
+  #list .row .hex {
+    width: 32px;
+    height: 32px;
+  }
+  .rname {
+    flex: 1;
+    min-width: 0;
+    font-size: 15px;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+  .rname .have,
+  .rname .nope {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .rsub {
+    display: block;
+    margin-top: 1px;
+    color: var(--muted);
+    font-size: 12px;
+  }
+  #list .tag {
+    display: none;
+  }
+  /* owned and not-wanted bees get a coloured edge */
+  #list .row.own::before,
+  #list .row.no::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 3px;
+    border-radius: 0 3px 3px 0;
+    background: var(--good);
+  }
+  #list .row.no::before {
+    background: #e06c6c;
+  }
+  #list .row.no {
+    opacity: 0.55;
   }
   .star {
-    font-size: 20px;
-    padding: 8px 4px;
-    margin: -8px -4px -8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    font-size: 22px;
+    opacity: 0.45;
+  }
+
+  /* filters sheet */
+  .sheet-bg {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    background: rgb(0 0 0 / 0.55);
+    animation: fade-in 0.2s ease-out;
+  }
+  .sheet {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 85vh;
+    max-height: 85dvh;
+    overflow: auto;
+    overscroll-behavior: contain;
+    padding: 0 calc(16px + env(safe-area-inset-right)) calc(16px + env(safe-area-inset-bottom))
+      calc(16px + env(safe-area-inset-left));
+    background: var(--panel);
+    border-top: 1px solid var(--line);
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 -8px 30px rgb(0 0 0 / 0.4);
+    animation: sheet-up 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .sheet-head {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -16px;
+    padding: 18px 16px 10px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+  }
+  /* grab handle */
+  .sheet-head::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    width: 36px;
+    height: 4px;
+    margin-left: -18px;
+    border-radius: 2px;
+    background: var(--line);
+  }
+  .sheet-head b {
+    font-size: 17px;
+  }
+  .sheet-head .btn {
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .sheet #fpanel {
+    gap: 16px;
+    padding: 0;
+    background: none;
+    border: 0;
+  }
+  .sheet .fchips.scroll {
+    max-height: none;
+    overflow: visible;
+  }
+  .sheet .fhead {
+    font-size: 12px;
+  }
+  .fchips {
+    gap: 6px;
   }
   .fchips button {
-    min-height: 34px;
+    min-height: 36px;
     padding: 4px 12px;
-    font-size: 13px;
+    font-size: 14px;
   }
   .flinks button {
     min-height: 32px;
     padding: 0 8px;
-    font-size: 12px;
-  }
-  #active button {
-    min-height: 32px;
-    padding: 4px 10px;
-    font-size: 12px;
+    font-size: 13px;
   }
   #bq {
     font-size: 16px;
+    padding: 8px 10px;
   }
-  .tools .btn {
-    min-height: 32px;
-    padding: 4px 10px;
+  .sheet .btn {
+    min-height: 44px;
   }
-  .tog {
-    width: 30px;
-    height: 30px;
-    font-size: 14px;
+
+  /* bee detail: hero, an even row of actions, facts in two columns */
+  #detail {
+    padding: 14px var(--gutter) 32px;
+    overflow: visible;
   }
-  .chip {
-    min-height: 32px;
-    max-width: 100%;
+  .btn {
+    min-height: 40px;
   }
-  /* bee header: icon + name on one row, buttons wrap below */
   .head {
-    gap: 8px;
-  }
-  .head .title {
-    flex: 1 1 calc(100% - 80px);
-    min-width: 0;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 12px;
   }
   .head .hex.big {
     width: 56px;
@@ -808,26 +1068,154 @@ kbd {
   }
   .head h2 {
     font-size: 22px;
+    line-height: 1.2;
     overflow-wrap: anywhere;
   }
-  .head .btn {
-    flex: 1 1 auto;
+  .head .title .sub {
+    font-size: 13px;
+  }
+  .head .qlink {
+    padding: 2px 0;
+  }
+  .acts {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .acts .btn {
+    flex: 1 1 70px;
+    min-width: 0;
+    min-height: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 6px 2px;
+    border-radius: 12px;
+    font-size: 12px;
     text-align: center;
+    transition:
+      background-color 0.15s,
+      border-color 0.15s,
+      color 0.15s;
+  }
+  .acts .ico {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .acts .lbl {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row dense;
+    gap: 8px;
+  }
+  .fact {
+    min-width: 0;
+    padding: 8px 12px;
+    border-radius: 10px;
+  }
+  .fact.wide {
+    grid-column: 1 / -1;
+  }
+  .fact.wide:has(> .empty) {
+    grid-column: auto;
+  }
+  h3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .tools {
+    margin-left: auto;
+  }
+  .tools .btn {
+    min-height: 40px;
+    padding: 4px 12px;
+  }
+
+  /* recipes: a card per recipe (parents on one row, result below), clear +/- toggles */
+  .chip {
+    min-height: 40px;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .chip .cl {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .tree ul {
-    padding-left: 10px;
+    padding-left: 7px;
+  }
+  .tree > ul {
+    padding-left: 0;
   }
   .tree li {
-    margin: 5px 0;
+    margin: 8px 0;
   }
   .recipe {
-    gap: 4px;
-    padding: 5px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 12px;
+  }
+  /* the two parents share one row and shrink evenly when they don't fit */
+  .pair {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    max-width: 100%;
+  }
+  .pair > .chip,
+  .par {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+  .par {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px 4px;
+  }
+  .par .leaf {
+    margin-left: 0;
+  }
+  .res {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+  }
+  .cond {
+    overflow-wrap: anywhere;
+  }
+  .tog {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: var(--accent2);
+    background: var(--panel2);
+    vertical-align: middle;
   }
   .keys {
     display: none;
   }
-  /* quests: the map on top and the panel below, each scrolls on its own */
+
+  /* quests: map on top, panel below, each scrolls on its own; the panel head switches the split */
   body:has(#questView) {
     height: 100%;
   }
@@ -838,6 +1226,18 @@ kbd {
     grid-template-columns: 1fr;
     grid-template-rows: minmax(0, 45fr) minmax(0, 55fr);
   }
+  #questView.m-map {
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
+  #questView.m-info {
+    grid-template-rows: minmax(0, 1fr);
+  }
+  #questView.m-info #qmap,
+  #questView.m-map #qpanel > :not(.qhead),
+  #qpanel > h2,
+  #qpanel > .qhead + .sub {
+    display: none;
+  }
   #qmap {
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
@@ -845,7 +1245,67 @@ kbd {
   #qpanel {
     border-left: 0;
     border-top: 1px solid var(--line);
-    padding: 14px;
+    padding: 0 var(--gutter) 14px;
+  }
+  #questView.m-map #qpanel {
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+  .qhead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 calc(-1 * var(--gutter)) 8px;
+    padding: 8px var(--gutter);
+    background: var(--panel2);
+    border-bottom: 1px solid var(--line);
+  }
+  #questView.m-map .qhead {
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+  .qname {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .qname b {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 15px;
+  }
+  .seg {
+    flex: none;
+    display: flex;
+    padding: 2px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+  }
+  .seg button {
+    min-height: 40px;
+    padding: 0 10px;
+    border: 0;
+    border-radius: 8px;
+    background: none;
+    color: var(--muted);
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .seg button.on {
+    background: var(--accent);
+    color: #1a1a1a;
+    font-weight: 600;
+  }
+  /* the picked quest pulses so it stands out on a small map */
+  .qn.sel {
+    animation: sel-pulse 1.8s ease-out infinite;
   }
   .steps li {
     margin: 8px 0;
@@ -853,6 +1313,46 @@ kbd {
   .qlink {
     display: inline-block;
     padding: 4px 0;
+  }
+}
+@keyframes pane-in {
+  from {
+    opacity: 0.4;
+    transform: translateY(6px);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes sheet-up {
+  from {
+    transform: translateY(100%);
+  }
+}
+@keyframes sel-pulse {
+  0% {
+    box-shadow:
+      0 0 0 3px var(--accent),
+      0 0 0 3px rgb(242 182 50 / 0.6);
+  }
+  100% {
+    box-shadow:
+      0 0 0 3px var(--accent),
+      0 0 0 16px rgb(242 182 50 / 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  main.list #side,
+  .sheet-bg,
+  .sheet,
+  .qn.sel {
+    animation: none;
+  }
+  #bnav > *,
+  .acts .btn {
+    transition: none;
   }
 }
 
@@ -892,4 +1392,63 @@ a.btn {
 .notfound {
   padding: 40px;
   color: var(--muted);
+}
+
+/* background bees (components/Particles.tsx): faint, slow, behind everything, never clickable */
+.particles {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  /* below all page content but above the body background (which paints on the canvas) */
+  z-index: -1;
+}
+.particle {
+  position: absolute;
+  left: 0;
+  opacity: 0.16;
+  animation: particle-fly linear infinite;
+}
+.particle.rev {
+  animation-name: particle-fly-back;
+}
+.particle > span {
+  display: block;
+  animation: particle-bob ease-in-out infinite alternate;
+}
+.particle .hex {
+  width: 100%;
+  height: 100%;
+}
+.particle.rev .hex {
+  transform: scaleX(-1);
+}
+@keyframes particle-fly {
+  from {
+    transform: translateX(-40px);
+  }
+  to {
+    transform: translateX(calc(100vw + 40px));
+  }
+}
+@keyframes particle-fly-back {
+  from {
+    transform: translateX(calc(100vw + 40px));
+  }
+  to {
+    transform: translateX(-40px);
+  }
+}
+@keyframes particle-bob {
+  from {
+    transform: translateY(-6px) rotate(-6deg);
+  }
+  to {
+    transform: translateY(6px) rotate(6deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .particles {
+    display: none;
+  }
 }

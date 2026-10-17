@@ -1,5 +1,5 @@
 // Move the user's marks between browsers/devices: everything is packed into a link
-// (/import?d=<base64url JSON>), so no server or account is needed.
+// (/import/?d=<base64url JSON>), so no server or account is needed.
 import { KEYS, load, save } from './storage';
 
 const ALL_KEYS = Object.values(KEYS);
@@ -42,4 +42,4 @@ export const writeSettings = (s: Settings) => {
 
 /** link that imports this browser's settings when opened */
 export const settingsLink = (basename: string) =>
-  `${location.origin}${basename.replace(/\/$/, '')}/import?d=${encodeSettings(readSettings())}`;
+  `${location.origin}${basename.replace(/\/$/, '')}/import/?d=${encodeSettings(readSettings())}`;
