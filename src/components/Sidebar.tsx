@@ -7,6 +7,7 @@ import { MOD_KEYS, VIEWS, g, useStore, type Filters, type View } from '../store'
 import { beePath } from '../links';
 import { settingsLink } from '../lib/settings';
 import { useHydrated } from '../hooks/useHydrated';
+import { useBackgroundBees } from '../hooks/useBackgroundBees';
 import { PHONE, useMedia } from '../hooks/useMedia';
 
 /** the bees the list shows, in order (also used for arrow-key navigation) */
@@ -132,7 +133,17 @@ function FilterPanel() {
         Reset all filters
       </button>
       <CopySettings />
+      <BackgroundBeesToggle />
     </div>
+  );
+}
+
+function BackgroundBeesToggle() {
+  const [shown, toggle] = useBackgroundBees();
+  return (
+    <button className={'btn' + (shown ? ' on' : '')} aria-pressed={shown} onClick={toggle}>
+      🐝 Background bees: {shown ? 'on' : 'off'}
+    </button>
   );
 }
 

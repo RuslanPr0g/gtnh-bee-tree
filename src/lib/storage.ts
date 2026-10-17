@@ -29,4 +29,5 @@ export const KEYS = {
   nope: 'gtnhBeesNope',
   fav: 'gtnhBeesFav',
   filters: 'gtnhBeesFilters',
+  particles: 'gtnhBeesParticles',
 } as const;

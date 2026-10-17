@@ -1,32 +1,35 @@
 import { useMemo } from 'react';
 import { BeeImg } from './Bee';
 import { useHydrated } from '../hooks/useHydrated';
+import { useBackgroundBees } from '../hooks/useBackgroundBees';
 import { g } from '../store';
 
-const COUNT = 7;
+const COUNT = 8;
 
 /**
  * A few tiny bees drifting slowly behind the page. Pure decoration: random per visit, so it only
- * renders in the browser (not in prerendered HTML), ignores the pointer, and stops for
- * prefers-reduced-motion (styles.css).
+ * renders in the browser (not in prerendered HTML) and ignores the pointer. Off by default when the
+ * system asks for less motion; the Filters panel has an on/off switch (useBackgroundBees).
  */
 export function Particles() {
   const hydrated = useHydrated();
+  const [shown] = useBackgroundBees();
   const bees = useMemo(
     () =>
       hydrated
         ? Array.from({ length: COUNT }, (_, i) => ({
             s: g.species[Math.floor(Math.random() * g.species.length)],
             top: 5 + Math.random() * 85, // vh
-            size: 10 + Math.random() * 8, // px
-            duration: 45 + Math.random() * 50, // s to cross the screen
-            delay: -Math.random() * 90, // start mid-flight
-            bob: 4 + Math.random() * 4, // s per up/down wave
+            size: 14 + Math.random() * 10, // px
+            duration: 28 + Math.random() * 30, // s to cross the screen
+            delay: -Math.random() * 60, // start mid-flight
+            bob: 2.5 + Math.random() * 3, // s per up/down wave
             reverse: i % 2 === 1,
           }))
         : [],
     [hydrated],
   );
+  if (!shown) return null;
   return (
     <div className="particles" aria-hidden>
       {bees.map((b, i) => (

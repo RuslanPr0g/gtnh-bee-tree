@@ -1406,7 +1406,7 @@ a.btn {
 .particle {
   position: absolute;
   left: 0;
-  opacity: 0.16;
+  opacity: 0.3;
   animation: particle-fly linear infinite;
 }
 .particle.rev {
@@ -1441,14 +1441,9 @@ a.btn {
 }
 @keyframes particle-bob {
   from {
-    transform: translateY(-6px) rotate(-6deg);
+    transform: translateY(-10px) rotate(-8deg);
   }
   to {
-    transform: translateY(6px) rotate(6deg);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .particles {
-    display: none;
+    transform: translateY(10px) rotate(8deg);
   }
 }
