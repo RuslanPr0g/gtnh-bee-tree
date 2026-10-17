@@ -1,0 +1,34 @@
+# Data tools
+
+Both tools write the JSON files in `src/data/`. Run them again after a GTNH pack update.
+
+## `beedump-agent/` → `src/data/bees.json`
+
+Mods register bees in code, so the list is read from a **running** GTNH client with a tiny Java agent.
+It only reads Forestry's allele registry (by reflection) and writes JSON. Nothing in the game or world changes, and no restart is needed.
+
+```bash
+JDK=~/.local/share/PrismLauncher/java/java-runtime-epsilon/bin   # any JDK 17+ with jcmd
+mkdir -p /tmp/beedump/out
+$JDK/javac -d /tmp/beedump/out tools/beedump-agent/Agent.java
+printf 'Agent-Class: beedump.Agent\n' > /tmp/beedump/manifest.txt
+$JDK/jar cfm /tmp/beedump/agent.jar /tmp/beedump/manifest.txt -C /tmp/beedump/out .
+
+PID=$(pgrep -f 'GT_New_Horizons.*EntryPoint')                       # the running game
+$JDK/jcmd $PID JVMTI.agent_load /tmp/beedump/agent.jar "$PWD/src/data/bees.json"
+```
+
+If something fails, the agent writes `bees.json.err` with the stack trace.
+Names are dumped in the client's language. Some GregTech branch names come out as raw keys (`for.genus.bees.radioactive`), and the app cleans those up (`src/lib/graph.ts`).
+
+## `extract-quests.py` → `src/data/quests.json`
+
+Reads the BetterQuesting default quest files (no game needed):
+
+```bash
+python3 tools/extract-quests.py \
+  ~/.local/share/PrismLauncher/instances/<GTNH instance>/.minecraft/config/betterquesting/DefaultQuests \
+  src/data/quests.json
+```
+
+The app uses the first questline in the file (`BeeBreeding`, "Be(e) Breeding").
