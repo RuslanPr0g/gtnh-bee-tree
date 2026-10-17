@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import { MODS, type Product } from '../lib/graph';
 import { BeeImg, Chip, Conditions, pct } from './Bee';
 import { RecipeTree, useTreeState } from './RecipeTree';
+import { useVisibleRows } from './Sidebar';
 import { g, ql, useStore } from '../store';
 import { questPath } from '../routes';
 
@@ -21,9 +22,11 @@ function Products({ list }: { list: Product[] }) {
   );
 }
 
-export function BeeDetail({ uid }: { uid: string }) {
+/** onList: show the bee list (phone layout, where the list replaces the detail) */
+export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) {
   const { have, fav, unwanted, toggleFav, toggleHave, toggleNope, isCanBreed, setFilters } = useStore();
   const s = g.byId[uid];
+  const rows = useVisibleRows();
   const tree = useTreeState(uid);
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -37,9 +40,14 @@ export function BeeDetail({ uid }: { uid: string }) {
 
   return (
     <div id="detail" ref={ref}>
+      <div className="mbar">
+        <button className="btn" onClick={onList}>
+          ☰ Bees <span className="sub">{rows.length}</span>
+        </button>
+      </div>
       <div className="head">
         <BeeImg s={s} big />
-        <div>
+        <div className="title">
           <h2>{s.name}</h2>
           <div className="sub">
             <i>
@@ -50,7 +58,10 @@ export function BeeDetail({ uid }: { uid: string }) {
               <span
                 className="qlink"
                 title="Show only this branch in the list"
-                onClick={() => setFilters((f) => ({ ...f, branches: new Set([s.branch!]) }))}
+                onClick={() => {
+                  setFilters((f) => ({ ...f, branches: new Set([s.branch!]) }));
+                  onList();
+                }}
               >
                 {s.branch}
               </span>

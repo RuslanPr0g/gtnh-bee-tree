@@ -159,7 +159,7 @@ function FilterBar() {
   );
 }
 
-function BeeList({ current }: { current: string }) {
+function BeeList({ current, onPick }: { current: string; onPick: () => void }) {
   const { have, fav, unwanted, toggleFav, filters } = useStore();
   const rows = useVisibleRows();
   const listRef = useRef<HTMLDivElement>(null);
@@ -174,7 +174,12 @@ function BeeList({ current }: { current: string }) {
         {filters.view === 'fav' && !rows.length ? ' — open a bee and press "Bookmark"' : ''}
       </div>
       {rows.map((s) => (
-        <Link key={s.uid} className={'row' + (current === s.uid ? ' sel' : '') + (unwanted.has(s.uid) ? ' no' : '')} to={beePath(s.uid)}>
+        <Link
+          key={s.uid}
+          className={'row' + (current === s.uid ? ' sel' : '') + (unwanted.has(s.uid) ? ' no' : '')}
+          to={beePath(s.uid)}
+          onClick={onPick}
+        >
           <BeeImg s={s} />
           <span>
             {s.name}
@@ -201,11 +206,18 @@ function BeeList({ current }: { current: string }) {
   );
 }
 
-export function Sidebar({ current }: { current: string }) {
+/** onClose: back to the bee (phone layout, where the list replaces the detail) */
+export function Sidebar({ current, onClose }: { current: string; onClose: () => void }) {
+  const s = g.byId[current];
   return (
     <aside id="side">
+      <div className="mbar">
+        <button className="btn" onClick={onClose}>
+          ← <BeeImg s={s} /> {s.name}
+        </button>
+      </div>
       <FilterBar />
-      <BeeList current={current} />
+      <BeeList current={current} onPick={onClose} />
     </aside>
   );
 }

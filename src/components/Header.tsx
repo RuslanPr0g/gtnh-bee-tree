@@ -6,6 +6,8 @@ import { DEFAULT_BEE, beePath, questPath } from '../routes';
 import type { useHistoryNav } from '../hooks/useHistoryNav';
 
 const RECIPES = g.species.reduce((n, s) => n + g.makes[s.uid].length, 0);
+// on touch screens, focusing the search on load would pop up the keyboard
+const TOUCH = typeof window !== 'undefined' && window.matchMedia('(hover: none) and (pointer: coarse)').matches;
 
 interface Props {
   searchRef: RefObject<HTMLInputElement | null>;
@@ -26,8 +28,8 @@ export function Header({ searchRef, nav }: Props) {
         </button>
       </div>
       <h1>
-        🐝 GTNH Bee Tree
-        <span>
+        🐝<span className="name"> GTNH Bee Tree</span>
+        <span className="cnt">
           {g.species.length} bees · {RECIPES} recipes
         </span>
       </h1>
@@ -36,7 +38,7 @@ export function Header({ searchRef, nav }: Props) {
           Bees
         </Link>
         <Link className={onQuests ? 'on' : ''} to={questPath(lastQuest ?? firstQuest(ql))}>
-          📖 Quest path
+          📖 Quest<span className="long"> path</span>
         </Link>
       </nav>
       <input
@@ -45,7 +47,7 @@ export function Header({ searchRef, nav }: Props) {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search bees, branches, products… (e.g. monastic, naquadah, comb)"
-        autoFocus
+        autoFocus={!TOUCH}
       />
     </header>
   );

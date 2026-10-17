@@ -1,4 +1,4 @@
-import { useEffect, useRef, type RefObject } from 'react';
+import { useEffect, useRef, useState, type RefObject } from 'react';
 import { Link, Navigate, Outlet, createHashRouter, useLocation, useMatch, useNavigate, useParams } from 'react-router';
 import { Header } from './components/Header';
 import { Sidebar, useVisibleRows } from './components/Sidebar';
@@ -103,18 +103,36 @@ function NotFound() {
   );
 }
 
+/** matches the phone layout in styles.css */
+const PHONE = '(max-width: 760px)';
+
 function BeeRoute() {
   const { uid = '' } = useParams();
-  const { setLastBee } = useStore();
+  const { key } = useLocation();
+  const { setLastBee, query } = useStore();
   const ok = !!g.byId[uid];
+  // Phones show the list or the detail, not both (desktop ignores this).
+  // Every navigation shows the detail; typing a search shows the list.
+  const [pane, setPane] = useState({ key, query, list: false });
+  const list = pane.key !== key ? false : pane.query !== query ? pane.list || !!query : pane.list;
+  if (pane.key !== key || pane.query !== query) setPane({ key, query, list });
+  const setList = (v: boolean) => setPane((p) => ({ ...p, list: v }));
   useEffect(() => {
     if (ok) setLastBee(uid);
   }, [ok, uid, setLastBee]);
+  // the phone layout scrolls the page: start at the top, or at the picked bee in the list
+  useEffect(() => {
+    if (!window.matchMedia(PHONE).matches) return;
+    const row = list && !query ? document.querySelector('#list .row.sel') : null;
+    if (row) row.scrollIntoView({ block: 'center' });
+    else window.scrollTo(0, 0);
+    // only when the pane or the page changes, not on every search key
+  }, [list, key]);
   if (!ok) return <NotFound />;
   return (
-    <main id="beesView">
-      <Sidebar current={uid} />
-      <BeeDetail uid={uid} />
+    <main id="beesView" className={list ? 'list' : ''}>
+      <Sidebar current={uid} onClose={() => setList(false)} />
+      <BeeDetail uid={uid} onList={() => setList(true)} />
     </main>
   );
 }
