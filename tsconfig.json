@@ -12,7 +12,14 @@
     "isolatedModules": true,
     "skipLibCheck": true,
     "noEmit": true,
-    "types": ["vite/client"]
+    "types": ["vite/client", "node"],
+    "rootDirs": [".", "./.react-router/types"]
   },
-  "include": ["src", "vite.config.ts"]
+  "include": [
+    "src",
+    ".react-router/types/**/*",
+    "vite.config.ts",
+    "vitest.config.ts",
+    "react-router.config.ts"
+  ]
 }

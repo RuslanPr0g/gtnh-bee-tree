@@ -3,6 +3,7 @@ import {
   useCallback,
   useContext,
   useEffect,
+  useLayoutEffect,
   useMemo,
   useState,
   type ReactNode,
@@ -31,6 +32,16 @@ export interface Filters {
   open: boolean;
 }
 
+const DEFAULT_FILTERS: Filters = {
+  view: 'all',
+  mods: new Set(MOD_KEYS),
+  branches: new Set(),
+  open: false,
+};
+
+// on the server (prerender) there is no window: layout effects must not run there
+const useClientLayoutEffect = typeof window === 'undefined' ? useEffect : useLayoutEffect;
+
 function loadFilters(): Filters {
   const f = load<Record<string, unknown> | null>(KEYS.filters, null);
   const arr = (v: unknown) =>
@@ -46,32 +57,48 @@ function loadFilters(): Filters {
 }
 
 function useStoreState() {
-  const [have, setHave] = useState(() => loadSet(KEYS.have, (u) => !!g.byId[u]));
-  // old saves could hold a bee in both lists: owning wins
-  const [nope, setNope] = useState(() => {
-    const h = loadSet(KEYS.have, (u) => !!g.byId[u]);
-    return loadSet(KEYS.nope, (u) => !!g.byId[u] && !h.has(u));
-  });
-  const [fav, setFav] = useState(() => loadSet(KEYS.fav, (u) => !!g.byId[u]));
-  const [filters, setFilters] = useState(loadFilters);
+  // Pages are prerendered without the user's data, so state starts empty (matching the HTML) and the
+  // saved values load right after hydration, before the browser paints.
+  const [loaded, setLoaded] = useState(false);
+  const [have, setHave] = useState(() => new Set<string>());
+  const [nope, setNope] = useState(() => new Set<string>());
+  const [fav, setFav] = useState(() => new Set<string>());
+  const [filters, setFilters] = useState(DEFAULT_FILTERS);
   const [query, setQuery] = useState('');
+
+  const reload = useCallback(() => {
+    const h = loadSet(KEYS.have, (u) => !!g.byId[u]);
+    setHave(h);
+    // old saves could hold a bee in both lists: owning wins
+    setNope(loadSet(KEYS.nope, (u) => !!g.byId[u] && !h.has(u)));
+    setFav(loadSet(KEYS.fav, (u) => !!g.byId[u]));
+    setFilters(loadFilters());
+    setLoaded(true);
+  }, []);
+  useClientLayoutEffect(reload, [reload]);
   // last bee / quest shown, so the tabs return to them
   const [lastBee, setLastBee] = useState<string | null>(null);
   const [lastQuest, setLastQuest] = useState<string | null>(null);
 
-  useEffect(() => save(KEYS.have, [...have]), [have]);
-  useEffect(() => save(KEYS.nope, [...nope]), [nope]);
-  useEffect(() => save(KEYS.fav, [...fav]), [fav]);
-  useEffect(
-    () =>
+  // save only after loading, so the empty first state never overwrites saved data
+  useEffect(() => {
+    if (loaded) save(KEYS.have, [...have]);
+  }, [loaded, have]);
+  useEffect(() => {
+    if (loaded) save(KEYS.nope, [...nope]);
+  }, [loaded, nope]);
+  useEffect(() => {
+    if (loaded) save(KEYS.fav, [...fav]);
+  }, [loaded, fav]);
+  useEffect(() => {
+    if (loaded)
       save(KEYS.filters, {
         view: filters.view,
         mods: [...filters.mods],
         br: [...filters.branches],
         open: filters.open,
-      }),
-    [filters],
-  );
+      });
+  }, [loaded, filters]);
 
   const unwanted: Unwanted = useMemo(() => computeUnwanted(g, nope, have), [nope, have]);
 
@@ -118,6 +145,8 @@ function useStoreState() {
   );
 
   return {
+    loaded,
+    reload,
     have,
     nope,
     fav,

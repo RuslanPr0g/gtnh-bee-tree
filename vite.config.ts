@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { reactRouter } from '@react-router/dev/vite';
 
-// relative base so the build works on GitHub Pages under /<repo>/ without extra config
+// base must match `basename` in react-router.config.ts (the GitHub Pages project path)
 export default defineConfig({
-  base: './',
-  plugins: [react()],
+  base: '/gtnh-bee-tree/',
+  plugins: [reactRouter()],
   // the bee + quest JSON (~400 kB) is bundled on purpose; it is the app's whole dataset
   build: { chunkSizeWarningLimit: 1000 },
 });

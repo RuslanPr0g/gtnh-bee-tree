@@ -280,9 +280,13 @@ main {
   color: var(--good);
 }
 .hex {
+  display: inline-block;
   width: 24px;
   height: 24px;
   flex: none;
+  vertical-align: middle;
+  background-image: url('./assets/generated/bees.png');
+  background-repeat: no-repeat;
   image-rendering: pixelated;
 }
 .hex.big {

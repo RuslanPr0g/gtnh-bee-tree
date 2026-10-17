@@ -13,20 +13,23 @@ A fast, searchable bee breeding browser for **GregTech: New Horizons** (GTNH 2.8
 
 ```bash
 npm install
-npm run dev        # http://localhost:5173
+npm run dev        # http://localhost:5173/gtnh-bee-tree/
 npm test           # unit tests (rules for not-wanted, can-breed, search, routes)
-npm run build      # static site in dist/
+npm run build      # prerendered static site in build/pages/
+npm run preview    # serve that build at http://localhost:4173/gtnh-bee-tree/
 npm run format     # Prettier (CI checks it)
 ```
 
 ## URLs
 
-Hash routing, so it works on GitHub Pages with no server setup:
+Every page has a clean URL and is prerendered to static HTML, so links open directly, show up in search with their own titles, and preview nicely when shared:
 
-| Page  | URL                            |
-| ----- | ------------------------------ |
-| Bee   | `#/bee/forestry.speciesHeroic` |
-| Quest | `#/quest/0%3A358`              |
+| Page  | URL                                  |
+| ----- | ------------------------------------ |
+| Bee   | `/gtnh-bee-tree/bee/forestry/heroic` |
+| Quest | `/gtnh-bee-tree/quest/naquadah`      |
+
+Old `#/bee/…` links still work and redirect to these.
 
 ## Data
 

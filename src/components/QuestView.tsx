@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef } from 'react';
 import { Link } from 'react-router';
 import { searchWords } from '../lib/graph';
 import { questDone, questMatches, questPath as pathTo, type Quest } from '../lib/quests';
-import { questPath } from '../routes';
+import { questPath } from '../links';
 import { BeeImg, Chip } from './Bee';
 import { g, ql, useStore } from '../store';
 

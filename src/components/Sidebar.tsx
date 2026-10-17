@@ -3,8 +3,9 @@ import { Link } from 'react-router';
 import { MODS, matchesSearch, searchWords, type Species } from '../lib/graph';
 import { BeeImg } from './Bee';
 import { MOD_KEYS, VIEWS, g, useStore, type Filters, type View } from '../store';
-import { beePath } from '../routes';
+import { beePath } from '../links';
 import { settingsLink } from '../lib/settings';
+import { useHydrated } from '../hooks/useHydrated';
 
 /** the bees the list shows, in order (also used for arrow-key navigation) */
 export function useVisibleRows(): Species[] {
@@ -141,7 +142,7 @@ function CopySettings() {
       className="btn"
       title="Open this link in another browser or on your phone to bring your bookmarks, marks and filters there"
       onClick={() =>
-        navigator.clipboard.writeText(settingsLink()).then(
+        navigator.clipboard.writeText(settingsLink(import.meta.env.BASE_URL)).then(
           () => setState('copied'),
           () => setState('failed'),
         )
@@ -218,10 +219,12 @@ function FilterBar() {
 function BeeList({ current, onPick }: { current: string; onPick: () => void }) {
   const { have, fav, unwanted, toggleFav, filters } = useStore();
   const rows = useVisibleRows();
+  // the list is the same on every page, so prerendered HTML leaves it out (keeps 600+ pages small)
+  const hydrated = useHydrated();
   const listRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     listRef.current?.querySelector('.row.sel')?.scrollIntoView({ block: 'nearest' });
-  }, [current]);
+  }, [current, hydrated]);
   return (
     <div id="list" ref={listRef}>
       <div className="count">
@@ -229,35 +232,38 @@ function BeeList({ current, onPick }: { current: string; onPick: () => void }) {
         {filters.view === 'have' && !rows.length ? ' — open a bee and press "I have this"' : ''}
         {filters.view === 'fav' && !rows.length ? ' — open a bee and press "Bookmark"' : ''}
       </div>
-      {rows.map((s) => (
-        <Link
-          key={s.uid}
-          className={'row' + (current === s.uid ? ' sel' : '') + (unwanted.has(s.uid) ? ' no' : '')}
-          to={beePath(s.uid)}
-          onClick={onPick}
-        >
-          <BeeImg s={s} />
-          <span>
-            {s.name}
-            {!g.makes[s.uid].length && <span className="base"> ● base</span>}
-            {have.has(s.uid) && <span className="have"> ✓</span>}
-            {unwanted.has(s.uid) && <span className="nope"> ✗</span>}
-          </span>
-          <span className="tag">{MODS[s.mod] ?? s.mod}</span>
-          <span
-            className={'star' + (fav.has(s.uid) ? ' on' : '')}
-            title="Bookmark (F)"
-            onClick={(e) => {
-              // the star sits inside the row link: don't navigate
-              e.preventDefault();
-              e.stopPropagation();
-              toggleFav(s.uid);
-            }}
+      {hydrated &&
+        rows.map((s) => (
+          <Link
+            key={s.uid}
+            className={
+              'row' + (current === s.uid ? ' sel' : '') + (unwanted.has(s.uid) ? ' no' : '')
+            }
+            to={beePath(s.uid)}
+            onClick={onPick}
           >
-            {fav.has(s.uid) ? '★' : '☆'}
-          </span>
-        </Link>
-      ))}
+            <BeeImg s={s} />
+            <span>
+              {s.name}
+              {!g.makes[s.uid].length && <span className="base"> ● base</span>}
+              {have.has(s.uid) && <span className="have"> ✓</span>}
+              {unwanted.has(s.uid) && <span className="nope"> ✗</span>}
+            </span>
+            <span className="tag">{MODS[s.mod] ?? s.mod}</span>
+            <span
+              className={'star' + (fav.has(s.uid) ? ' on' : '')}
+              title="Bookmark (F)"
+              onClick={(e) => {
+                // the star sits inside the row link: don't navigate
+                e.preventDefault();
+                e.stopPropagation();
+                toggleFav(s.uid);
+              }}
+            >
+              {fav.has(s.uid) ? '★' : '☆'}
+            </span>
+          </Link>
+        ))}
     </div>
   );
 }

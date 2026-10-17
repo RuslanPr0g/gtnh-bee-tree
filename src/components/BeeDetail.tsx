@@ -5,7 +5,7 @@ import { BeeImg, Chip, Conditions, pct } from './Bee';
 import { RecipeTree, useTreeState } from './RecipeTree';
 import { useVisibleRows } from './Sidebar';
 import { g, ql, useStore } from '../store';
-import { questPath } from '../routes';
+import { questPath } from '../links';
 
 const cap = (s: string | null) =>
   s ? s.charAt(0) + s.slice(1).toLowerCase().replace(/_/g, ' ') : '?';

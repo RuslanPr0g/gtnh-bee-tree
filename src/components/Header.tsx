@@ -2,7 +2,7 @@ import type { RefObject } from 'react';
 import { Link, useMatch } from 'react-router';
 import { g, ql, useStore } from '../store';
 import { firstQuest } from '../lib/quests';
-import { DEFAULT_BEE, beePath, questPath } from '../routes';
+import { DEFAULT_BEE, beePath, questPath } from '../links';
 import type { useHistoryNav } from '../hooks/useHistoryNav';
 
 const RECIPES = g.species.reduce((n, s) => n + g.makes[s.uid].length, 0);

@@ -5,7 +5,9 @@ import { useLocation, useNavigate, useNavigationType } from 'react-router';
 // reached in this tab (sessionStorage, so it survives reloads) to know whether "forward" is possible.
 const MAX_KEY = 'gtnhBeesMaxIdx';
 const readIdx = (): number =>
-  typeof window.history.state?.idx === 'number' ? window.history.state.idx : 0;
+  typeof window !== 'undefined' && typeof window.history.state?.idx === 'number'
+    ? window.history.state.idx
+    : 0;
 const readMax = (): number => {
   try {
     return Number(sessionStorage.getItem(MAX_KEY)) || 0;

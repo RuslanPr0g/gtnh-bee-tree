@@ -25,6 +25,10 @@ export interface Species {
   products: Product[];
   specialty: Product[];
   mod: string;
+  /** URL path part: `<mod slug>/<name slug>`, e.g. `magic-bees/abandoned` */
+  slug: string;
+  /** row in the generated icon sprite (bees.json order) */
+  icon: number;
 }
 
 export interface Mutation {
@@ -37,7 +41,7 @@ export interface Mutation {
 }
 
 export interface RawData {
-  species: Omit<Species, 'mod'>[];
+  species: Omit<Species, 'mod' | 'slug' | 'icon'>[];
   mutations: Mutation[];
 }
 
@@ -45,6 +49,7 @@ export interface Graph {
   species: Species[];
   sorted: Species[];
   byId: Record<string, Species>;
+  bySlug: Record<string, Species>;
   /** recipes that produce a bee */
   makes: Record<string, Mutation[]>;
   /** recipes a bee is a parent in */
@@ -62,6 +67,13 @@ export const MODS: Record<string, string> = {
   computronics: 'Computronics',
 };
 
+export const slugify = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/\+/g, ' plus ')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+
 // some mods leave untranslated keys like "for.genus.bees.radioactive"; turn those into plain words or drop them
 const KEY_NAMES: Record<string, string> = {
   raremetal: 'Rare Metal',
@@ -78,17 +90,22 @@ const fromKey = (v: string) => {
 
 export function buildGraph(raw: RawData): Graph {
   const byId: Graph['byId'] = {};
+  const bySlug: Graph['bySlug'] = {};
   const makes: Graph['makes'] = {};
   const usedIn: Graph['usedIn'] = {};
   const dupNames: Graph['dupNames'] = {};
-  const species = raw.species.map((s): Species => ({
+  const species = raw.species.map((s, icon): Species => ({
     ...s,
     mod: s.uid.split('.')[0],
+    slug: `${slugify(MODS[s.uid.split('.')[0]] ?? s.uid.split('.')[0])}/${slugify(s.name)}`,
+    icon,
     branch: isKey(s.branch) ? fromKey(s.branch) : s.branch,
     description: isKey(s.description) ? null : s.description,
   }));
   for (const s of species) {
     byId[s.uid] = s;
+    if (bySlug[s.slug]) throw new Error(`two bees share the URL ${s.slug}`);
+    bySlug[s.slug] = s;
     makes[s.uid] = [];
     usedIn[s.uid] = [];
     dupNames[s.name] = (dupNames[s.name] ?? 0) + 1;
@@ -100,7 +117,7 @@ export function buildGraph(raw: RawData): Graph {
     if (m.b !== m.a) usedIn[m.b].push(m);
   }
   const sorted = species.slice().sort((x, y) => x.name.localeCompare(y.name));
-  return { species, sorted, byId, makes, usedIn, dupNames };
+  return { species, sorted, byId, bySlug, makes, usedIn, dupNames };
 }
 
 /** every bee in the recursive "how to get it" tree of uid (not uid itself, unless it is its own ancestor) */

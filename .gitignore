@@ -2,3 +2,6 @@ node_modules
 dist
 *.local
 .vite
+src/assets/generated
+build
+.react-router

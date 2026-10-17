@@ -1,5 +1,5 @@
 // The "Be(e) Breeding" questline from the GTNH quest book (BetterQuesting), laid out like in game.
-import type { Graph } from './graph';
+import { slugify, type Graph } from './graph';
 
 export interface RawQuest {
   id: string;
@@ -25,6 +25,8 @@ export interface RawQuestLine {
 }
 
 export interface Quest extends RawQuest {
+  /** URL path part, from the quest name */
+  slug: string;
   /** the bee shown as the quest's icon */
   main: string | undefined;
   next: string[];
@@ -38,6 +40,7 @@ export interface QuestLine {
   name: string;
   nodes: Quest[];
   byId: Record<string, Quest>;
+  bySlug: Record<string, Quest>;
   extern: Record<string, string>;
   /** bee uid -> quests where it is the main bee */
   questOf: Record<string, string[]>;
@@ -52,9 +55,11 @@ export function buildQuestLine(raw: RawQuestLine, g: Graph): QuestLine {
   const minX = Math.min(...raw.nodes.map((n) => n.x));
   const minY = Math.min(...raw.nodes.map((n) => n.y));
   const byId: Record<string, Quest> = {};
+  const bySlug: Record<string, Quest> = {};
   const nodes = raw.nodes.map((n): Quest => {
     const q: Quest = {
       ...n,
+      slug: slugify(n.name),
       main: n.icon && g.byId[n.icon] ? n.icon : n.bees[n.bees.length - 1],
       next: [],
       px: (n.x - minX) * SCALE + PAD,
@@ -62,6 +67,8 @@ export function buildQuestLine(raw: RawQuestLine, g: Graph): QuestLine {
       ps: n.w * SCALE,
     };
     byId[q.id] = q;
+    if (bySlug[q.slug]) throw new Error(`two quests share the URL ${q.slug}`);
+    bySlug[q.slug] = q;
     return q;
   });
   const questOf: Record<string, string[]> = {};
@@ -73,6 +80,7 @@ export function buildQuestLine(raw: RawQuestLine, g: Graph): QuestLine {
     name: raw.name,
     nodes,
     byId,
+    bySlug,
     extern: raw.extern,
     questOf,
     width: Math.max(...nodes.map((n) => n.px + n.ps)) + PAD * 3,

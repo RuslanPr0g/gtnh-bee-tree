@@ -1,11 +1,22 @@
 import { Link } from 'react-router';
 import { MODS, type Species } from '../lib/graph';
-import { beeIconUrl } from '../lib/icons';
 import { g, useStore } from '../store';
-import { beePath } from '../routes';
+import { beePath } from '../links';
 
+const ICONS = g.species.length;
+
+/** the bee's icon: one row of the sprite built by tools/build-icons.mjs */
 export function BeeImg({ s, big }: { s: Species; big?: boolean }) {
-  return <img className={big ? 'hex big' : 'hex'} src={beeIconUrl(s)} alt="" />;
+  return (
+    <span
+      className={big ? 'hex big' : 'hex'}
+      aria-hidden
+      style={{
+        backgroundSize: `100% ${ICONS * 100}%`,
+        backgroundPosition: `0 ${(s.icon / (ICONS - 1)) * 100}%`,
+      }}
+    />
+  );
 }
 
 /** bee name with the mod added when two mods use the same name */
