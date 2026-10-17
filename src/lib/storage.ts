@@ -18,7 +18,9 @@ export function save(key: string, value: unknown): void {
 
 export function loadSet(key: string, valid: (id: string) => boolean): Set<string> {
   const v = load<unknown>(key, []);
-  return new Set(Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string' && valid(x)) : []);
+  return new Set(
+    Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string' && valid(x)) : [],
+  );
 }
 
 // same keys as the single-file page (each site/origin still keeps its own copy)

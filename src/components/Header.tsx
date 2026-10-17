@@ -7,7 +7,8 @@ import type { useHistoryNav } from '../hooks/useHistoryNav';
 
 const RECIPES = g.species.reduce((n, s) => n + g.makes[s.uid].length, 0);
 // on touch screens, focusing the search on load would pop up the keyboard
-const TOUCH = typeof window !== 'undefined' && window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+const TOUCH =
+  typeof window !== 'undefined' && window.matchMedia('(hover: none) and (pointer: coarse)').matches;
 
 interface Props {
   searchRef: RefObject<HTMLInputElement | null>;

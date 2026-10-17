@@ -7,7 +7,8 @@ import { useVisibleRows } from './Sidebar';
 import { g, ql, useStore } from '../store';
 import { questPath } from '../routes';
 
-const cap = (s: string | null) => (s ? s.charAt(0) + s.slice(1).toLowerCase().replace(/_/g, ' ') : '?');
+const cap = (s: string | null) =>
+  s ? s.charAt(0) + s.slice(1).toLowerCase().replace(/_/g, ' ') : '?';
 
 function Products({ list }: { list: Product[] }) {
   if (!list.length) return <span className="empty">none</span>;
@@ -24,7 +25,8 @@ function Products({ list }: { list: Product[] }) {
 
 /** onList: show the bee list (phone layout, where the list replaces the detail) */
 export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) {
-  const { have, fav, unwanted, toggleFav, toggleHave, toggleNope, isCanBreed, setFilters } = useStore();
+  const { have, fav, unwanted, toggleFav, toggleHave, toggleNope, isCanBreed, setFilters } =
+    useStore();
   const s = g.byId[uid];
   const rows = useVisibleRows();
   const tree = useTreeState(uid);
@@ -70,21 +72,38 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
             )}
           </div>
         </div>
-        <button className={'btn' + (fav.has(uid) ? ' fav' : '')} onClick={() => toggleFav(uid)} title="Bookmark this bee (F)">
+        <button
+          className={'btn' + (fav.has(uid) ? ' fav' : '')}
+          onClick={() => toggleFav(uid)}
+          title="Bookmark this bee (F)"
+        >
           {fav.has(uid) ? '★ Bookmarked' : '☆ Bookmark'}
         </button>
-        <button className={'btn' + (owned ? ' on' : '')} onClick={() => toggleHave(uid)} title="Mark bees you own (H)">
+        <button
+          className={'btn' + (owned ? ' on' : '')}
+          onClick={() => toggleHave(uid)}
+          title="Mark bees you own (H)"
+        >
           {owned ? '✓ I have this' : '☐ I have this'}
         </button>
         {owned ? (
-          <button className="btn" disabled style={{ opacity: 0.4, cursor: 'default' }} title="You have this bee, so it can't be not wanted">
+          <button
+            className="btn"
+            disabled
+            style={{ opacity: 0.4, cursor: 'default' }}
+            title="You have this bee, so it can't be not wanted"
+          >
             ☐ Not wanted
           </button>
         ) : (
           <button
             className={'btn' + (nope ? ' off' : '')}
             onClick={() => toggleNope(uid)}
-            title={nope ? 'Click to want it again (also unmarks the bees that caused it)' : 'Not wanted: also marks bees that can only be bred from it (N)'}
+            title={
+              nope
+                ? 'Click to want it again (also unmarks the bees that caused it)'
+                : 'Not wanted: also marks bees that can only be bred from it (N)'
+            }
           >
             {nope ? '✗ Not wanted' : '☐ Not wanted'}
           </button>
@@ -97,12 +116,31 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
       </div>
 
       <div className="facts">
-        <div className="fact"><b>Temperature</b>{cap(s.temp)}</div>
-        <div className="fact"><b>Humidity</b>{cap(s.humidity)}</div>
-        <div className="fact"><b>Products</b><Products list={s.products} /></div>
-        <div className="fact"><b>Specialty</b><Products list={s.specialty} /></div>
-        {s.nocturnal && <div className="fact"><b>Works</b>at night</div>}
-        <div className="fact"><b>Gene</b>{s.dominant ? 'Dominant' : 'Recessive'}</div>
+        <div className="fact">
+          <b>Temperature</b>
+          {cap(s.temp)}
+        </div>
+        <div className="fact">
+          <b>Humidity</b>
+          {cap(s.humidity)}
+        </div>
+        <div className="fact">
+          <b>Products</b>
+          <Products list={s.products} />
+        </div>
+        <div className="fact">
+          <b>Specialty</b>
+          <Products list={s.specialty} />
+        </div>
+        {s.nocturnal && (
+          <div className="fact">
+            <b>Works</b>at night
+          </div>
+        )}
+        <div className="fact">
+          <b>Gene</b>
+          {s.dominant ? 'Dominant' : 'Recessive'}
+        </div>
       </div>
       {s.description && <div className="desc">{s.description.split('|')[0]}</div>}
 
@@ -110,8 +148,12 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
         How to get it
         {recipes.length > 0 && (
           <span className="tools">
-            <button className="btn" onClick={tree.openAll}>Open all</button>
-            <button className="btn" onClick={tree.closeAll}>Close all</button>
+            <button className="btn" onClick={tree.openAll}>
+              Open all
+            </button>
+            <button className="btn" onClick={tree.closeAll}>
+              Close all
+            </button>
           </span>
         )}
       </h3>
@@ -120,7 +162,10 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
           {otherCauses.length ? (
             <>
               ✗ Not wanted: every way to breed it needs a not-wanted bee (from{' '}
-              {otherCauses.map((r) => <Chip key={r} uid={r} />)}). Click "Not wanted" here to want it again; that also unmarks{' '}
+              {otherCauses.map((r) => (
+                <Chip key={r} uid={r} />
+              ))}
+              ). Click "Not wanted" here to want it again; that also unmarks{' '}
               {otherCauses.length > 1 ? 'those bees' : 'that bee'}.
             </>
           ) : (
@@ -137,14 +182,14 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
         <>
           <RecipeTree uid={uid} open={tree.open} toggle={tree.toggle} />
           <p className="sub">
-            Click <b>+</b> to open a parent's recipes. <span className="leaf">base</span> = can't be bred, find it in the world. Click any bee
-            name to jump to it.
+            Click <b>+</b> to open a parent's recipes. <span className="leaf">base</span> = can't be
+            bred, find it in the world. Click any bee name to jump to it.
           </p>
         </>
       ) : (
         <div className="note">
-          This bee can't be bred. Find it in <b>hives in the world</b>, buy it from a <b>villager</b> (Apiarist), or get it another way (check
-          NEI).
+          This bee can't be bred. Find it in <b>hives in the world</b>, buy it from a{' '}
+          <b>villager</b> (Apiarist), or get it another way (check NEI).
         </div>
       )}
 
@@ -170,9 +215,11 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
       )}
 
       <div className="keys">
-        <kbd>Backspace</kbd> back · <kbd>Shift</kbd>+<kbd>Backspace</kbd> forward · <kbd>/</kbd> search · <kbd>↑</kbd>
-        <kbd>↓</kbd> move in list · <kbd>Enter</kbd> open first result · <kbd>Esc</kbd> clear search · <kbd>F</kbd> bookmark ·{' '}
-        <kbd>H</kbd> I have this · <kbd>N</kbd> not wanted · mouse side buttons work too
+        <kbd>Backspace</kbd> back · <kbd>Shift</kbd>+<kbd>Backspace</kbd> forward · <kbd>/</kbd>{' '}
+        search · <kbd>↑</kbd>
+        <kbd>↓</kbd> move in list · <kbd>Enter</kbd> open first result · <kbd>Esc</kbd> clear search
+        · <kbd>F</kbd> bookmark · <kbd>H</kbd> I have this · <kbd>N</kbd> not wanted · mouse side
+        buttons work too
       </div>
     </div>
   );

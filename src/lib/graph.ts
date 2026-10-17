@@ -135,7 +135,7 @@ export function computeUnwanted(g: Graph, nope: Set<string>, have: Set<string>):
   for (const r of roots) for (const a of ancestors(g, r)) keep.add(a);
   for (const r of roots) unwanted.set(r, new Set([r]));
   // grow to a fixpoint; cause sets only ever grow, so this ends
-  for (let changed = true; changed; ) {
+  for (let changed = true; changed;) {
     changed = false;
     for (const s of g.species) {
       const x = s.uid;
@@ -155,7 +155,12 @@ export function computeUnwanted(g: Graph, nope: Set<string>, have: Set<string>):
 }
 
 /** new root set after the user wants `uid` again: removes every root causing it, until it is wanted */
-export function unmarkNope(g: Graph, uid: string, nope: Set<string>, have: Set<string>): Set<string> {
+export function unmarkNope(
+  g: Graph,
+  uid: string,
+  nope: Set<string>,
+  have: Set<string>,
+): Set<string> {
   const next = new Set(nope);
   let unwanted = computeUnwanted(g, next, have);
   // repeat in case another root still reaches it (bounded by the number of roots)

@@ -100,6 +100,8 @@ export function questMatches(n: Quest, g: Graph, words: string[]): boolean {
   return words.every((w) => hay.includes(w));
 }
 
-export const questDone = (n: Quest, have: Set<string>) => n.bees.length > 0 && n.bees.every((b) => have.has(b));
+export const questDone = (n: Quest, have: Set<string>) =>
+  n.bees.length > 0 && n.bees.every((b) => have.has(b));
 
-export const firstQuest = (ql: QuestLine) => ql.nodes.find((n) => !n.pre.some((p) => ql.byId[p]))?.id ?? ql.nodes[0].id;
+export const firstQuest = (ql: QuestLine) =>
+  ql.nodes.find((n) => !n.pre.some((p) => ql.byId[p]))?.id ?? ql.nodes[0].id;

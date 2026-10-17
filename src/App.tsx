@@ -1,5 +1,14 @@
 import { useEffect, useRef, useState, type RefObject } from 'react';
-import { Link, Navigate, Outlet, createHashRouter, useLocation, useMatch, useNavigate, useParams } from 'react-router';
+import {
+  Link,
+  Navigate,
+  Outlet,
+  createHashRouter,
+  useLocation,
+  useMatch,
+  useNavigate,
+  useParams,
+} from 'react-router';
 import { Header } from './components/Header';
 import { Sidebar, useVisibleRows } from './components/Sidebar';
 import { BeeDetail } from './components/BeeDetail';
@@ -11,7 +20,10 @@ import { DEFAULT_BEE, beePath, legacyTarget, questPath } from './routes';
 import { g, ql, useStore } from './store';
 
 /** global keys: Backspace back, / search, Esc clear, Enter open first, arrows move, F/H/N marks */
-function useKeys(searchRef: RefObject<HTMLInputElement | null>, nav: ReturnType<typeof useHistoryNav>) {
+function useKeys(
+  searchRef: RefObject<HTMLInputElement | null>,
+  nav: ReturnType<typeof useHistoryNav>,
+) {
   const store = useStore();
   const rows = useVisibleRows();
   const navigate = useNavigate();
@@ -60,7 +72,8 @@ function useKeys(searchRef: RefObject<HTMLInputElement | null>, nav: ReturnType<
       } else if ((e.key === 'ArrowDown' || e.key === 'ArrowUp') && current && rows.length) {
         e.preventDefault();
         const i = rows.findIndex((r) => r.uid === current);
-        const next = i < 0 ? 0 : e.key === 'ArrowDown' ? Math.min(rows.length - 1, i + 1) : Math.max(0, i - 1);
+        const next =
+          i < 0 ? 0 : e.key === 'ArrowDown' ? Math.min(rows.length - 1, i + 1) : Math.max(0, i - 1);
         if (rows[next].uid !== current) navigate(beePath(rows[next].uid));
       }
     };
@@ -98,7 +111,10 @@ function Layout() {
 function NotFound() {
   return (
     <div className="notfound">
-      Nothing here. <Link className="qlink" to={beePath(DEFAULT_BEE)}>Go to the bee list</Link>
+      Nothing here.{' '}
+      <Link className="qlink" to={beePath(DEFAULT_BEE)}>
+        Go to the bee list
+      </Link>
     </div>
   );
 }
@@ -150,7 +166,11 @@ function QuestRoute() {
 /** unknown paths: old single-file links (#b:<uid>, #q:<id>, #<uid>) redirect, the rest is "not found" */
 function Fallback() {
   const { pathname } = useLocation();
-  const to = legacyTarget(pathname, (u) => !!g.byId[u], (q) => !!ql.byId[q]);
+  const to = legacyTarget(
+    pathname,
+    (u) => !!g.byId[u],
+    (q) => !!ql.byId[q],
+  );
   return to ? <Navigate to={to} replace /> : <NotFound />;
 }
 

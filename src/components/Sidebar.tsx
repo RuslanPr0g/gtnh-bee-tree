@@ -12,13 +12,20 @@ export function useVisibleRows(): Species[] {
     const words = searchWords(query);
     const inView = (s: Species): boolean => {
       switch (filters.view) {
-        case 'all': return true;
-        case 'fav': return fav.has(s.uid);
-        case 'want': return !unwanted.has(s.uid);
-        case 'have': return have.has(s.uid);
-        case 'can': return isCanBreed(s.uid);
-        case 'base': return !g.makes[s.uid].length;
-        case 'nope': return unwanted.has(s.uid);
+        case 'all':
+          return true;
+        case 'fav':
+          return fav.has(s.uid);
+        case 'want':
+          return !unwanted.has(s.uid);
+        case 'have':
+          return have.has(s.uid);
+        case 'can':
+          return isCanBreed(s.uid);
+        case 'base':
+          return !g.makes[s.uid].length;
+        case 'nope':
+          return unwanted.has(s.uid);
       }
     };
     return g.sorted.filter(
@@ -31,7 +38,9 @@ export function useVisibleRows(): Species[] {
   }, [filters, query, have, fav, unwanted, isCanBreed]);
 }
 
-const MOD_COUNTS = Object.fromEntries(MOD_KEYS.map((k) => [k, g.species.filter((s) => s.mod === k).length]));
+const MOD_COUNTS = Object.fromEntries(
+  MOD_KEYS.map((k) => [k, g.species.filter((s) => s.mod === k).length]),
+);
 
 function FilterPanel() {
   const { filters, setFilters } = useStore();
@@ -46,7 +55,8 @@ function FilterPanel() {
   // branches of the shown mods, with counts; picked ones always stay visible
   const branches = useMemo(() => {
     const counts: Record<string, number> = {};
-    for (const s of g.species) if (filters.mods.has(s.mod) && s.branch) counts[s.branch] = (counts[s.branch] ?? 0) + 1;
+    for (const s of g.species)
+      if (filters.mods.has(s.mod) && s.branch) counts[s.branch] = (counts[s.branch] ?? 0) + 1;
     for (const b of filters.branches) counts[b] ??= 0;
     const bt = branchQuery.trim().toLowerCase();
     return Object.keys(counts)
@@ -67,7 +77,11 @@ function FilterPanel() {
         </div>
         <div className="fchips">
           {MOD_KEYS.map((k) => (
-            <button key={k} className={filters.mods.has(k) ? 'on' : ''} onClick={() => set({ mods: toggle(filters.mods, k) })}>
+            <button
+              key={k}
+              className={filters.mods.has(k) ? 'on' : ''}
+              onClick={() => set({ mods: toggle(filters.mods, k) })}
+            >
               {MODS[k]}
               <i>{MOD_COUNTS[k]}</i>
             </button>
@@ -81,11 +95,20 @@ function FilterPanel() {
             <button onClick={() => set({ branches: new Set() })}>clear</button>
           </span>
         </div>
-        <input id="bq" value={branchQuery} onChange={(e) => setBranchQuery(e.target.value)} placeholder="Find a branch…" />
+        <input
+          id="bq"
+          value={branchQuery}
+          onChange={(e) => setBranchQuery(e.target.value)}
+          placeholder="Find a branch…"
+        />
         <div className="fchips scroll">
           {branches.length ? (
             branches.map(([b, n]) => (
-              <button key={b} className={filters.branches.has(b) ? 'on' : ''} onClick={() => set({ branches: toggle(filters.branches, b) })}>
+              <button
+                key={b}
+                className={filters.branches.has(b) ? 'on' : ''}
+                onClick={() => set({ branches: toggle(filters.branches, b) })}
+              >
                 {b}
                 <i>{n}</i>
               </button>
@@ -115,7 +138,12 @@ function FilterBar() {
   return (
     <div id="filters">
       <div className="frow">
-        <select id="view" value={filters.view} onChange={(e) => setFilters((f) => ({ ...f, view: e.target.value as View }))} title="Show">
+        <select
+          id="view"
+          value={filters.view}
+          onChange={(e) => setFilters((f) => ({ ...f, view: e.target.value as View }))}
+          title="Show"
+        >
           {Object.entries(VIEWS).map(([k, v]) => (
             <option key={k} value={k}>
               {v}
@@ -134,7 +162,10 @@ function FilterBar() {
       {(modsOff || filters.branches.size > 0) && (
         <div id="active">
           {modsOff && (
-            <button title="Show all mods" onClick={() => setFilters((f) => ({ ...f, mods: new Set(MOD_KEYS) }))}>
+            <button
+              title="Show all mods"
+              onClick={() => setFilters((f) => ({ ...f, mods: new Set(MOD_KEYS) }))}
+            >
               Mods: {filters.mods.size} of {MOD_KEYS.length} ×
             </button>
           )}

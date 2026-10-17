@@ -9,7 +9,8 @@ export function BeeImg({ s, big }: { s: Species; big?: boolean }) {
 }
 
 /** bee name with the mod added when two mods use the same name */
-export const beeLabel = (s: Species) => s.name + (g.dupNames[s.name] > 1 ? ` (${MODS[s.mod] ?? s.mod})` : '');
+export const beeLabel = (s: Species) =>
+  s.name + (g.dupNames[s.name] > 1 ? ` (${MODS[s.mod] ?? s.mod})` : '');
 
 /** link to a bee's page (middle-click opens a new tab) */
 export function Chip({ uid }: { uid: string }) {

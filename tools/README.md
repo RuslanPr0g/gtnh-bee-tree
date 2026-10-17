@@ -1,6 +1,6 @@
 # Data tools
 
-Both tools write the JSON files in `src/data/`. Run them again after a GTNH pack update.
+Both tools write the JSON files in `src/data/`. Run them again after a GTNH pack update, then `npm run format` (CI checks formatting, data included) and `npm test`.
 
 ## `beedump-agent/` → `src/data/bees.json`
 

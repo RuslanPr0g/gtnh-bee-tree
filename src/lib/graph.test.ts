@@ -1,6 +1,15 @@
 import { describe, expect, it } from 'vitest';
 import raw from '../data/bees.json';
-import { ancestors, buildGraph, canBreed, computeUnwanted, matchesSearch, searchWords, unmarkNope, type RawData } from './graph';
+import {
+  ancestors,
+  buildGraph,
+  canBreed,
+  computeUnwanted,
+  matchesSearch,
+  searchWords,
+  unmarkNope,
+  type RawData,
+} from './graph';
 
 const g = buildGraph(raw as unknown as RawData);
 const id = (name: string, mod?: string) => {
@@ -83,7 +92,9 @@ describe('can breed now', () => {
     const have = set(id('Steadfast'), id('Valiant'));
     expect(canBreed(g, id('Heroic'), have, computeUnwanted(g, set(), have))).toBe(true);
     expect(canBreed(g, id('Heroic'), set(id('Steadfast')), new Map())).toBe(false);
-    expect(canBreed(g, id('Heroic'), have, computeUnwanted(g, set(id('Heroic')), have))).toBe(false);
+    expect(canBreed(g, id('Heroic'), have, computeUnwanted(g, set(id('Heroic')), have))).toBe(
+      false,
+    );
   });
 });
 

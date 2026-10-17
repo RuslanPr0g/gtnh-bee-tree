@@ -1,4 +1,12 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+  type ReactNode,
+} from 'react';
 import { graph as g, questLine as ql } from './data';
 import { MODS, canBreed, computeUnwanted, unmarkNope, type Unwanted } from './lib/graph';
 import { KEYS, load, loadSet, save } from './lib/storage';
@@ -25,7 +33,8 @@ export interface Filters {
 
 function loadFilters(): Filters {
   const f = load<Record<string, unknown> | null>(KEYS.filters, null);
-  const arr = (v: unknown) => (Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : null);
+  const arr = (v: unknown) =>
+    Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : null;
   const mods = arr(f?.mods);
   const br = arr(f?.br);
   return {
@@ -54,7 +63,13 @@ function useStoreState() {
   useEffect(() => save(KEYS.nope, [...nope]), [nope]);
   useEffect(() => save(KEYS.fav, [...fav]), [fav]);
   useEffect(
-    () => save(KEYS.filters, { view: filters.view, mods: [...filters.mods], br: [...filters.branches], open: filters.open }),
+    () =>
+      save(KEYS.filters, {
+        view: filters.view,
+        mods: [...filters.mods],
+        br: [...filters.branches],
+        open: filters.open,
+      }),
     [filters],
   );
 
@@ -97,11 +112,28 @@ function useStoreState() {
     [have, nope, unwanted],
   );
 
-  const isCanBreed = useCallback((uid: string) => canBreed(g, uid, have, unwanted), [have, unwanted]);
+  const isCanBreed = useCallback(
+    (uid: string) => canBreed(g, uid, have, unwanted),
+    [have, unwanted],
+  );
 
   return {
-    have, nope, fav, unwanted, filters, setFilters, query, setQuery,
-    lastBee, setLastBee, lastQuest, setLastQuest, toggleFav, toggleHave, toggleNope, isCanBreed,
+    have,
+    nope,
+    fav,
+    unwanted,
+    filters,
+    setFilters,
+    query,
+    setQuery,
+    lastBee,
+    setLastBee,
+    lastQuest,
+    setLastQuest,
+    toggleFav,
+    toggleHave,
+    toggleNope,
+    isCanBreed,
   };
 }
 

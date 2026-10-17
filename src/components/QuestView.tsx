@@ -13,7 +13,9 @@ function QuestMap({ id, path }: { id: string; path: Set<string> }) {
   const words = useMemo(() => searchWords(query), [query]);
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    ref.current?.querySelector('.qn.sel')?.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
+    ref.current
+      ?.querySelector('.qn.sel')
+      ?.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
   }, [id]);
   return (
     <div id="qmap" ref={ref}>
@@ -25,7 +27,16 @@ function QuestMap({ id, path }: { id: string; path: Set<string> }) {
               .map((p) => {
                 const [x1, y1] = center(ql.byId[p]);
                 const [x2, y2] = center(n);
-                return <line key={p + '>' + n.id} className={path.has(p) && path.has(n.id) ? 'hot' : ''} x1={x1} y1={y1} x2={x2} y2={y2} />;
+                return (
+                  <line
+                    key={p + '>' + n.id}
+                    className={path.has(p) && path.has(n.id) ? 'hot' : ''}
+                    x1={x1}
+                    y1={y1}
+                    x2={x2}
+                    y2={y2}
+                  />
+                );
               }),
           )}
         </svg>
@@ -41,7 +52,13 @@ function QuestMap({ id, path }: { id: string; path: Set<string> }) {
             .filter(Boolean)
             .join(' ');
           return (
-            <Link key={n.id} className={cls} title={n.name} to={questPath(n.id)} style={{ left: n.px, top: n.py, width: n.ps, height: n.ps }}>
+            <Link
+              key={n.id}
+              className={cls}
+              title={n.name}
+              to={questPath(n.id)}
+              style={{ left: n.px, top: n.py, width: n.ps, height: n.ps }}
+            >
               {n.main ? <BeeImg s={g.byId[n.main]} /> : n.name.slice(0, 2)}
               {n.w >= 48 && <span className="lbl">{n.name}</span>}
             </Link>
@@ -125,8 +142,8 @@ function QuestPanel({ id, path }: { id: string; path: string[] }) {
         </>
       )}
       <div className="qlegend">
-        Gold = path to the picked quest · green = you have all its bees (mark them with "I have this") · click a bee to open its breeding tree ·
-        search box dims other quests
+        Gold = path to the picked quest · green = you have all its bees (mark them with "I have
+        this") · click a bee to open its breeding tree · search box dims other quests
       </div>
     </div>
   );

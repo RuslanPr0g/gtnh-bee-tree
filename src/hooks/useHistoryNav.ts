@@ -4,7 +4,8 @@ import { useLocation, useNavigate, useNavigationType } from 'react-router';
 // React Router stores the entry's position in history.state.idx. We remember the furthest position
 // reached in this tab (sessionStorage, so it survives reloads) to know whether "forward" is possible.
 const MAX_KEY = 'gtnhBeesMaxIdx';
-const readIdx = (): number => (typeof window.history.state?.idx === 'number' ? window.history.state.idx : 0);
+const readIdx = (): number =>
+  typeof window.history.state?.idx === 'number' ? window.history.state.idx : 0;
 const readMax = (): number => {
   try {
     return Number(sessionStorage.getItem(MAX_KEY)) || 0;
@@ -24,7 +25,10 @@ export function useHistoryNav() {
   const navigate = useNavigate();
   const location = useLocation();
   const type = useNavigationType();
-  const [state, setState] = useState(() => ({ idx: readIdx(), max: Math.max(readIdx(), readMax()) }));
+  const [state, setState] = useState(() => ({
+    idx: readIdx(),
+    max: Math.max(readIdx(), readMax()),
+  }));
 
   useEffect(() => {
     const idx = readIdx();

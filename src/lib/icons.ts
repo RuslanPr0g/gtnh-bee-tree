@@ -11,7 +11,9 @@ const layers = [outlineUrl, bodyUrl, stripesUrl].map((src) => {
   return img;
 });
 
-export const iconsReady: Promise<void> = Promise.all(layers.map((i) => i.decode())).then(() => undefined);
+export const iconsReady: Promise<void> = Promise.all(layers.map((i) => i.decode())).then(
+  () => undefined,
+);
 
 export const hex = (n: number) => '#' + ((n >>> 0) & 0xffffff).toString(16).padStart(6, '0');
 

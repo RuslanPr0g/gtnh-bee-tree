@@ -8,8 +8,9 @@ React 19 + TypeScript + Vite single-page app: a bee breeding browser for the Min
 - `npm test`: Vitest unit tests (`src/**/*.test.ts`)
 - `npm run typecheck`: `tsc --noEmit` (strict, no unused locals/params)
 - `npm run build`: type-check + production build into `dist/`
+- `npm run format` / `npm run format:check`: Prettier (single quotes, width 100), JSON data included
 
-Run `npm test` and `npm run build` before committing.
+Run `npm run format`, `npm test` and `npm run build` before committing; CI (`.github/workflows/ci.yml`, on PRs) checks all three, and `deploy.yml` tests, builds and publishes to GitHub Pages on every push to `main`. Node version: `.nvmrc`.
 
 ## Layout
 
