@@ -1448,3 +1448,53 @@ a.btn {
     transform: translateY(10px) rotate(8deg);
   }
 }
+
+/* one-time note about the background bees (components/Particles.tsx) */
+.tip {
+  position: fixed;
+  left: 16px;
+  bottom: calc(var(--bnav, 0px) + 16px);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: min(440px, calc(100vw - 32px));
+  padding: 10px 10px 10px 14px;
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px #0008;
+  font-size: 13px;
+  color: var(--text);
+  animation: tip-in 0.25s ease-out;
+}
+.tip .btn {
+  white-space: nowrap;
+  min-height: 36px;
+}
+.tip-x {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  color: var(--muted);
+  font-size: 20px;
+  cursor: pointer;
+}
+.tip-x:hover {
+  color: var(--text);
+  background: var(--panel);
+}
+@keyframes tip-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tip {
+    animation: none;
+  }
+}

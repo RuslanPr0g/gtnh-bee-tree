@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Outlet, useLocation, useMatch, useNavigate } from 'react-router';
 import { BottomNav } from '../components/BottomNav';
 import { Header } from '../components/Header';
-import { Particles } from '../components/Particles';
+import { Particles, ParticlesTip } from '../components/Particles';
 import { useHistoryNav } from '../hooks/useHistoryNav';
 import { useKeys } from '../hooks/useKeys';
 import { PaneProvider } from '../hooks/usePane';
@@ -35,6 +35,7 @@ export default function Shell() {
   return (
     <PaneProvider>
       <Particles />
+      <ParticlesTip />
       <Header searchRef={searchRef} nav={nav} />
       <Outlet />
       <BottomNav current={current} searchRef={searchRef} />

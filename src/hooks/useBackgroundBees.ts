@@ -1,26 +1,35 @@
 import { useSyncExternalStore } from 'react';
 import { KEYS, load, save } from '../lib/storage';
-import { useMedia } from './useMedia';
 
-// The user's choice ('on' | 'off'), or null to follow the system: off when it asks for less motion.
+// The background bees are on unless the user turned them off ('on' | 'off' once they chose).
+// A one-time tip tells new visitors they can be turned off.
 const listeners = new Set<() => void>();
 const subscribe = (fn: () => void) => {
   listeners.add(fn);
   return () => listeners.delete(fn);
 };
-const read = () => {
-  const v = load<unknown>(KEYS.particles, null);
-  return v === 'on' || v === 'off' ? v : null;
-};
+const notify = () => listeners.forEach((fn) => fn());
+const read = () => load<unknown>(KEYS.particles, null) !== 'off';
+const tipSeen = () => load<unknown>(KEYS.particlesTip, false) === true;
 
 /** [shown, toggle] for the drifting background bees */
 export function useBackgroundBees(): [boolean, () => void] {
-  const choice = useSyncExternalStore(subscribe, read, () => null);
-  const reduced = useMedia('(prefers-reduced-motion: reduce)');
-  const shown = choice ? choice === 'on' : !reduced;
+  // false in prerendered HTML: the bees are browser-only decoration
+  const shown = useSyncExternalStore(subscribe, read, () => false);
   const toggle = () => {
     save(KEYS.particles, shown ? 'off' : 'on');
-    listeners.forEach((fn) => fn());
+    save(KEYS.particlesTip, true);
+    notify();
   };
   return [shown, toggle];
+}
+
+/** whether to show the first-visit tip, and a function to dismiss it for good */
+export function useBackgroundBeesTip(): [boolean, () => void] {
+  const seen = useSyncExternalStore(subscribe, tipSeen, () => true);
+  const dismiss = () => {
+    save(KEYS.particlesTip, true);
+    notify();
+  };
+  return [!seen, dismiss];
 }
