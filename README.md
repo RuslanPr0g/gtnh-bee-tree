@@ -24,10 +24,10 @@ npm run format     # Prettier (CI checks it)
 
 Every page has a clean URL and is prerendered to static HTML, so links open directly, show up in search with their own titles, and preview nicely when shared:
 
-| Page  | URL                                  |
-| ----- | ------------------------------------ |
-| Bee   | `/gtnh-bee-tree/bee/forestry/heroic` |
-| Quest | `/gtnh-bee-tree/quest/naquadah`      |
+| Page  | URL                                   |
+| ----- | ------------------------------------- |
+| Bee   | `/gtnh-bee-tree/bee/forestry/heroic/` |
+| Quest | `/gtnh-bee-tree/quest/naquadah/`      |
 
 Old `#/bee/…` links still work and redirect to these.
 
