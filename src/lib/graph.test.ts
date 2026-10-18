@@ -7,6 +7,7 @@ import {
   computeUnwanted,
   matchesSearch,
   searchWords,
+  stepIn,
   unmarkNope,
   type RawData,
 } from './graph';
@@ -104,5 +105,16 @@ describe('search', () => {
     expect(matchesSearch(s, searchWords('naquadah comb'))).toBe(true);
     expect(matchesSearch(s, searchWords('radioactive'))).toBe(true);
     expect(matchesSearch(s, searchWords('naquadah honey'))).toBe(false);
+  });
+
+  it('steps through a list one bee at a time', () => {
+    const list = ['a', 'b', 'c'];
+    expect(stepIn(list, 'b', 1)).toBe('c');
+    expect(stepIn(list, 'b', -1)).toBe('a');
+    expect(stepIn(list, 'c', 1)).toBeNull();
+    expect(stepIn(list, 'a', -1)).toBeNull();
+    expect(stepIn(list, 'x', 1)).toBe('a');
+    expect(stepIn(list, 'x', -1)).toBe('a');
+    expect(stepIn([], 'x', 1)).toBeNull();
   });
 });

@@ -27,7 +27,7 @@ React Router 8 **framework mode** with `ssr: false` and full prerendering (`reac
 - `src/root.tsx` (document, providers, error boundary), `src/routes.ts` (route config), `src/routes/*.tsx` (route modules with `meta` for titles and descriptions; `shell.tsx` is the layout with header, keys and old-link redirect).
 - `src/store.tsx`: React context with the user's marks (have / nope / fav), filters and search query, persisted to localStorage. **Prerender-safe:** state starts empty to match the HTML, then saved values load in a layout effect after hydration, and saving only starts after that.
 - `src/components/Particles.tsx` + `src/hooks/useBackgroundBees.ts`: the drifting background bees, with an on/off switch in the Filters panel. On by default for everyone; a one-time tip (`ParticlesTip`) says they can be turned off. Choice and tip are saved in localStorage.
-- `src/hooks/`: `useKeys` (keyboard), `useHistoryNav` (back/forward buttons, using `history.state.idx`), `useHydrated` (browser-only UI: the bee list isn't prerendered, so each page stays small), `useMedia` (`PHONE` query; false until hydrated), `usePane` (phone list/detail pane, provided by the shell; links with `LIST_STATE` open the list).
+- `src/hooks/`: `useKeys` (keyboard), `useHistoryNav` (back/forward buttons, using `history.state.idx`), `useHydrated` (browser-only UI: the bee list isn't prerendered, so each page stays small), `useMedia` (`PHONE` query; false until hydrated), `useSwipe` (sideways swipe on an element), `usePane` (phone list/detail pane, provided by the shell; links with `LIST_STATE` open the list).
 - `src/components/`: `Header`, `Sidebar` (filters + list, and the phone filter sheet), `BeeScreen` (list + detail), `BeeDetail`, `RecipeTree`, `QuestView` (phone: Map / Both / Details split; with a quest picked, unrelated lines fade, its path is gold and what it unlocks is dashed; ✕ Clear, clicking the picked quest again, clicking empty map or Esc go back to `/quest/`), `BottomNav` (phone tab bar: Bees list · bee · Quests · Search), `NotFound`, and shared `Bee` (BeeImg, Chip link).
 - `src/styles.css`: one stylesheet, dark theme, with a phone layout under 760px (sticky search header, bottom tab bar, safe-area insets). Phone-only elements are `display: none` and phone-only wrappers (`.acts`, `.pair`, `.res`, …) are `display: contents` outside it, so the desktop layout doesn't change.
 - `tools/`: scripts that regenerate the JSON (see `tools/README.md`).
@@ -49,7 +49,8 @@ React Router 8 **framework mode** with `ssr: false` and full prerendering (`reac
 - **Keys** are handled in `useKeys` (`App.tsx`):
   - Backspace and Shift+Backspace go back and forward, except while typing in a non-empty search box.
   - `/` focuses search, Esc clears it (and on the quest map, with the search empty, clears the picked quest), and Enter opens the first result.
-  - The arrow keys move through the list, and F / H / N toggle the marks.
+  - The arrow keys move through the list (`stepIn`, in the order and filter the list shows), and F / H / N toggle the marks.
+- **Phones:** swiping left / right on a bee steps to the next / previous bee the same way (`useSwipe`; not from the screen edges or on things that scroll sideways), and `BeeStepper` shows the same as Prev / Next links with the position in the list.
   - Other inputs keep their normal keys.
 
 ## Conventions

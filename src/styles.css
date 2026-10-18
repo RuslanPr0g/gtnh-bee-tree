@@ -764,6 +764,7 @@ kbd {
 }
 /* phone-only parts: hidden on desktop, and wrappers that don't change the desktop layout */
 #bnav,
+.stepper,
 .qhead,
 .rsub,
 .fcount,
@@ -1163,6 +1164,46 @@ kbd {
   #detail {
     padding: 14px var(--gutter) 32px;
     overflow: visible;
+  }
+  /* sideways swipes step through bees, not the browser history */
+  html,
+  body {
+    overscroll-behavior-x: none;
+  }
+  /* previous / next bee in the list (swiping does the same) */
+  .stepper {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .stepper .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .stepper .btn:last-child {
+    justify-self: end;
+  }
+  .stepper .nm {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .stepper .pos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--muted);
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+  }
+  .stepper .view {
+    font-size: 11px;
   }
   .btn {
     min-height: 40px;

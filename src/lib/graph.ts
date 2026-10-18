@@ -208,3 +208,13 @@ export function matchesSearch(s: Species, words: string[]): boolean {
 }
 
 export const searchWords = (q: string) => q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+
+/**
+ * The bee before (-1) or after (+1) `current` in a list, e.g. the visible list rows.
+ * Starts at the first bee when `current` isn't in the list; null at either end.
+ */
+export function stepIn(list: string[], current: string, by: 1 | -1): string | null {
+  const i = list.indexOf(current);
+  const next = i < 0 ? list[0] : list[i + by];
+  return next && next !== current ? next : null;
+}

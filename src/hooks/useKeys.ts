@@ -1,7 +1,7 @@
 import { useEffect, useRef, type RefObject } from 'react';
 import { useNavigate } from 'react-router';
 import { useVisibleRows } from '../components/Sidebar';
-import { searchWords } from '../lib/graph';
+import { searchWords, stepIn } from '../lib/graph';
 import { questMatches } from '../lib/quests';
 import { beePath, questPath } from '../links';
 import { g, ql, useStore } from '../store';
@@ -61,10 +61,12 @@ export function useKeys(
         q?.blur();
       } else if ((e.key === 'ArrowDown' || e.key === 'ArrowUp') && current && rows.length) {
         e.preventDefault();
-        const i = rows.findIndex((r) => r.uid === current);
-        const next =
-          i < 0 ? 0 : e.key === 'ArrowDown' ? Math.min(rows.length - 1, i + 1) : Math.max(0, i - 1);
-        if (rows[next].uid !== current) navigate(beePath(rows[next].uid));
+        const next = stepIn(
+          rows.map((r) => r.uid),
+          current,
+          e.key === 'ArrowDown' ? 1 : -1,
+        );
+        if (next) navigate(beePath(next));
       }
     };
     // mouse side buttons

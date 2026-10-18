@@ -1,11 +1,13 @@
 import { useEffect, useRef } from 'react';
-import { Link } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { MODS, type Product } from '../lib/graph';
 import { BeeImg, Chip, Conditions, pct } from './Bee';
 import { BeeName } from './BeeName';
+import { BeeStepper, stepState, useStep } from './BeeStepper';
+import { useSwipe } from '../hooks/useSwipe';
 import { RecipeTree, useTreeState } from './RecipeTree';
 import { g, ql, useStore } from '../store';
-import { questPath } from '../links';
+import { beePath, questPath } from '../links';
 
 const cap = (s: string | null) =>
   s ? s.charAt(0) + s.slice(1).toLowerCase().replace(/_/g, ' ') : '?';
@@ -34,6 +36,23 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
     if (ref.current) ref.current.scrollTop = 0;
   }, [uid]);
 
+  // swipe (phones) or the stepper links: the next or previous bee in the list
+  const { prev, next } = useStep(uid);
+  const navigate = useNavigate();
+  useSwipe(ref, (by) => {
+    const to = by > 0 ? next : prev;
+    if (to) navigate(beePath(to), { state: stepState(by) });
+  });
+  const { state } = useLocation();
+  const step = (state as { step?: number } | null)?.step;
+  useEffect(() => {
+    if (step && !window.matchMedia('(prefers-reduced-motion: reduce)').matches)
+      ref.current?.animate(
+        [{ transform: `translateX(${step * 40}px)`, opacity: 0.3 }, { transform: 'none' }],
+        { duration: 180, easing: 'ease-out' },
+      );
+  }, [uid, step]);
+
   const owned = have.has(uid);
   const nope = unwanted.get(uid);
   const otherCauses = nope ? [...nope].filter((r) => r !== uid) : [];
@@ -41,6 +60,7 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
 
   return (
     <div id="detail" ref={ref}>
+      <BeeStepper uid={uid} />
       <div className="head">
         <BeeImg s={s} big />
         <div className="title">
