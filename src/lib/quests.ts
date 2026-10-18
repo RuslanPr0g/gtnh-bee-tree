@@ -38,6 +38,7 @@ export interface Quest extends RawQuest {
 
 export interface QuestLine {
   name: string;
+  desc: string;
   nodes: Quest[];
   byId: Record<string, Quest>;
   bySlug: Record<string, Quest>;
@@ -78,6 +79,7 @@ export function buildQuestLine(raw: RawQuestLine, g: Graph): QuestLine {
   }
   return {
     name: raw.name,
+    desc: raw.desc,
     nodes,
     byId,
     bySlug,
@@ -111,5 +113,40 @@ export function questMatches(n: Quest, g: Graph, words: string[]): boolean {
 export const questDone = (n: Quest, have: Set<string>) =>
   n.bees.length > 0 && n.bees.every((b) => have.has(b));
 
-export const firstQuest = (ql: QuestLine) =>
-  ql.nodes.find((n) => !n.pre.some((p) => ql.byId[p]))?.id ?? ql.nodes[0].id;
+/** a map line from a prerequisite to the quest it unlocks */
+export interface QuestEdge {
+  from: string;
+  to: string;
+  x1: number;
+  y1: number;
+  x2: number;
+  y2: number;
+}
+
+const GAP = 3;
+
+/** map lines between the edges of the boxes (not their centers), so arrowheads stay visible */
+export function questEdges(ql: QuestLine): QuestEdge[] {
+  return ql.nodes.flatMap((n) =>
+    n.pre
+      .filter((p) => ql.byId[p])
+      .map((p) => {
+        const a = ql.byId[p];
+        const [ax, ay] = [a.px + a.ps / 2, a.py + a.ps / 2];
+        const [bx, by] = [n.px + n.ps / 2, n.py + n.ps / 2];
+        const [dx, dy] = [bx - ax, by - ay];
+        // the boxes are squares: leave each one where the line crosses its border
+        const m = Math.max(Math.abs(dx), Math.abs(dy)) || 1;
+        const s = (a.ps / 2 + GAP) / m;
+        const t = (n.ps / 2 + GAP) / m;
+        return {
+          from: p,
+          to: n.id,
+          x1: ax + dx * s,
+          y1: ay + dy * s,
+          x2: bx - dx * t,
+          y2: by - dy * t,
+        };
+      }),
+  );
+}

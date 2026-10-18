@@ -1,8 +1,7 @@
 import { useEffect, type RefObject } from 'react';
 import { Link, useMatch } from 'react-router';
-import { g, ql, useStore } from '../store';
-import { firstQuest } from '../lib/quests';
-import { DEFAULT_BEE, beePath, questPath } from '../links';
+import { g, useStore } from '../store';
+import { DEFAULT_BEE, QUESTS, beePath, questPath } from '../links';
 import type { useHistoryNav } from '../hooks/useHistoryNav';
 import { PHONE, useMedia } from '../hooks/useMedia';
 
@@ -42,7 +41,7 @@ export function Header({ searchRef, nav }: Props) {
         <Link className={onQuests ? '' : 'on'} to={beePath(lastBee ?? DEFAULT_BEE)}>
           Bees
         </Link>
-        <Link className={onQuests ? 'on' : ''} to={questPath(lastQuest ?? firstQuest(ql))}>
+        <Link className={onQuests ? 'on' : ''} to={lastQuest ? questPath(lastQuest) : QUESTS}>
           📖 Quest<span className="long"> path</span>
         </Link>
       </nav>

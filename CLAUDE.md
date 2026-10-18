@@ -14,12 +14,12 @@ Run `npm run format`, `npm test` and `npm run build` before committing; CI (`.gi
 
 ## Layout
 
-React Router 8 **framework mode** with `ssr: false` and full prerendering (`react-router.config.ts`): every page (home, 450 bees, 169 quests, import) is rendered to its own HTML file at build time, so clean URLs work on GitHub Pages. `buildEnd` turns the output into `build/pages/` (the folder that's deployed) with the SPA fallback as `404.html`.
+React Router 8 **framework mode** with `ssr: false` and full prerendering (`react-router.config.ts`): every page (home, 450 bees, the quest map, 169 quests, import) is rendered to its own HTML file at build time, so clean URLs work on GitHub Pages. `buildEnd` turns the output into `build/pages/` (the folder that's deployed) with the SPA fallback as `404.html`.
 
 - `src/data/*.json`: **all data**, plain JSON. Keep it JSON (no data in code). `src/data/index.ts` loads it once into `graph` and `questLine`.
 - `src/lib/graph.ts`: pure logic. Species/mutation graph with slugs (`bySlug`), `ancestors`, `computeUnwanted`, `unmarkNope`, `canBreed`, search. No DOM, so it is unit tested.
-- `src/lib/quests.ts`: questline model, map layout, `questPath` (prerequisites in order).
-- `src/lib/paths.ts`: the URL scheme (`/bee/<mod>/<name>`, `/quest/<name>`), `allPaths` (the prerender list) and `legacyTarget` (old `#/…` and `#b:…` links). `src/links.ts` binds it to the dataset.
+- `src/lib/quests.ts`: questline model, map layout, `questPath` (prerequisites in order), `questEdges` (map lines, clipped to the box borders so arrowheads show).
+- `src/lib/paths.ts`: the URL scheme (`/bee/<mod>/<name>`, `/quest/` (map, nothing picked), `/quest/<name>`), `allPaths` (the prerender list) and `legacyTarget` (old `#/…` and `#b:…` links). `src/links.ts` binds it to the dataset.
 - `src/lib/settings.ts`: the settings link (`/import?d=<base64url>`) for moving marks between browsers.
 - `src/lib/names.ts`: bee name meanings (`src/data/names.json`) and the Google Translate link. `BeeName` shows them when the name in the bee detail is clicked. After a data update run `node tools/bee-names.mjs` (adds new names empty, drops gone ones); a test fails while any name has no meaning.
 - `src/lib/storage.ts`: localStorage helpers that never throw. Keys are in `KEYS`.
@@ -28,7 +28,7 @@ React Router 8 **framework mode** with `ssr: false` and full prerendering (`reac
 - `src/store.tsx`: React context with the user's marks (have / nope / fav), filters and search query, persisted to localStorage. **Prerender-safe:** state starts empty to match the HTML, then saved values load in a layout effect after hydration, and saving only starts after that.
 - `src/components/Particles.tsx` + `src/hooks/useBackgroundBees.ts`: the drifting background bees, with an on/off switch in the Filters panel. On by default for everyone; a one-time tip (`ParticlesTip`) says they can be turned off. Choice and tip are saved in localStorage.
 - `src/hooks/`: `useKeys` (keyboard), `useHistoryNav` (back/forward buttons, using `history.state.idx`), `useHydrated` (browser-only UI: the bee list isn't prerendered, so each page stays small), `useMedia` (`PHONE` query; false until hydrated), `usePane` (phone list/detail pane, provided by the shell; links with `LIST_STATE` open the list).
-- `src/components/`: `Header`, `Sidebar` (filters + list, and the phone filter sheet), `BeeScreen` (list + detail), `BeeDetail`, `RecipeTree`, `QuestView` (phone: Map / Both / Details split), `BottomNav` (phone tab bar: Bees list · bee · Quests · Search), `NotFound`, and shared `Bee` (BeeImg, Chip link).
+- `src/components/`: `Header`, `Sidebar` (filters + list, and the phone filter sheet), `BeeScreen` (list + detail), `BeeDetail`, `RecipeTree`, `QuestView` (phone: Map / Both / Details split; with a quest picked, unrelated lines fade, its path is gold and what it unlocks is dashed; ✕ Clear, clicking the picked quest again, clicking empty map or Esc go back to `/quest/`), `BottomNav` (phone tab bar: Bees list · bee · Quests · Search), `NotFound`, and shared `Bee` (BeeImg, Chip link).
 - `src/styles.css`: one stylesheet, dark theme, with a phone layout under 760px (sticky search header, bottom tab bar, safe-area insets). Phone-only elements are `display: none` and phone-only wrappers (`.acts`, `.pair`, `.res`, …) are `display: contents` outside it, so the desktop layout doesn't change.
 - `tools/`: scripts that regenerate the JSON (see `tools/README.md`).
 
@@ -48,7 +48,7 @@ React Router 8 **framework mode** with `ssr: false` and full prerendering (`reac
 - **Navigation is links.** Bees, list rows, quest nodes and tabs are `<Link>`s, so middle-click and new tabs work. Actions (marks, filters) are buttons.
 - **Keys** are handled in `useKeys` (`App.tsx`):
   - Backspace and Shift+Backspace go back and forward, except while typing in a non-empty search box.
-  - `/` focuses search, Esc clears it, and Enter opens the first result.
+  - `/` focuses search, Esc clears it (and on the quest map, with the search empty, clears the picked quest), and Enter opens the first result.
   - The arrow keys move through the list, and F / H / N toggle the marks.
   - Other inputs keep their normal keys.
 

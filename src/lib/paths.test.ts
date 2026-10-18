@@ -12,7 +12,7 @@ describe('paths', () => {
     expect(questPath(ql, '0:358')).toBe('/quest/naquadah/');
     const all = allPaths(g, ql);
     expect(new Set(all).size).toBe(all.length);
-    expect(all).toHaveLength(1 + g.species.length + ql.nodes.length);
+    expect(all).toHaveLength(2 + g.species.length + ql.nodes.length);
     for (const p of all) expect(p).toMatch(/^\/([a-z0-9-]+\/)*$/);
   });
 

@@ -594,12 +594,51 @@ h3 {
   pointer-events: none;
 }
 .qinner line {
-  stroke: #3a4150;
-  stroke-width: 2;
+  stroke: #4a5366;
+  stroke-width: 1.5;
+  stroke-opacity: 0.55;
+  transition: stroke-opacity 0.15s;
+}
+/* a quest is picked: lines that don't touch its path step back */
+.qinner line.far {
+  stroke-opacity: 0.12;
 }
 .qinner line.hot {
   stroke: var(--accent);
-  stroke-width: 3;
+  stroke-width: 2.5;
+  stroke-opacity: 1;
+}
+.qinner line.next {
+  stroke: var(--accent2);
+  stroke-width: 2;
+  stroke-dasharray: 5 4;
+  stroke-opacity: 0.9;
+}
+.qinner line.hov {
+  stroke: #8fb8ff;
+  stroke-width: 2.5;
+  stroke-opacity: 1;
+}
+.qinner marker path {
+  fill: #4a5366;
+  fill-opacity: 0.55;
+}
+.qinner marker.far path {
+  fill-opacity: 0.12;
+}
+.qinner marker.hot path,
+.qinner marker.next path,
+.qinner marker.hov path {
+  fill-opacity: 1;
+}
+.qinner marker.hot path {
+  fill: var(--accent);
+}
+.qinner marker.next path {
+  fill: var(--accent2);
+}
+.qinner marker.hov path {
+  fill: #8fb8ff;
 }
 .qn {
   position: absolute;
@@ -637,6 +676,16 @@ h3 {
   box-shadow: 0 0 0 3px var(--accent);
   z-index: 3;
 }
+.qn.next {
+  border-color: var(--accent2);
+  border-style: dashed;
+}
+.qn.far {
+  opacity: 0.55;
+}
+.qn.far:hover {
+  opacity: 1;
+}
 .qn.dim {
   opacity: 0.18;
 }
@@ -659,6 +708,21 @@ h3 {
 #qpanel h2 {
   margin: 0 0 6px;
   font-size: 20px;
+}
+.qtitle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.qunpick {
+  flex: none;
+  text-decoration: none;
+  padding: 3px 9px;
+  font-size: 12px;
+}
+.qhead .qunpick {
+  display: none;
 }
 .qdesc {
   white-space: pre-wrap;
@@ -1295,6 +1359,7 @@ kbd {
   #questView.m-info #qmap,
   #questView.m-map #qpanel > :not(.qhead),
   #qpanel > h2,
+  #qpanel > .qtitle,
   #qpanel > .qhead + .sub {
     display: none;
   }
@@ -1326,6 +1391,15 @@ kbd {
   #questView.m-map .qhead {
     margin-bottom: 0;
     border-bottom: 0;
+  }
+  .qhead .qunpick {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 12px;
+  }
+  .qhead .qunpick .lbl {
+    display: none;
   }
   .qname {
     flex: 1;

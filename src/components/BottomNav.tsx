@@ -1,9 +1,8 @@
 import type { RefObject } from 'react';
 import { Link, useMatch } from 'react-router';
 import { BeeImg } from './Bee';
-import { g, ql, useStore } from '../store';
-import { firstQuest } from '../lib/quests';
-import { DEFAULT_BEE, beePath, questPath } from '../links';
+import { g, useStore } from '../store';
+import { DEFAULT_BEE, QUESTS, beePath, questPath } from '../links';
 import { LIST_STATE, usePane } from '../hooks/usePane';
 
 /** 24px line icons that take the tab's text colour */
@@ -40,7 +39,7 @@ export function BottomNav({ current, searchRef }: Props) {
         <BeeImg s={g.byId[bee]} />
         <span className="lbl">{g.byId[bee].name}</span>
       </Link>
-      <Link to={questPath(lastQuest ?? firstQuest(ql))} {...on('quest')}>
+      <Link to={lastQuest ? questPath(lastQuest) : QUESTS} {...on('quest')}>
         <Icon d={BOOK} />
         <span className="lbl">Quests</span>
       </Link>

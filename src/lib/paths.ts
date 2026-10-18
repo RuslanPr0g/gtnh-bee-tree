@@ -1,5 +1,6 @@
 // Clean URLs (every page is prerendered to HTML at build time, so they work on GitHub Pages):
 //   /bee/<mod>/<name>/  e.g. /bee/magic-bees/abandoned/
+//   /quest/             the quest map, nothing picked
 //   /quest/<name>/      e.g. /quest/naquadah/
 //   /import?d=…         settings link (see settings.ts)
 // Paths here are relative to the app basename (/gtnh-bee-tree/ on GitHub Pages). They end in "/"
@@ -11,10 +12,13 @@ export const DEFAULT_BEE = 'forestry.speciesMonastic';
 
 export const beePath = (g: Graph, uid: string) => `/bee/${g.byId[uid]?.slug ?? ''}/`;
 export const questPath = (ql: QuestLine, id: string) => `/quest/${ql.byId[id]?.slug ?? ''}/`;
+/** the quest map with nothing picked */
+export const QUESTS = '/quest/';
 
 /** every page to prerender */
 export const allPaths = (g: Graph, ql: QuestLine) => [
   '/',
+  QUESTS,
   ...g.species.map((s) => beePath(g, s.uid)),
   ...ql.nodes.map((n) => questPath(ql, n.id)),
 ];
