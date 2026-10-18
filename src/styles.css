@@ -1117,6 +1117,20 @@ kbd {
     line-height: 1.2;
     overflow-wrap: anywhere;
   }
+  /* the meaning box spans the header instead of starting at the name */
+  .head {
+    position: relative;
+  }
+  .head .bname {
+    position: static;
+  }
+  .bname-tip {
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: auto;
+    max-width: none;
+  }
   .head .title .sub {
     font-size: 13px;
   }
