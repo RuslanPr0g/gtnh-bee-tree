@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router';
 import { MODS, type Product } from '../lib/graph';
 import { BeeImg, Chip, Conditions, pct } from './Bee';
+import { BeeName } from './BeeName';
 import { RecipeTree, useTreeState } from './RecipeTree';
 import { g, ql, useStore } from '../store';
 import { questPath } from '../links';
@@ -43,7 +44,7 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
       <div className="head">
         <BeeImg s={s} big />
         <div className="title">
-          <h2>{s.name}</h2>
+          <BeeName name={s.name} />
           <div className="sub">
             <i>
               {s.branchSci ?? ''} {s.binomial ?? ''}

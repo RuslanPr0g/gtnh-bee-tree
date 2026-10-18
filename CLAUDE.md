@@ -21,6 +21,7 @@ React Router 8 **framework mode** with `ssr: false` and full prerendering (`reac
 - `src/lib/quests.ts`: questline model, map layout, `questPath` (prerequisites in order).
 - `src/lib/paths.ts`: the URL scheme (`/bee/<mod>/<name>`, `/quest/<name>`), `allPaths` (the prerender list) and `legacyTarget` (old `#/…` and `#b:…` links). `src/links.ts` binds it to the dataset.
 - `src/lib/settings.ts`: the settings link (`/import?d=<base64url>`) for moving marks between browsers.
+- `src/lib/names.ts`: bee name meanings (`src/data/names.json`) and the Google Translate link. `BeeName` shows them when the name in the bee detail is clicked. After a data update run `node tools/bee-names.mjs` (adds new names empty, drops gone ones); a test fails while any name has no meaning.
 - `src/lib/storage.ts`: localStorage helpers that never throw. Keys are in `KEYS`.
 - `tools/build-icons.mjs` → `src/assets/generated/bees.png` (gitignored): every bee icon tinted at build time into one sprite. It runs before dev, build and test. `BeeImg` shows one row of it.
 - `src/root.tsx` (document, providers, error boundary), `src/routes.ts` (route config), `src/routes/*.tsx` (route modules with `meta` for titles and descriptions; `shell.tsx` is the layout with header, keys and old-link redirect).

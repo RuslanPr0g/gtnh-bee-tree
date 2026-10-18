@@ -94,14 +94,16 @@ export function buildGraph(raw: RawData): Graph {
   const makes: Graph['makes'] = {};
   const usedIn: Graph['usedIn'] = {};
   const dupNames: Graph['dupNames'] = {};
-  const species = raw.species.map((s, icon): Species => ({
-    ...s,
-    mod: s.uid.split('.')[0],
-    slug: `${slugify(MODS[s.uid.split('.')[0]] ?? s.uid.split('.')[0])}/${slugify(s.name)}`,
-    icon,
-    branch: isKey(s.branch) ? fromKey(s.branch) : s.branch,
-    description: isKey(s.description) ? null : s.description,
-  }));
+  const species = raw.species.map(
+    (s, icon): Species => ({
+      ...s,
+      mod: s.uid.split('.')[0],
+      slug: `${slugify(MODS[s.uid.split('.')[0]] ?? s.uid.split('.')[0])}/${slugify(s.name)}`,
+      icon,
+      branch: isKey(s.branch) ? fromKey(s.branch) : s.branch,
+      description: isKey(s.description) ? null : s.description,
+    }),
+  );
   for (const s of species) {
     byId[s.uid] = s;
     if (bySlug[s.slug]) throw new Error(`two bees share the URL ${s.slug}`);
@@ -152,7 +154,7 @@ export function computeUnwanted(g: Graph, nope: Set<string>, have: Set<string>):
   for (const r of roots) for (const a of ancestors(g, r)) keep.add(a);
   for (const r of roots) unwanted.set(r, new Set([r]));
   // grow to a fixpoint; cause sets only ever grow, so this ends
-  for (let changed = true; changed;) {
+  for (let changed = true; changed; ) {
     changed = false;
     for (const s of g.species) {
       const x = s.uid;

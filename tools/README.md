@@ -32,3 +32,15 @@ python3 tools/extract-quests.py \
 ```
 
 The app uses the first questline in the file (`BeeBreeding`, "Be(e) Breeding").
+
+## `bee-names.mjs` → `src/data/names.json`
+
+Each bee name with a short plain-language meaning, shown when the name is clicked in the bee detail.
+After `bees.json` changes, run it to add new names (with an empty meaning) and drop names that are gone, then fill in the empty ones:
+
+```bash
+node tools/bee-names.mjs            # sync the keys
+node tools/bee-names.mjs --missing  # list names that still need a meaning
+```
+
+`src/lib/names.test.ts` fails while any name has no meaning.
