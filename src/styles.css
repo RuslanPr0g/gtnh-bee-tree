@@ -492,6 +492,65 @@ h3 {
   display: inline-block;
   margin: 2px 6px 2px 0;
 }
+.comb {
+  position: relative;
+}
+.comb-btn {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: help;
+  border-bottom: 1px dotted var(--muted);
+}
+.comb-btn:hover,
+.comb-btn:focus-visible {
+  color: var(--accent);
+}
+.comb-tip {
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 20;
+  flex-direction: column;
+  gap: 2px;
+  width: max-content;
+  max-width: min(420px, calc(100vw - 32px));
+  padding: 10px 12px;
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  font-size: 13px;
+  line-height: 1.4;
+  white-space: normal;
+}
+.comb:hover .comb-tip,
+.comb:focus-within .comb-tip {
+  display: flex;
+}
+.comb-mach {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.comb-mach:first-child {
+  margin-top: 0;
+}
+.comb-mach b {
+  color: var(--accent2);
+  font-weight: 600;
+}
+.comb-in {
+  color: var(--muted);
+}
+.comb-out {
+  color: var(--text);
+}
 .nav {
   display: flex;
   gap: 4px;
@@ -1228,6 +1287,18 @@ kbd {
   }
   .head .bname {
     position: static;
+  }
+  .fact.wide {
+    position: relative;
+  }
+  .comb {
+    position: static;
+  }
+  .comb-tip {
+    left: 8px;
+    right: 8px;
+    width: auto;
+    max-width: none;
   }
   .bname-tip {
     top: 40px;

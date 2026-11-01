@@ -1,6 +1,6 @@
 # Data tools
 
-Both tools write the JSON files in `src/data/`. Run them again after a GTNH pack update, then `npm run format` (CI checks formatting, data included) and `npm test`.
+These tools write the JSON files in `src/data/`. Run them again after a GTNH pack update, then `npm run format` (CI checks formatting, data included) and `npm test`.
 
 ## `beedump-agent/` → `src/data/bees.json`
 
@@ -20,6 +20,21 @@ $JDK/jcmd $PID JVMTI.agent_load /tmp/beedump/agent.jar "$PWD/src/data/bees.json"
 
 If something fails, the agent writes `bees.json.err` with the stack trace.
 Names are dumped in the client's language. Some GregTech branch names come out as raw keys (`for.genus.bees.radioactive`), and the app cleans those up (`src/lib/graph.ts`).
+
+## `combdump-agent/` → `src/data/combs.json`
+
+What each comb turns into in machines (GregTech recipe maps and the Forestry centrifuge), read from the running game the same way.
+Multiblock copies of single-block recipes and programmed circuits are left out.
+Agents stay loaded in the game, so if you load it twice in one game session, change the package name first (the old class would be reused).
+
+```bash
+mkdir -p /tmp/combdump/out
+python3 -c "import json;d=json.load(open('src/data/bees.json'));print('\\n'.join(sorted({p['item'] for s in d['species'] for p in s['products']+s['specialty'] if p['item'].endswith('Comb')})))" > /tmp/combdump/names.txt
+$JDK/javac -d /tmp/combdump/out tools/combdump-agent/Agent.java
+printf 'Agent-Class: combdump.Agent\n' > /tmp/combdump/manifest.txt
+$JDK/jar cfm /tmp/combdump/agent.jar /tmp/combdump/manifest.txt -C /tmp/combdump/out .
+$JDK/jcmd $PID JVMTI.agent_load /tmp/combdump/agent.jar "/tmp/combdump/names.txt|$PWD/src/data/combs.json"
+```
 
 ## `extract-quests.py` → `src/data/quests.json`
 

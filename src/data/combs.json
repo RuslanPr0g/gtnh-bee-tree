@@ -1,0 +1,6497 @@
+{
+  "Alcoholic Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Alcoholic Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Tipsy Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Alcoholic Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Tipsy Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Almandine Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Almandine Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Almandine Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Aluminium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Aluminium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Aluminium Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Amber Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Amber Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Amber Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Amber Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Sticky Resin", "n": 1 },
+        { "item": "Sticky Resin", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Amber Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Sticky Resin", "n": 1 },
+        { "item": "Sticky Resin", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Americium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 122880,
+      "ticks": 600,
+      "in": [{ "item": "Americium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Helium Plasma", "mb": 8175 }],
+      "out": [{ "item": "Purified Americium Ore", "n": 1 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Chemical Reactor",
+      "eut": 491520,
+      "ticks": 300,
+      "in": [{ "item": "Americium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Nitrogen Plasma", "mb": 1211 }],
+      "out": [{ "item": "Purified Americium Ore", "n": 2 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Chemical Reactor",
+      "eut": 1966080,
+      "ticks": 150,
+      "in": [{ "item": "Americium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Silver Plasma", "mb": 310 }],
+      "out": [{ "item": "Purified Americium Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Chemical Reactor",
+      "eut": 7864320,
+      "ticks": 75,
+      "in": [{ "item": "Americium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Bromine Plasma", "mb": 29 }],
+      "out": [{ "item": "Purified Americium Ore", "n": 8 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Chemical Reactor",
+      "eut": 31457280,
+      "ticks": 37,
+      "in": [{ "item": "Americium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Thorium Plasma", "mb": 68 }],
+      "out": [{ "item": "Purified Americium Ore", "n": 16 }],
+      "fluidOut": []
+    }
+  ],
+  "Apatite Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Apatite Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Apatite Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Arcane Shard Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 1920,
+      "ticks": 512,
+      "in": [{ "item": "Arcane Shard Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.25 },
+        { "item": "Arcaneshard Propolis", "n": 1, "chance": 0.1 },
+        { "item": "Ender Goo Drop", "n": 1, "chance": 0.15 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Argon Comb": [
+    {
+      "machine": "Fluid Extractor",
+      "eut": 60,
+      "ticks": 128,
+      "in": [{ "item": "Argon Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [],
+      "fluidOut": [{ "item": "Argon", "mb": 250 }]
+    }
+  ],
+  "Arsenic Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Arsenic Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Arsenic Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Ash Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Ash Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Dark Ashes", "n": 1, "chance": 0.5 },
+        { "item": "Ashes", "n": 1, "chance": 0.5 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Ash Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Dark Ashes", "n": 1, "chance": 0.5 },
+        { "item": "Ashes", "n": 1, "chance": 0.5 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Astral Silver Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Astral Silver Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Astral Silver Dust", "n": 1, "chance": 0.2 },
+        { "item": "Silver Dust", "n": 1, "chance": 0.1 },
+        { "item": "Magic Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Awakened Draconium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 98304,
+      "ticks": 288,
+      "in": [{ "item": "Awakened Draconium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 2688 }],
+      "out": [{ "item": "Purified Awakened Draconium Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Barnarda Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 122880,
+      "ticks": 300,
+      "in": [{ "item": "Barnarda Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Barnarda E Stone Dust", "n": 1, "chance": 0.3 },
+        { "item": "Barnarda F Stone Dust", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Barren Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Barren Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Barren Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Bauxite Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 384,
+      "ticks": 160,
+      "in": [{ "item": "Bauxite Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrofluoric Acid", "mb": 1152 }],
+      "out": [{ "item": "Purified Bauxite Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Bedrockium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 1536,
+      "ticks": 192,
+      "in": [{ "item": "Bedrockium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1536 }],
+      "out": [{ "item": "Purified Bedrockium Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 1920,
+      "ticks": 512,
+      "in": [{ "item": "Bedrockium Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Bedrockium Dust", "n": 1, "chance": 0.5 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Black Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Black Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Black Colored Honey Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Black Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Black Colored Honey Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Black Plutonium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24576,
+      "ticks": 256,
+      "in": [{ "item": "Black Plutonium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 2304 }],
+      "out": [{ "item": "Purified Black Plutonium Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Black Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Black Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Black Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Black Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Black Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Blaze Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Blaze Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.75 },
+        { "item": "Blaze Powder", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Blaze Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.75 },
+        { "item": "Blaze Powder", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Blizz Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 120,
+      "ticks": 256,
+      "in": [{ "item": "Blizz Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 },
+        { "item": "Blizz Dust", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Blue Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Blue Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Blue Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Blue Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Blue Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Blue Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Blue Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Blue Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Blue Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Blue Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Blutonium Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Blutonium Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Blutonium Grains", "n": 1, "chance": 0.25 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Blutonium Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Blutonium Grains", "n": 1, "chance": 0.25 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Bone Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Bone Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.2 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.2 },
+        { "item": "Bone Meal", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Bone Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.2 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.2 },
+        { "item": "Bone Meal", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Brimstone Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Brimstone Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Acidic Drop", "n": 1, "chance": 0.5 },
+        { "item": "Sulfur Dust", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Brimstone Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Acidic Drop", "n": 1, "chance": 0.5 },
+        { "item": "Sulfur Dust", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Brown Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Brown Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Brown Colored Honey Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Brown Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Brown Colored Honey Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Brown Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Brown Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Brown Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Brown Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Brown Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Caelestis Blue Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 12,
+      "ticks": 512,
+      "in": [{ "item": "Caelestis Blue Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Lapis Caelestis Caesicius (Light Blue)", "n": 1 },
+        { "item": "Lapis Caelestis Callainus (Cyan)", "n": 1 },
+        { "item": "Lapis Caelestis Caeruleus (Blue)", "n": 1 },
+        { "item": "Lapis Caelestis Cinereus (Gray)", "n": 1 },
+        { "item": "Lapis Caelestis Nox (Black)", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Caelestis Green Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 12,
+      "ticks": 512,
+      "in": [{ "item": "Caelestis Green Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Lapis Caelestis Paphiae Myrti (Dark Green)", "n": 1 },
+        { "item": "Lapis Caelestis Viridis (Green)", "n": 1 },
+        { "item": "Lapis Caelestis Flavus (Yellow)", "n": 1 },
+        { "item": "Lapis Caelestis Lux Cinereus (Light Gray)", "n": 1 },
+        { "item": "Lapis Caelestis Albus (White)", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Caelestis Red Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 12,
+      "ticks": 512,
+      "in": [{ "item": "Caelestis Red Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Lapis Caelestis Purpura Amethystinus (Magenta)", "n": 1 },
+        { "item": "Lapis Caelestis Purpura (Purple)", "n": 1 },
+        { "item": "Lapis Caelestis Rufus (Red)", "n": 1 },
+        { "item": "Lapis Caelestis Aurantiacus (Orange)", "n": 1 },
+        { "item": "Lapis Caelestis Fuscus (Brown)", "n": 1 },
+        { "item": "Lapis Caelestis Roseus (Pink)", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Caffeinated Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Caffeinated Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.9 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.75 },
+        { "item": "Coffee Powder", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Caffeinated Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.9 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.75 },
+        { "item": "Coffee Powder", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Callisto Ice Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 6144,
+      "ticks": 224,
+      "in": [{ "item": "Callisto Ice Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1920 }],
+      "out": [{ "item": "Purified Callisto Ice Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Caustic Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Caustic Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Caustic Drop", "n": 1 },
+        { "item": "Caustic Drop", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Caustic Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Caustic Drop", "n": 1 },
+        { "item": "Caustic Drop", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Centauri Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 122880,
+      "ticks": 300,
+      "in": [{ "item": "Centauri Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "α Centauri Bb Surface Dust", "n": 1, "chance": 0.3 },
+        { "item": "α Centauri Bb Stone Dust", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Certus Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Certus Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Certus Quartz Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Certus Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Nether Quartz", "n": 1, "chance": 0.25 },
+        { "item": "Certus Quartz Dust", "n": 1, "chance": 0.2 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Certus Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Nether Quartz", "n": 1, "chance": 0.25 },
+        { "item": "Certus Quartz Dust", "n": 1, "chance": 0.2 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Chrome Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 384,
+      "ticks": 160,
+      "in": [{ "item": "Chrome Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrofluoric Acid", "mb": 1152 }],
+      "out": [{ "item": "Purified Chrome Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Clay Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Clay Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.25 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Clay", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Clay Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.25 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Clay", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Coal Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Coal Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Coal Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Coal Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Coal", "n": 1, "chance": 0.05 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Coal Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Coal", "n": 1, "chance": 0.05 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Cocoa Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Cocoa Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Cocoa Beans", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Cocoa Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Cocoa Beans", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Conductive Iron Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 120,
+      "ticks": 256,
+      "in": [{ "item": "Conductive Iron Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Conductive Iron Dust", "n": 1, "chance": 0.9 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Coolant Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 196,
+      "in": [{ "item": "Coolant Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Coolant Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Copper Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Copper Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Copper Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Copper Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Copper Dust", "n": 1, "chance": 0.7 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Copper Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Copper Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Copper Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Copper Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Copper Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Copper Dust", "n": 1, "chance": 0.7 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Cosmic Neutronium Comb": [
+    {
+      "machine": "DTPF",
+      "eut": 66524920,
+      "ticks": 106,
+      "in": [{ "item": "Cosmic Neutronium Comb", "n": 1 }],
+      "fluidIn": [
+        { "item": "Excited Dimensionally Transcendent Exotic Catalyst", "mb": 889 },
+        { "item": "Molten Copper", "mb": 589824 }
+      ],
+      "out": [],
+      "fluidOut": [
+        { "item": "Dimensionally Transcendent Residue", "mb": 889 },
+        { "item": "Molten Cosmic Neutronium", "mb": 589824 }
+      ]
+    },
+    {
+      "machine": "DTPF",
+      "eut": 33262460,
+      "ticks": 213,
+      "in": [{ "item": "Cosmic Neutronium Comb", "n": 1 }],
+      "fluidIn": [
+        { "item": "Excited Dimensionally Transcendent Resplendent Catalyst", "mb": 2108 },
+        { "item": "Molten Copper", "mb": 294912 }
+      ],
+      "out": [],
+      "fluidOut": [
+        { "item": "Dimensionally Transcendent Residue", "mb": 1054 },
+        { "item": "Molten Cosmic Neutronium", "mb": 294912 }
+      ]
+    },
+    {
+      "machine": "DTPF",
+      "eut": 16631230,
+      "ticks": 427,
+      "in": [{ "item": "Cosmic Neutronium Comb", "n": 1 }],
+      "fluidIn": [
+        { "item": "Excited Dimensionally Transcendent Prosaic Catalyst", "mb": 4886 },
+        { "item": "Molten Copper", "mb": 147456 }
+      ],
+      "out": [],
+      "fluidOut": [
+        { "item": "Dimensionally Transcendent Residue", "mb": 1221 },
+        { "item": "Molten Cosmic Neutronium", "mb": 147456 }
+      ]
+    },
+    {
+      "machine": "DTPF",
+      "eut": 8315615,
+      "ticks": 854,
+      "in": [{ "item": "Cosmic Neutronium Comb", "n": 1 }],
+      "fluidIn": [
+        { "item": "Excited Dimensionally Transcendent Crude Catalyst", "mb": 12486 },
+        { "item": "Molten Copper", "mb": 73728 }
+      ],
+      "out": [],
+      "fluidOut": [
+        { "item": "Dimensionally Transcendent Residue", "mb": 1560 },
+        { "item": "Molten Cosmic Neutronium", "mb": 73728 }
+      ]
+    }
+  ],
+  "Cryolite Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Cryolite Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Cryolite Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Cryolite Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Cryolite Dust", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Cryolite Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Cryolite Dust", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Cryotheum Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 120,
+      "ticks": 256,
+      "in": [{ "item": "Cryotheum Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 },
+        { "item": "Cryotheum Dust", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Cyan Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Cyan Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Cyan Colored Honey Drop", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Cyan Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Cyan Colored Honey Drop", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Cyan Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Cyan Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Cyan Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Cyan Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Cyan Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Cyanite Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Cyanite Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Cyanite Grains", "n": 1, "chance": 0.25 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Cyanite Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Cyanite Grains", "n": 1, "chance": 0.25 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "D-o-b Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "D-o-b Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Sapphire Dust", "n": 1, "chance": 0.006 },
+        { "item": "Red Alloy Dust", "n": 1, "chance": 0.006 },
+        { "item": "Platinum Metallic Powder Dust", "n": 2, "chance": 0.006 },
+        { "item": "Lignite Coal Dust", "n": 1, "chance": 0.05 },
+        { "item": "Aluminium Dust", "n": 1, "chance": 0.006 },
+        { "item": "Fluix Dust", "n": 1, "chance": 0.01 },
+        { "item": "Tin Dust", "n": 1, "chance": 0.006 },
+        { "item": "Plantball", "n": 1, "chance": 0.01 },
+        { "item": "Coal", "n": 1, "chance": 0.05 },
+        { "item": "Stone Dust", "n": 1, "chance": 0.07 },
+        { "item": "Diamond Dust", "n": 1, "chance": 0.006 },
+        { "item": "Lead Dust", "n": 1, "chance": 0.006 },
+        { "item": "Silver Dust", "n": 1, "chance": 0.006 },
+        { "item": "Earth Shard", "n": 1, "chance": 0.01 },
+        { "item": "Entropy Shard", "n": 1, "chance": 0.01 },
+        { "item": "Uranium 235 Dust", "n": 1, "chance": 0.006 },
+        { "item": "Olivine Dust", "n": 1, "chance": 0.006 },
+        { "item": "Order Shard", "n": 1, "chance": 0.01 },
+        { "item": "Fire Shard", "n": 1, "chance": 0.01 },
+        { "item": "Manganese Dust", "n": 1, "chance": 0.006 },
+        { "item": "Naquadah Dust", "n": 1, "chance": 0.007 },
+        { "item": "Air Shard", "n": 1, "chance": 0.01 },
+        { "item": "Thaumium Dust", "n": 1, "chance": 0.006 },
+        { "item": "Nickel Dust", "n": 1, "chance": 0.006 },
+        { "item": "Water Shard", "n": 1, "chance": 0.01 },
+        { "item": "Sticky Resin", "n": 1, "chance": 0.05 },
+        { "item": "Zinc Dust", "n": 1, "chance": 0.006 },
+        { "item": "Iridium Metal Residue Dust", "n": 2, "chance": 0.006 },
+        { "item": "Chrome Dust", "n": 1, "chance": 0.006 },
+        { "item": "Certus Quartz Dust", "n": 1, "chance": 0.006 },
+        { "item": "Copper Dust", "n": 1, "chance": 0.006 },
+        { "item": "Redstone Dust", "n": 1, "chance": 0.006 },
+        { "item": "Lapis Dust", "n": 1, "chance": 0.006 },
+        { "item": "Conductive Iron Ingot", "n": 1, "chance": 0.006 },
+        { "item": "Balanced Shard", "n": 1, "chance": 0.01 },
+        { "item": "Energetic Alloy Ingot", "n": 1, "chance": 0.01 },
+        { "item": "Carbon Dust", "n": 1, "chance": 0.004 },
+        { "item": "Green Sapphire Dust", "n": 1, "chance": 0.006 },
+        { "item": "Ruby Dust", "n": 1, "chance": 0.006 },
+        { "item": "Oil Drop", "n": 1, "chance": 0.05 },
+        { "item": "Titanium Dust", "n": 1, "chance": 0.006 },
+        { "item": "Tungsten Dust", "n": 1, "chance": 0.006 },
+        { "item": "Coal Dust", "n": 1, "chance": 0.006 },
+        { "item": "Iron Dust", "n": 1, "chance": 0.006 },
+        { "item": "Gold Dust", "n": 1, "chance": 0.006 },
+        { "item": "Steel Dust", "n": 1, "chance": 0.006 },
+        { "item": "Emerald Dust", "n": 1, "chance": 0.006 },
+        { "item": "Rarest Metal Residue Dust", "n": 2, "chance": 0.001 },
+        { "item": "Redstone Alloy Ingot", "n": 1, "chance": 0.006 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "D-o-b Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Sapphire Dust", "n": 1, "chance": 0.006 },
+        { "item": "Red Alloy Dust", "n": 1, "chance": 0.006 },
+        { "item": "Platinum Dust", "n": 1, "chance": 0.006 },
+        { "item": "Lignite Coal Dust", "n": 1, "chance": 0.05 },
+        { "item": "Aluminium Dust", "n": 1, "chance": 0.006 },
+        { "item": "Fluix Dust", "n": 1, "chance": 0.01 },
+        { "item": "Tin Dust", "n": 1, "chance": 0.006 },
+        { "item": "Plantball", "n": 1, "chance": 0.01 },
+        { "item": "Coal", "n": 1, "chance": 0.05 },
+        { "item": "Stone Dust", "n": 1, "chance": 0.07 },
+        { "item": "Diamond Dust", "n": 1, "chance": 0.006 },
+        { "item": "Lead Dust", "n": 1, "chance": 0.006 },
+        { "item": "Silver Dust", "n": 1, "chance": 0.006 },
+        { "item": "Earth Shard", "n": 1, "chance": 0.01 },
+        { "item": "Entropy Shard", "n": 1, "chance": 0.01 },
+        { "item": "Uranium 235 Dust", "n": 1, "chance": 0.006 },
+        { "item": "Olivine Dust", "n": 1, "chance": 0.006 },
+        { "item": "Order Shard", "n": 1, "chance": 0.01 },
+        { "item": "Fire Shard", "n": 1, "chance": 0.01 },
+        { "item": "Manganese Dust", "n": 1, "chance": 0.006 },
+        { "item": "Naquadah Dust", "n": 1, "chance": 0.007 },
+        { "item": "Air Shard", "n": 1, "chance": 0.01 },
+        { "item": "Thaumium Dust", "n": 1, "chance": 0.006 },
+        { "item": "Nickel Dust", "n": 1, "chance": 0.006 },
+        { "item": "Water Shard", "n": 1, "chance": 0.01 },
+        { "item": "Sticky Resin", "n": 1, "chance": 0.05 },
+        { "item": "Zinc Dust", "n": 1, "chance": 0.006 },
+        { "item": "Iridium Dust", "n": 1, "chance": 0.006 },
+        { "item": "Chrome Dust", "n": 1, "chance": 0.006 },
+        { "item": "Certus Quartz Dust", "n": 1, "chance": 0.006 },
+        { "item": "Copper Dust", "n": 1, "chance": 0.006 },
+        { "item": "Redstone Dust", "n": 1, "chance": 0.006 },
+        { "item": "Lapis Dust", "n": 1, "chance": 0.006 },
+        { "item": "Conductive Iron", "n": 1, "chance": 0.006 },
+        { "item": "Balanced Shard", "n": 1, "chance": 0.01 },
+        { "item": "Energetic Alloy", "n": 1, "chance": 0.01 },
+        { "item": "Carbon Dust", "n": 1, "chance": 0.004 },
+        { "item": "Green Sapphire Dust", "n": 1, "chance": 0.006 },
+        { "item": "Ruby Dust", "n": 1, "chance": 0.006 },
+        { "item": "Oil Drop", "n": 1, "chance": 0.05 },
+        { "item": "Titanium Dust", "n": 1, "chance": 0.006 },
+        { "item": "Tungsten Dust", "n": 1, "chance": 0.006 },
+        { "item": "Coal Dust", "n": 1, "chance": 0.006 },
+        { "item": "Iron Dust", "n": 1, "chance": 0.006 },
+        { "item": "Gold Dust", "n": 1, "chance": 0.006 },
+        { "item": "Steel Dust", "n": 1, "chance": 0.006 },
+        { "item": "Emerald Dust", "n": 1, "chance": 0.006 },
+        { "item": "Osmium Dust", "n": 1, "chance": 0.001 },
+        { "item": "Redstone Alloy", "n": 1, "chance": 0.006 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Damp Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Damp Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Watery Propolis", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Damp Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Watery Propolis", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Dark Steel Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 120,
+      "ticks": 256,
+      "in": [{ "item": "Dark Steel Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Dark Steel Dust", "n": 1 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Decomposed Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Decomposed Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Compost", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Decomposed Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Compost", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Desh Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 1536,
+      "ticks": 192,
+      "in": [{ "item": "Desh Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1536 }],
+      "out": [{ "item": "Purified Desh Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Diamond Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Diamond Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Diamond Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Diamond Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Diamond Fragment", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Diamond Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Diamond Fragment", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Divided Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 384,
+      "ticks": 160,
+      "in": [{ "item": "Divided Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrofluoric Acid", "mb": 1152 }],
+      "out": [{ "item": "Purified Diamond Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Divided Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.5 },
+        { "item": "Semi-stable Nugget", "n": 1, "chance": 0.2 },
+        { "item": "Tiny Pile of Iron Dust", "n": 1, "chance": 0.1 },
+        { "item": "Tiny Pile of Diamond Dust", "n": 1, "chance": 0.05 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Draconium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 6144,
+      "ticks": 224,
+      "in": [{ "item": "Draconium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1920 }],
+      "out": [{ "item": "Purified Draconium Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Dragon Essence Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 7680,
+      "ticks": 640,
+      "in": [{ "item": "Dragon Essence Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.3 },
+        { "item": "Dragonessence Propolis", "n": 1, "chance": 0.075 },
+        { "item": "Ender Goo Drop", "n": 1, "chance": 0.2 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Dragonblood Comb": [
+    {
+      "machine": "Draconic Evolution Fusion Crafter",
+      "eut": 1966080,
+      "ticks": 2800,
+      "in": [
+        { "item": "Dragon Egg", "n": 0 },
+        { "item": "Awakened Draconium Dust", "n": 64 },
+        { "item": "Dragonblood Comb", "n": 1 }
+      ],
+      "fluidIn": [{ "item": "Radon Plasma", "mb": 216 }],
+      "out": [],
+      "fluidOut": [{ "item": "Molten Dragonblood", "mb": 432 }]
+    },
+    {
+      "machine": "Draconic Evolution Fusion Crafter",
+      "eut": 1966080,
+      "ticks": 2400,
+      "in": [
+        { "item": "Infinity Egg", "n": 0 },
+        { "item": "Awakened Draconium Dust", "n": 64 },
+        { "item": "Dragonblood Comb", "n": 1 }
+      ],
+      "fluidIn": [{ "item": "Radon Plasma", "mb": 108 }],
+      "out": [],
+      "fluidOut": [{ "item": "Molten Dragonblood", "mb": 648 }]
+    },
+    {
+      "machine": "Chemical Plant",
+      "eut": 7864320,
+      "ticks": 6000,
+      "in": [{ "item": "Dragonblood Comb", "n": 5 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Refractory Wax", "n": 1 },
+        { "item": "Dragonblood Propolis", "n": 1 },
+        { "item": "Dragonblood Drop", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Dripping Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Dripping Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honeydew", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.4 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Dripping Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honeydew", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.4 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Dusty Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Dusty Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [{ "item": "Honey Drop", "n": 1, "chance": 0.25 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Dusty Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [{ "item": "Honey Drop", "n": 1, "chance": 0.25 }],
+      "fluidOut": []
+    }
+  ],
+  "Earthy Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Earthy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1 },
+        { "item": "Clay", "n": 1, "chance": 0.6 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Earthy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1 },
+        { "item": "Clay", "n": 1, "chance": 0.6 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Ectoplasma Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 1920,
+      "ticks": 512,
+      "in": [{ "item": "Ectoplasma Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.25 },
+        { "item": "Ectoplasma Propolis", "n": 1, "chance": 0.1 },
+        { "item": "Ender Goo Drop", "n": 1, "chance": 0.15 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Electrical Steel Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Electrical Steel Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Electrical Steel Dust", "n": 1 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Electrical Steel Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Electrical Steel Dust", "n": 1 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Electrotine Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 96,
+      "ticks": 128,
+      "in": [{ "item": "Electrotine Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phosphoric Acid", "mb": 768 }],
+      "out": [{ "item": "Purified Electrotine Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Elven Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 480,
+      "ticks": 660,
+      "in": [{ "item": "Elven Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Molten Manasteel", "mb": 288 }],
+      "out": [{ "item": "Elven Elementium Dust", "n": 1 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Chemical Reactor",
+      "eut": 480,
+      "ticks": 660,
+      "in": [{ "item": "Elven Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Molten Shadow Metal", "mb": 288 }],
+      "out": [{ "item": "Elven Elementium Dust", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Autoclave",
+      "eut": 1920,
+      "ticks": 400,
+      "in": [
+        { "item": "Elven Comb", "n": 6 },
+        { "item": "Flawless Mana Diamond", "n": 1 }
+      ],
+      "fluidIn": [{ "item": "Molten Void Metal", "mb": 18 }],
+      "out": [{ "item": "Dragonstone", "n": 1 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Dehydrator",
+      "eut": 480,
+      "ticks": 400,
+      "in": [{ "item": "Elven Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [{ "item": "Pixie Dust", "n": 1, "chance": 0.5 }],
+      "fluidOut": []
+    }
+  ],
+  "Emerald Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Emerald Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Emerald Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Emerald Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Emerald Fragment", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Emerald Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Emerald Fragment", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "End Dust Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "End Dust Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.2 },
+        { "item": "End Propolis", "n": 1, "chance": 0.15 },
+        { "item": "Ender Goo Drop", "n": 1, "chance": 0.1 },
+        { "item": "Endstone Dust", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Ender Shard Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 128,
+      "in": [{ "item": "Ender Shard Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [{ "item": "Ender Shard", "n": 1 }],
+      "fluidOut": []
+    }
+  ],
+  "Enderium Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Enderium Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 },
+        { "item": "Small Pile of Enderium Base Dust", "n": 1, "chance": 0.3 },
+        { "item": "Tiny Pile of Enderium Dust", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Enderman Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 7680,
+      "ticks": 640,
+      "in": [{ "item": "Enderman Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.3 },
+        { "item": "Enderman Propolis", "n": 1, "chance": 0.075 },
+        { "item": "Ender Goo Drop", "n": 1, "chance": 0.2 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Endium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 384,
+      "ticks": 160,
+      "in": [{ "item": "Endium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrofluoric Acid", "mb": 1152 }],
+      "out": [{ "item": "Purified Endium Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Energetic Alloy Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Energetic Alloy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Energetic Alloy Dust", "n": 1, "chance": 0.8 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Energetic Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Energetic Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Redstone Dust", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Energetic Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Redstone Dust", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Energy Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 196,
+      "in": [{ "item": "Energy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Hot Coolant Drop", "n": 1, "chance": 0.2 },
+        { "item": "Energium Dust", "n": 1, "chance": 0.2 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Europium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 30720,
+      "ticks": 300,
+      "in": [{ "item": "Europium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Helium Plasma", "mb": 606 }],
+      "out": [{ "item": "Purified Europium Ore", "n": 1 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Chemical Reactor",
+      "eut": 122880,
+      "ticks": 150,
+      "in": [{ "item": "Europium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Nitrogen Plasma", "mb": 180 }],
+      "out": [{ "item": "Purified Europium Ore", "n": 2 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Chemical Reactor",
+      "eut": 491520,
+      "ticks": 75,
+      "in": [{ "item": "Europium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Silver Plasma", "mb": 54 }],
+      "out": [{ "item": "Purified Europium Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Chemical Reactor",
+      "eut": 1966080,
+      "ticks": 37,
+      "in": [{ "item": "Europium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Bromine Plasma", "mb": 6 }],
+      "out": [{ "item": "Purified Europium Ore", "n": 8 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Chemical Reactor",
+      "eut": 7864320,
+      "ticks": 18,
+      "in": [{ "item": "Europium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Thorium Plasma", "mb": 18 }],
+      "out": [{ "item": "Purified Europium Ore", "n": 16 }],
+      "fluidOut": []
+    }
+  ],
+  "Fire Essence Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 7680,
+      "ticks": 640,
+      "in": [{ "item": "Fire Essence Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.3 },
+        { "item": "Fireessence Propolis", "n": 1, "chance": 0.075 },
+        { "item": "Ender Goo Drop", "n": 1, "chance": 0.2 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Firestone Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Firestone Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Firestone Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Firey Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Firey Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Blaze Powder", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Firey Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Blaze Powder", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Fluix Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Fluix Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Fluix Dust", "n": 1, "chance": 0.25 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Fluix Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Fluix Dust", "n": 1, "chance": 0.25 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Fluorine Comb": [
+    {
+      "machine": "Fluid Extractor",
+      "eut": 60,
+      "ticks": 128,
+      "in": [{ "item": "Fluorine Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [],
+      "fluidOut": [{ "item": "Fluorine", "mb": 250 }]
+    }
+  ],
+  "Force Comb": [
+    {
+      "machine": "Chemical Plant",
+      "eut": 1920,
+      "ticks": 2400,
+      "in": [{ "item": "Force Comb", "n": 2 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Force Propolis", "n": 1 },
+        { "item": "Force Drop", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Forgotten Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Forgotten Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.4 },
+        { "item": "Amnesic Wax", "n": 1, "chance": 0.5 },
+        { "item": "Propolis", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Forgotten Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.4 },
+        { "item": "Amnesic Wax", "n": 1, "chance": 0.5 },
+        { "item": "Propolis", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Fossilised Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Fossilised Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.75 },
+        { "item": "Coal Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Fossilised Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.75 },
+        { "item": "Coal Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Frozen Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Frozen Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.7 },
+        { "item": "Snowball", "n": 1, "chance": 0.4 },
+        { "item": "Crystalline Pollen Cluster", "n": 1, "chance": 0.2 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Frozen Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.7 },
+        { "item": "Snowball", "n": 1, "chance": 0.4 },
+        { "item": "Crystalline Pollen Cluster", "n": 1, "chance": 0.2 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Fruity Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Fruity Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Juicy Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Fruity Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Juicy Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Fungal Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Fungal Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.9 },
+        { "item": "Mushroom", "n": 1 },
+        { "item": "Mushroom", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Fungal Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.9 },
+        { "item": "Mushroom", "n": 1 },
+        { "item": "Mushroom", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Furtive Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Furtive Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honeydew", "n": 1, "chance": 0.35 },
+        { "item": "Propolis", "n": 1, "chance": 0.2 },
+        { "item": "Beeswax", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Furtive Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honeydew", "n": 1, "chance": 0.35 },
+        { "item": "Propolis", "n": 1, "chance": 0.2 },
+        { "item": "Beeswax", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Gallium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Gallium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Gallium Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Glacial Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Glacial Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Kelvin Drop", "n": 1, "chance": 0.8 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Glacial Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Kelvin Drop", "n": 1, "chance": 0.8 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Glittering Earthy Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Glittering Earthy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Clay", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 },
+        { "item": "Stony Propolis", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Glittering Earthy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Clay", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 },
+        { "item": "Stony Propolis", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Glittering Entropic Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Glittering Entropic Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1 },
+        { "item": "Chaotic Propolis", "n": 1, "chance": 0.8 },
+        { "item": "Gunpowder", "n": 1, "chance": 0.6 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Glittering Entropic Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1 },
+        { "item": "Chaotic Propolis", "n": 1, "chance": 0.8 },
+        { "item": "Gunpowder", "n": 1, "chance": 0.6 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Glittering Firey Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Glittering Firey Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Burning Propolis", "n": 1, "chance": 0.8 },
+        { "item": "Blaze Powder", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Glittering Firey Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Burning Propolis", "n": 1, "chance": 0.8 },
+        { "item": "Blaze Powder", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Glittering Ordered Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Glittering Ordered Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Redstone Dust", "n": 1, "chance": 0.6 },
+        { "item": "Ordered Propolis", "n": 1, "chance": 0.8 },
+        { "item": "Magic Wax", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Glittering Ordered Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Redstone Dust", "n": 1, "chance": 0.6 },
+        { "item": "Ordered Propolis", "n": 1, "chance": 0.8 },
+        { "item": "Magic Wax", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Glittering Watery Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Glittering Watery Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Ink Sac", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 },
+        { "item": "Flowing Propolis", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Glittering Watery Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Ink Sac", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 },
+        { "item": "Flowing Propolis", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Glittering Windy Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Glittering Windy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Breezey Propolis", "n": 1, "chance": 0.8 },
+        { "item": "Magic Wax", "n": 1 },
+        { "item": "Feather", "n": 1, "chance": 0.6 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Glittering Windy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Breezey Propolis", "n": 1, "chance": 0.8 },
+        { "item": "Magic Wax", "n": 1 },
+        { "item": "Feather", "n": 1, "chance": 0.6 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Glowing Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Glowing Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Glowstone Dust", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Glowing Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Glowstone Dust", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Gold Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Gold Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Gold Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Golden Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Golden Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Gold Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Golden Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Gold Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Gray Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Gray Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Gray Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Gray Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Gray Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Gray Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Gray Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Gray Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Gray Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Gray Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Green Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Green Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Green Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Green Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Green Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Green Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Green Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Green Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Green Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Green Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Grossular Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Grossular Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Grossular Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Haumea Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 30720,
+      "ticks": 300,
+      "in": [{ "item": "Haumea Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Haumea Stone Dust", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Helium Comb": [
+    {
+      "machine": "Fluid Extractor",
+      "eut": 240,
+      "ticks": 128,
+      "in": [{ "item": "Helium Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [],
+      "fluidOut": [{ "item": "Helium", "mb": 250 }]
+    }
+  ],
+  "Honey Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Honey Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Honey Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Hydra Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Hydra Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Breezey Propolis", "n": 1, "chance": 0.05 },
+        { "item": "Fiery Blood Drop", "n": 1, "chance": 0.33 },
+        { "item": "Hydra Blood Drop", "n": 1, "chance": 0.08 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Hydrogen Comb": [
+    {
+      "machine": "Fluid Extractor",
+      "eut": 60,
+      "ticks": 128,
+      "in": [{ "item": "Hydrogen Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [],
+      "fluidOut": [{ "item": "Hydrogen", "mb": 500 }]
+    }
+  ],
+  "Indium Comb": [
+    {
+      "machine": "Vacuum Furnace",
+      "eut": 30720,
+      "ticks": 2400,
+      "in": [
+        { "item": "Indium Comb", "n": 64 },
+        { "item": "Indium Comb", "n": 64 },
+        { "item": "Indium Comb", "n": 64 },
+        { "item": "Indium Comb", "n": 64 }
+      ],
+      "fluidIn": [{ "item": "Sphalerite Froth", "mb": 4000 }],
+      "out": [
+        { "item": "Zinc Dust", "n": 64 },
+        { "item": "Zinc Dust", "n": 64 },
+        { "item": "Zinc Dust", "n": 52 },
+        { "item": "Iron Dust", "n": 64 },
+        { "item": "Iron Dust", "n": 56 },
+        { "item": "Indium Dust", "n": 64 },
+        { "item": "Indium Dust", "n": 64 },
+        { "item": "Indium Dust", "n": 64 },
+        { "item": "Germanium Dust", "n": 15 }
+      ],
+      "fluidOut": [
+        { "item": "Red Mud Slurry", "mb": 2000 },
+        { "item": "Water", "mb": 2000 }
+      ]
+    },
+    {
+      "machine": "Vacuum Furnace",
+      "eut": 7680,
+      "ticks": 2400,
+      "in": [{ "item": "Indium Comb", "n": 40 }],
+      "fluidIn": [{ "item": "Chalcopyrite Froth", "mb": 4000 }],
+      "out": [
+        { "item": "Copper Dust", "n": 64 },
+        { "item": "Copper Dust", "n": 64 },
+        { "item": "Copper Dust", "n": 52 },
+        { "item": "Iron Dust", "n": 64 },
+        { "item": "Iron Dust", "n": 56 },
+        { "item": "Cadmium Dust", "n": 50 },
+        { "item": "Indium Dust", "n": 30 }
+      ],
+      "fluidOut": [
+        { "item": "Red Mud Slurry", "mb": 2000 },
+        { "item": "Water", "mb": 2000 }
+      ]
+    },
+    {
+      "machine": "Chemical Reactor",
+      "eut": 7680,
+      "ticks": 288,
+      "in": [
+        { "item": "Crushed Indium Ore", "n": 4 },
+        { "item": "Indium Comb", "n": 16 }
+      ],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 2688 }],
+      "out": [{ "item": "Purified Indium Ore", "n": 12 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Chemical Reactor",
+      "eut": 1966080,
+      "ticks": 400,
+      "in": [{ "item": "Indium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "UU-Matter", "mb": 293 }],
+      "out": [{ "item": "Purified Indium Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 960,
+      "ticks": 1500,
+      "in": [{ "item": "Indium Comb", "n": 8 }],
+      "fluidIn": [{ "item": "Thorium Based Liquid Fuel (Depleted)", "mb": 1000 }],
+      "out": [
+        { "item": "Thorium 232 Dust", "n": 64 },
+        { "item": "Thorium 232 Dust", "n": 16, "chance": 0.8 },
+        { "item": "Praseodymium Dust", "n": 64 },
+        { "item": "Praseodymium Dust", "n": 32, "chance": 0.8 },
+        { "item": "Boron Dust", "n": 2, "chance": 0.3 },
+        { "item": "Indium Dust", "n": 12, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Infinity Catalyst Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 122880,
+      "ticks": 100,
+      "in": [{ "item": "Infinity Catalyst Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Infinity Catalyst Dust", "n": 1, "chance": 0.25 },
+        { "item": "Neutronium Dust", "n": 1, "chance": 0.2 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Infinity Comb": [
+    {
+      "machine": "DTPF",
+      "eut": 409600000,
+      "ticks": 625,
+      "in": [
+        { "item": "Infinity Catalyst", "n": 4 },
+        { "item": "Infinity Comb", "n": 1 }
+      ],
+      "fluidIn": [{ "item": "Excited Dimensionally Transcendent Stellar Catalyst", "mb": 9667 }],
+      "out": [],
+      "fluidOut": [
+        { "item": "Dimensionally Transcendent Residue", "mb": 19334 },
+        { "item": "Molten Infinity", "mb": 36864 }
+      ]
+    },
+    {
+      "machine": "DTPF",
+      "eut": 204800000,
+      "ticks": 1250,
+      "in": [
+        { "item": "Infinity Catalyst", "n": 2 },
+        { "item": "Infinity Comb", "n": 1 }
+      ],
+      "fluidIn": [{ "item": "Excited Dimensionally Transcendent Exotic Catalyst", "mb": 22307 }],
+      "out": [],
+      "fluidOut": [
+        { "item": "Dimensionally Transcendent Residue", "mb": 22307 },
+        { "item": "Molten Infinity", "mb": 18432 }
+      ]
+    },
+    {
+      "machine": "DTPF",
+      "eut": 102400000,
+      "ticks": 2500,
+      "in": [
+        { "item": "Infinity Catalyst", "n": 1 },
+        { "item": "Infinity Comb", "n": 1 }
+      ],
+      "fluidIn": [
+        { "item": "Excited Dimensionally Transcendent Resplendent Catalyst", "mb": 50092 }
+      ],
+      "out": [],
+      "fluidOut": [
+        { "item": "Dimensionally Transcendent Residue", "mb": 25046 },
+        { "item": "Molten Infinity", "mb": 9216 }
+      ]
+    },
+    {
+      "machine": "DTPF",
+      "eut": 1600000,
+      "ticks": 19,
+      "in": [
+        { "item": "Infinity Catalyst", "n": 1 },
+        { "item": "Infinity Comb", "n": 1 }
+      ],
+      "fluidIn": [{ "item": "Excited Dimensionally Transcendent Resplendent Catalyst", "mb": 782 }],
+      "out": [],
+      "fluidOut": [
+        { "item": "Dimensionally Transcendent Residue", "mb": 391 },
+        { "item": "Molten Infinity", "mb": 144 }
+      ]
+    }
+  ],
+  "Infused Air Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 12,
+      "ticks": 1024,
+      "in": [{ "item": "Infused Air Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [{ "item": "Air Shard", "n": 1 }],
+      "fluidOut": []
+    }
+  ],
+  "Infused Aqua Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 12,
+      "ticks": 1024,
+      "in": [{ "item": "Infused Aqua Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [{ "item": "Water Shard", "n": 1 }],
+      "fluidOut": []
+    }
+  ],
+  "Infused Gold Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 6144,
+      "ticks": 224,
+      "in": [{ "item": "Infused Gold Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1920 }],
+      "out": [{ "item": "Purified Infused Gold Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 7680,
+      "ticks": 200,
+      "in": [{ "item": "Infused Gold Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Infused Gold Dust", "n": 1, "chance": 0.2 },
+        { "item": "Gold Dust", "n": 1, "chance": 0.1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Infused Ignis Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 12,
+      "ticks": 1024,
+      "in": [{ "item": "Infused Ignis Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [{ "item": "Fire Shard", "n": 1 }],
+      "fluidOut": []
+    }
+  ],
+  "Infused Ordo Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 12,
+      "ticks": 1024,
+      "in": [{ "item": "Infused Ordo Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [{ "item": "Order Shard", "n": 1 }],
+      "fluidOut": []
+    }
+  ],
+  "Infused Perditio Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 12,
+      "ticks": 1024,
+      "in": [{ "item": "Infused Perditio Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [{ "item": "Entropy Shard", "n": 1 }],
+      "fluidOut": []
+    }
+  ],
+  "Infused Terra Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 12,
+      "ticks": 1024,
+      "in": [{ "item": "Infused Terra Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [{ "item": "Earth Shard", "n": 1 }],
+      "fluidOut": []
+    }
+  ],
+  "Iridium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 6144,
+      "ticks": 3136,
+      "in": [{ "item": "Iridium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1920 }],
+      "out": [{ "item": "Iridium Nugget", "n": 1 }],
+      "fluidOut": [{ "item": "Acidic Iridium Solution", "mb": 1000 }]
+    }
+  ],
+  "Iron Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Iron Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Iron Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Iron Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Iron Dust", "n": 1, "chance": 0.3 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Iron Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Iron Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Iron Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Iron Dust", "n": 1, "chance": 0.3 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Iron Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Iron Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Irradiated Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 7680,
+      "ticks": 300,
+      "in": [{ "item": "Irradiated Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Iridium Metal Residue Dust", "n": 2, "chance": 0.0011 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Jupiter Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 300,
+      "in": [{ "item": "Jupiter Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Io Stone Dust", "n": 1, "chance": 0.3 },
+        { "item": "Europa Ice Dust", "n": 1, "chance": 0.3 },
+        { "item": "Europa Stone Dust", "n": 1, "chance": 0.3 },
+        { "item": "Ganymede Stone Dust", "n": 1, "chance": 0.3 },
+        { "item": "Callisto Stone Dust", "n": 1, "chance": 0.3 },
+        { "item": "Tiny Pile of Callisto Ice Dust", "n": 1, "chance": 0.05 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Kevlar Comb": [
+    {
+      "machine": "Quantum Force Transformer",
+      "eut": 31457280,
+      "ticks": 400,
+      "in": [
+        { "item": "Kevlar Comb", "n": 24 },
+        { "item": "Carbon Dust", "n": 64 }
+      ],
+      "fluidIn": [
+        { "item": "Nitrogen", "mb": 16000 },
+        { "item": "Hydrogen", "mb": 16000 }
+      ],
+      "out": [],
+      "fluidOut": [
+        { "item": "Polyurethane Resin", "mb": 32000 },
+        { "item": "Liquid Crystal Kevlar", "mb": 4608 },
+        { "item": "Molten Kevlar", "mb": 9216 }
+      ]
+    }
+  ],
+  "Krypton Comb": [
+    {
+      "machine": "Fluid Extractor",
+      "eut": 7680,
+      "ticks": 25,
+      "in": [{ "item": "Krypton Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [],
+      "fluidOut": [{ "item": "Krypton", "mb": 250 }]
+    }
+  ],
+  "Lapis Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Lapis Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Lapis Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Lapis Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Lapis Lazuli", "n": 6 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Lapis Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Lapis Lazuli", "n": 6 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Lapotron Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 240,
+      "in": [{ "item": "Lapotron Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Lapis Coolant Drop", "n": 1, "chance": 0.2 },
+        { "item": "Lapotron Dust", "n": 1 },
+        { "item": "Amnesic Wax", "n": 1, "chance": 0.4 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Latex Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Latex Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.5 },
+        { "item": "Beeswax", "n": 1, "chance": 0.85 },
+        { "item": "Rubber Bar", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Latex Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.5 },
+        { "item": "Beeswax", "n": 1, "chance": 0.85 },
+        { "item": "Rubber", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Lead Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Lead Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Lead Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Lead Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Lead Dust", "n": 1, "chance": 0.45 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Lead Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Lead Dust", "n": 1, "chance": 0.45 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Leaden Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Leaden Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Lead Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Leaden Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Lead Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Ledox Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 1536,
+      "ticks": 192,
+      "in": [{ "item": "Ledox Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1536 }],
+      "out": [{ "item": "Purified Ledox Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Lich Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Lich Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Ordered Propolis", "n": 1, "chance": 0.05 },
+        { "item": "Lich Bone Chip", "n": 1, "chance": 0.33 },
+        { "item": "Lich Bone Fragment", "n": 1, "chance": 0.08 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Light Blue Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Light Blue Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Light Blue Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Light Blue Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Light Blue Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Light Blue Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Light Blue Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Light Blue Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Light Blue Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Light Blue Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Light Gray Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Light Gray Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Light Gray Colored Honey Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Light Gray Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Light Gray Colored Honey Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Light Gray Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Light Gray Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Light Gray Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Light Gray Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Light Gray Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Lignite Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Lignite Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Lignite Coal Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Lignite Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Lignite Coal", "n": 1, "chance": 0.9 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Lignite Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Lignite Coal", "n": 1, "chance": 0.9 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Lime Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Lime Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Lime Colored Honey Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Lime Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Lime Colored Honey Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Lime Green Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Lime Green Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Lime Green Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Lime Green Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Lime Green Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Lithium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 96,
+      "ticks": 128,
+      "in": [{ "item": "Lithium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phosphoric Acid", "mb": 768 }],
+      "out": [{ "item": "Purified Lithium Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Lutetium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 6144,
+      "ticks": 224,
+      "in": [{ "item": "Lutetium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1920 }],
+      "out": [{ "item": "Purified Lutetium Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "M-M-M Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 30,
+      "ticks": 400,
+      "in": [{ "item": "M-M-M Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [{ "item": "Manafly", "n": 1, "chance": 0.8 }],
+      "fluidOut": []
+    }
+  ],
+  "Machinist Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Machinist Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Royal Jelly", "n": 1, "chance": 0.1 },
+        { "item": "Pollen Cluster", "n": 1, "chance": 0.1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.2 },
+        { "item": "Nutdew", "n": 1, "chance": 0.1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.2 },
+        { "item": "Lump of Electronics", "n": 1, "chance": 0.05 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Machinist Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Royal Jelly", "n": 1, "chance": 0.1 },
+        { "item": "Pollen Cluster", "n": 1, "chance": 0.1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.2 },
+        { "item": "Nutdew", "n": 1, "chance": 0.1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.2 },
+        { "item": "Lump of Electronics", "n": 1, "chance": 0.05 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Magenta Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Magenta Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magenta Colored Honey Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Magenta Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magenta Colored Honey Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Magenta Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Magenta Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Magenta Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Magenta Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Magenta Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Magnesium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Magnesium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Magnesium Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Makemake Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 30720,
+      "ticks": 300,
+      "in": [{ "item": "Makemake Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "MakeMake Stone Dust", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Manasteel Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 30,
+      "ticks": 660,
+      "in": [{ "item": "Manasteel Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Molten Steel", "mb": 144 }],
+      "out": [{ "item": "Manasteel Dust", "n": 1 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Chemical Reactor",
+      "eut": 30,
+      "ticks": 660,
+      "in": [{ "item": "Manasteel Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Molten Thaumium", "mb": 288 }],
+      "out": [{ "item": "Manasteel Dust", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Manganese Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Manganese Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Manganese Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Mars Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 300,
+      "in": [{ "item": "Mars Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Mars Stone Dust", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Mellow Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Mellow Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honeydew", "n": 1, "chance": 0.6 },
+        { "item": "Beeswax", "n": 1, "chance": 0.2 },
+        { "item": "Nether Quartz", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Mellow Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honeydew", "n": 1, "chance": 0.6 },
+        { "item": "Beeswax", "n": 1, "chance": 0.2 },
+        { "item": "Nether Quartz", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Memory Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Memory Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.9 },
+        { "item": "Honeydew", "n": 1, "chance": 0.4 },
+        { "item": "Intellect Drop", "n": 1, "chance": 0.1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Memory Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.9 },
+        { "item": "Honeydew", "n": 1, "chance": 0.4 },
+        { "item": "Intellect Drop", "n": 1, "chance": 0.1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Mercury Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 1920,
+      "ticks": 300,
+      "in": [{ "item": "Mercury Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Mercury Core Dust", "n": 1, "chance": 0.3 },
+        { "item": "Mercury Stone Dust", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Meteoric Iron Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 384,
+      "ticks": 160,
+      "in": [{ "item": "Meteoric Iron Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrofluoric Acid", "mb": 1152 }],
+      "out": [{ "item": "Purified Meteoric Iron Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Mica Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Mica Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Mica Dust", "n": 2 },
+        { "item": "Beeswax", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Milky Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Milky Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Milkdew", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Milky Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Milkdew", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Mithril Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 384,
+      "ticks": 160,
+      "in": [{ "item": "Mithril Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrofluoric Acid", "mb": 1152 }],
+      "out": [{ "item": "Purified Mithril Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Molten Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Molten Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.087 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.86 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Molten Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.087 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.86 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Molybdenum Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Molybdenum Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Molybdenum Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Moon Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 120,
+      "ticks": 300,
+      "in": [{ "item": "Moon Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Moon Stone Dust", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Mossy Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Mossy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Mossy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Mucous Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Mucous Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.75 },
+        { "item": "Slimeball", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Mucous Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.75 },
+        { "item": "Slimeball", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Mundane Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Mundane Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.9 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.6 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Mundane Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.9 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.6 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Mysterious Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Mysterious Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Pulsating Propolis", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.4 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Mysterious Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Pulsating Propolis", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.4 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Mysterious Crystal Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24576,
+      "ticks": 256,
+      "in": [{ "item": "Mysterious Crystal Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 2304 }],
+      "out": [{ "item": "Purified Mysterious Crystal Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 30720,
+      "ticks": 512,
+      "in": [{ "item": "Mysterious Crystal Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Mysterious Crystal Dust", "n": 1, "chance": 0.1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Mytryl Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 6144,
+      "ticks": 224,
+      "in": [{ "item": "Mytryl Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1920 }],
+      "out": [{ "item": "Purified Mytryl Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Naga Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 120,
+      "ticks": 256,
+      "in": [{ "item": "Naga Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Stony Propolis", "n": 1, "chance": 0.05 },
+        { "item": "Naga Scale Chip", "n": 1, "chance": 0.33 },
+        { "item": "Naga Scale Fragment", "n": 1, "chance": 0.08 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Naquadah Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 6144,
+      "ticks": 224,
+      "in": [{ "item": "Naquadah Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1920 }],
+      "out": [{ "item": "Purified Naquadah Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Naquadria Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24576,
+      "ticks": 256,
+      "in": [{ "item": "Naquadria Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 2304 }],
+      "out": [{ "item": "Purified Naquadria Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Neodymium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 96,
+      "ticks": 128,
+      "in": [{ "item": "Neodymium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phosphoric Acid", "mb": 768 }],
+      "out": [{ "item": "Purified Neodymium Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Neon Comb": [
+    {
+      "machine": "Fluid Extractor",
+      "eut": 7680,
+      "ticks": 15,
+      "in": [{ "item": "Neon Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [],
+      "fluidOut": [{ "item": "Neon", "mb": 250 }]
+    }
+  ],
+  "Neptune Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 7680,
+      "ticks": 300,
+      "in": [{ "item": "Neptune Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Proteus Stone Dust", "n": 1, "chance": 0.3 },
+        { "item": "Triton Stone Dust", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Nether Shard Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 128,
+      "in": [{ "item": "Nether Shard Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [{ "item": "Nether Shard", "n": 1 }],
+      "fluidOut": []
+    }
+  ],
+  "Nether Star Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 1536,
+      "ticks": 192,
+      "in": [{ "item": "Nether Star Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1536 }],
+      "out": [{ "item": "Purified Nether Star Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 1920,
+      "ticks": 512,
+      "in": [{ "item": "Nether Star Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.5 },
+        { "item": "Draconic Dust", "n": 2, "chance": 0.1 },
+        { "item": "Tiny Pile of Nether Star Dust", "n": 1, "chance": 0.1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Netherite Comb": [
+    {
+      "machine": "Blast Furnace",
+      "eut": 122880,
+      "ticks": 300,
+      "in": [
+        { "item": "Netherite Nanoparticles", "n": 1 },
+        { "item": "Netherite Comb", "n": 8 }
+      ],
+      "fluidIn": [{ "item": "Molten Hellish Metal", "mb": 144 }],
+      "out": [{ "item": "Intensely Bonded Netherite Nanoparticles", "n": 2 }],
+      "fluidOut": [{ "item": "Molten Thaumium", "mb": 32 }]
+    }
+  ],
+  "Neutronium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 1572864,
+      "ticks": 5984,
+      "in": [{ "item": "Neutronium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 3456 }],
+      "out": [{ "item": "Neutronium Nugget", "n": 1 }],
+      "fluidOut": [{ "item": "Molten Neutronium", "mb": 576 }]
+    }
+  ],
+  "Nickel Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Nickel Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Nickel Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Nickel Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Nickel Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Nickel Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Nickel Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Nitrogen Comb": [
+    {
+      "machine": "Fluid Extractor",
+      "eut": 60,
+      "ticks": 128,
+      "in": [{ "item": "Nitrogen Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [],
+      "fluidOut": [{ "item": "Nitrogen", "mb": 500 }]
+    }
+  ],
+  "Occult Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Occult Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Occult Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Oil Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Oil Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Oilsands Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Oil Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Oil Berry", "n": 6 },
+        { "item": "Oil Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Oil Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Oil Berry", "n": 6 },
+        { "item": "Oil Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Oily Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Oily Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Oily Propolis", "n": 1, "chance": 0.6 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Oily Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Oily Propolis", "n": 1, "chance": 0.6 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Old Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Old Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Old Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Olivine Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Olivine Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Olivine Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Orange Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Orange Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Orange Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Orange Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Orange Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Orange Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Orange Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Orange Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Orange Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Orange Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Oriharukon Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 6144,
+      "ticks": 224,
+      "in": [{ "item": "Oriharukon Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1920 }],
+      "out": [{ "item": "Purified Oriharukon Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Osmium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 6144,
+      "ticks": 3808,
+      "in": [{ "item": "Osmium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1920 }],
+      "out": [{ "item": "Osmium Nugget", "n": 1 }],
+      "fluidOut": [{ "item": "Acidic Osmium Solution", "mb": 1000 }]
+    }
+  ],
+  "Otherworldy Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Otherworldy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1 },
+        { "item": "Magic Wax", "n": 1, "chance": 0.22 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Otherworldy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1 },
+        { "item": "Magic Wax", "n": 1, "chance": 0.22 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Oxygen Comb": [
+    {
+      "machine": "Fluid Extractor",
+      "eut": 60,
+      "ticks": 128,
+      "in": [{ "item": "Oxygen Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [],
+      "fluidOut": [{ "item": "Oxygen", "mb": 500 }]
+    }
+  ],
+  "Palladium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 6144,
+      "ticks": 224,
+      "in": [{ "item": "Palladium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1920 }],
+      "out": [{ "item": "Purified Palladium Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Papery Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Papery Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.2 },
+        { "item": "Paper", "n": 1, "chance": 0.057 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Papery Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.2 },
+        { "item": "Paper", "n": 1, "chance": 0.057 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Parched Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Parched Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Parched Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Petroleum Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Petroleum Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Petroleum Propolis", "n": 1, "chance": 0.6 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Petroleum Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Petroleum Propolis", "n": 1, "chance": 0.6 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Phosphorus Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Phosphorus Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Phosphorus Dust", "n": 1 },
+        { "item": "Tricalcium Phosphate Dust", "n": 2 },
+        { "item": "Beeswax", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Pink Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Pink Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Pink Colored Honey Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Pink Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Pink Colored Honey Drop", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Pink Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Pink Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Pink Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Pink Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Pink Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Platinum Comb": [
+    {
+      "machine": "Quantum Force Transformer",
+      "eut": 491520,
+      "ticks": 400,
+      "in": [
+        { "item": "Platinum Comb", "n": 32 },
+        { "item": "Palladium Comb", "n": 32 },
+        { "item": "Osmium Comb", "n": 32 },
+        { "item": "Iridium Comb", "n": 32 }
+      ],
+      "fluidIn": [],
+      "out": [],
+      "fluidOut": [
+        { "item": "Molten Osmium", "mb": 36864 },
+        { "item": "Molten Palladium", "mb": 36864 },
+        { "item": "Molten Iridium", "mb": 36864 },
+        { "item": "Molten Platinum", "mb": 36864 }
+      ]
+    },
+    {
+      "machine": "Chemical Reactor",
+      "eut": 384,
+      "ticks": 1600,
+      "in": [{ "item": "Platinum Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrofluoric Acid", "mb": 1152 }],
+      "out": [{ "item": "Platinum Nugget", "n": 1 }],
+      "fluidOut": [{ "item": "Platinum Concentrate", "mb": 2000 }]
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Platinum Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Platinum Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Platinum Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Platinum Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Pluto Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 30720,
+      "ticks": 300,
+      "in": [{ "item": "Pluto Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Pluto Stone Dust", "n": 1, "chance": 0.3 },
+        { "item": "Pluto Ice Dust", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Plutonium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 1536,
+      "ticks": 192,
+      "in": [{ "item": "Plutonium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1536 }],
+      "out": [{ "item": "Purified Plutonium 239 Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Powdery Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Powdery Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.2 },
+        { "item": "Beeswax", "n": 1, "chance": 0.2 },
+        { "item": "Gunpowder", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Powdery Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.2 },
+        { "item": "Beeswax", "n": 1, "chance": 0.2 },
+        { "item": "Gunpowder", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Prismatic Comb": [
+    {
+      "machine": "Autoclave",
+      "eut": 30720,
+      "ticks": 300,
+      "in": [
+        { "item": "Red Algae Biomass", "n": 32 },
+        { "item": "Prismatic Comb", "n": 8 }
+      ],
+      "fluidIn": [{ "item": "Filtered Water (Grade 1)", "mb": 8000 }],
+      "out": [{ "item": "Prismarine Shard", "n": 16 }],
+      "fluidOut": []
+    }
+  ],
+  "Pulsating Iron Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Pulsating Iron Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Pulsating Iron Dust", "n": 1, "chance": 0.8 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Purple Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Purple Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Purple Colored Honey Drop", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Purple Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Purple Colored Honey Drop", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Purple Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Purple Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Purple Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Purple Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Purple Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Pyrite Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Pyrite Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Pyrite Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Pyrope Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Pyrope Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Pyrope Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Pyrotheum Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Pyrotheum Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Blaze Powder", "n": 1, "chance": 0.25 },
+        { "item": "Pyrotheum Dust", "n": 1, "chance": 0.2 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Quantium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 6144,
+      "ticks": 224,
+      "in": [{ "item": "Quantium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1920 }],
+      "out": [{ "item": "Purified Quantium Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Quicksilver Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Quicksilver Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Cinnabar Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Quicksilver Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.5 },
+        { "item": "Quicksilver Drop", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Quicksilver Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.5 },
+        { "item": "Quicksilver Drop", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Rare Earth Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Rare Earth Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Rare Earth", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Rare Earth Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Rare Earth", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Red Alloy Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Red Alloy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Red Alloy Dust", "n": 1 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Red Alloy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Red Alloy Dust", "n": 1 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Red Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Red Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Red Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Red Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Red Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Red Garnet Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Red Garnet Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Red Garnet Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Red Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Red Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Red Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Red Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Red Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Redstone Alloy Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Redstone Alloy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Redstone Alloy Dust", "n": 1 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Redstone Alloy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Redstone Alloy Dust", "n": 1 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Redstone Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Redstone Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Redstone Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Refined Rare Earth Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 7680,
+      "ticks": 640,
+      "in": [{ "item": "Refined Rare Earth Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Rare Earth (I) Dust", "n": 1, "chance": 0.33 },
+        { "item": "Rare Earth (II) Dust", "n": 1, "chance": 0.33 },
+        { "item": "Rare Earth (III) Dust", "n": 1, "chance": 0.33 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Rocky Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Rocky Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Rocky Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Rotten Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Rotten Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.2 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.2 },
+        { "item": "Rotten Flesh", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Rotten Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.2 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.2 },
+        { "item": "Rotten Flesh", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Ruby Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Ruby Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Ruby Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Ruby Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Ruby Fragment", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Ruby Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Ruby Fragment", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Rune Type 1 Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 7680,
+      "ticks": 640,
+      "in": [{ "item": "Rune Type 1 Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.25 },
+        { "item": "Rune of Power Fragment", "n": 1, "chance": 0.05 },
+        { "item": "Rune of Agility Fragment", "n": 1, "chance": 0.05 },
+        { "item": "Rune of Vigor Fragment", "n": 1, "chance": 0.05 },
+        { "item": "Rune of Defense Fragment", "n": 1, "chance": 0.05 },
+        { "item": "Rune of Magic Fragment", "n": 1, "chance": 0.05 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Rune Type 2 Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 7680,
+      "ticks": 640,
+      "in": [{ "item": "Rune Type 2 Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.5 },
+        { "item": "Rune of Void Fragment", "n": 1, "chance": 0.025 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Salis Mundus Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 120,
+      "ticks": 256,
+      "in": [{ "item": "Salis Mundus Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Salis Mundus", "n": 1 },
+        { "item": "Magic Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Salt Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 120,
+      "ticks": 160,
+      "in": [{ "item": "Salt Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Salt", "n": 6 },
+        { "item": "Rock Salt", "n": 6 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Saltpeter Dust", "n": 6, "chance": 0.25 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Sapphire Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Sapphire Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Sapphire Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Sapphire Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Sapphire Fragment", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Sapphire Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Sapphire Fragment", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Saturn Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 7680,
+      "ticks": 300,
+      "in": [{ "item": "Saturn Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Enceladus Stone Dust", "n": 1, "chance": 0.3 },
+        { "item": "Titan Stone Dust", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Seaweed Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 491520,
+      "ticks": 100,
+      "in": [{ "item": "Seaweed Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "T Ceti E Seaweed", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Seedy Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Seedy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Nutdew", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Seedy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Nutdew", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.9 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Shadow Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Shadow Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.5 },
+        { "item": "Obsidian Dust", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Shadow Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.5 },
+        { "item": "Obsidian Dust", "n": 1, "chance": 0.75 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Shadow Metal Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 384,
+      "ticks": 160,
+      "in": [{ "item": "Shadow Metal Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrofluoric Acid", "mb": 1152 }],
+      "out": [{ "item": "Purified Shadow Metal Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Shadow Metal Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Shadow Metal Dust", "n": 1, "chance": 0.2 },
+        { "item": "Shadow Steel Dust", "n": 1, "chance": 0.1 },
+        { "item": "Magic Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Shimmering Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Shimmering Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Enderpearl Dust", "n": 1, "chance": 0.25 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Shimmering Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Enderpearl Dust", "n": 1, "chance": 0.25 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Silky Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Silky Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1 },
+        { "item": "Silky Propolis", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Silky Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1 },
+        { "item": "Silky Propolis", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Silver Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Silver Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Silver Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Silver Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Silver Dust", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Silver Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Silver Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Silver Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Silver Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Silver Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Silver Dust", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Silverfish Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 1920,
+      "ticks": 512,
+      "in": [{ "item": "Silverfish Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.25 },
+        { "item": "Silverfish Propolis", "n": 1, "chance": 0.1 },
+        { "item": "Ender Goo Drop", "n": 1, "chance": 0.2 },
+        { "item": "Spawn Silverfish", "n": 1, "chance": 0.15 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Simmering Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Simmering Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Refractory Wax", "n": 1 },
+        { "item": "Phosphor", "n": 2, "chance": 0.7 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Simmering Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Refractory Wax", "n": 1 },
+        { "item": "Phosphor", "n": 2, "chance": 0.7 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Slag Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Slag Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Stone Dust", "n": 1, "chance": 0.5 },
+        { "item": "Black Granite Dust", "n": 1, "chance": 0.2 },
+        { "item": "Red Granite Dust", "n": 1, "chance": 0.2 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Slag Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Stone Dust", "n": 1, "chance": 0.5 },
+        { "item": "Black Granite Dust", "n": 1, "chance": 0.2 },
+        { "item": "Red Granite Dust", "n": 1, "chance": 0.2 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Snow Queen Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 1920,
+      "ticks": 512,
+      "in": [{ "item": "Snow Queen Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Flowing Propolis", "n": 1, "chance": 0.05 },
+        { "item": "Snow Queen Blood Drop", "n": 1, "chance": 0.33 },
+        { "item": "Snow Queen Blood Drop", "n": 1, "chance": 0.08 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Soul Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Soul Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honeydew", "n": 1, "chance": 0.26 },
+        { "item": "Soulful Wax", "n": 1, "chance": 0.95 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Soul Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honeydew", "n": 1, "chance": 0.26 },
+        { "item": "Soulful Wax", "n": 1, "chance": 0.95 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Space Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Space Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.3 },
+        { "item": "Oxygen Drop", "n": 1, "chance": 0.15 },
+        { "item": "Coin \"The Space Invaders 1\"", "n": 1, "chance": 0.05 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Stainless Steel Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Stainless Steel Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Stainless Steel Dust", "n": 1, "chance": 0.5 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Stardust Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Stardust Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Magic Wax", "n": 1, "chance": 0.2 },
+        { "item": "Stardust Propolis", "n": 1, "chance": 0.15 },
+        { "item": "Ender Goo Drop", "n": 1, "chance": 0.1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Static Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Static Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Redstone Dust", "n": 1, "chance": 0.75 },
+        { "item": "Energy Drop", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Static Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Redstone Dust", "n": 1, "chance": 0.75 },
+        { "item": "Energy Drop", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Steel Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Steel Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Steel Dust", "n": 1, "chance": 0.4 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Steel Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Steel Dust", "n": 1, "chance": 0.4 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Sticky Resin Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Sticky Resin Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Sticky Resin", "n": 1, "chance": 0.5 },
+        { "item": "Plantball", "n": 1, "chance": 0.15 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Sticky Resin Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Sticky Resin", "n": 1, "chance": 0.5 },
+        { "item": "Plantball", "n": 1, "chance": 0.15 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Stone Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Stone Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Soapstone Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Stone Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Stone Dust", "n": 1, "chance": 0.7 },
+        { "item": "Black Granite Dust", "n": 1, "chance": 0.5 },
+        { "item": "Red Granite Dust", "n": 1, "chance": 0.5 },
+        { "item": "Basalt Dust", "n": 1, "chance": 0.5 },
+        { "item": "Marble Dust", "n": 1, "chance": 0.5 },
+        { "item": "Redrock Dust", "n": 1, "chance": 0.5 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Stone Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Stone Dust", "n": 1, "chance": 0.7 },
+        { "item": "Black Granite Dust", "n": 1, "chance": 0.5 },
+        { "item": "Red Granite Dust", "n": 1, "chance": 0.5 },
+        { "item": "Basalt Dust", "n": 1, "chance": 0.5 },
+        { "item": "Marble Dust", "n": 1, "chance": 0.5 },
+        { "item": "Redrock Dust", "n": 1, "chance": 0.5 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Stringy Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Stringy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Propolis", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.4 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Stringy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Propolis", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.4 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Sulfur Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Sulfur Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Sulfur Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Sulfur Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Sulfur Dust", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Sulfur Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Sulfur Dust", "n": 1 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Tainted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Tainted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Tainted Goo", "n": 1, "chance": 0.15 },
+        { "item": "Taint Tendril", "n": 1, "chance": 0.15 },
+        { "item": "Fibrous Taint", "n": 1, "chance": 0.15 },
+        { "item": "Tainted Grass", "n": 1, "chance": 0.15 },
+        { "item": "Tainted Plant", "n": 1, "chance": 0.15 },
+        { "item": "Magic Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Tainted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Tainted Goo", "n": 1, "chance": 0.15 },
+        { "item": "Taint Tendril", "n": 1, "chance": 0.15 },
+        { "item": "Fibrous Taint", "n": 1, "chance": 0.15 },
+        { "item": "Tainted Grass", "n": 1, "chance": 0.15 },
+        { "item": "Tainted Plant", "n": 1, "chance": 0.15 },
+        { "item": "Magic Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Tar Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Tar Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Creosote Propolis", "n": 1, "chance": 0.7 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Tar Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Creosote Propolis", "n": 1, "chance": 0.7 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Tceti Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 122880,
+      "ticks": 300,
+      "in": [{ "item": "Tceti Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Tceti E Stone Dust", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Temporal Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Temporal Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honeydew", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 },
+        { "item": "Phased Pollen", "n": 1, "chance": 0.055 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Temporal Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honeydew", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 },
+        { "item": "Phased Pollen", "n": 1, "chance": 0.055 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Terrasteel Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 1920,
+      "ticks": 660,
+      "in": [
+        { "item": "Terrasteel Comb", "n": 4 },
+        { "item": "Terrasteel Ingot", "n": 1 }
+      ],
+      "fluidIn": [{ "item": "Molten Elven Elementium", "mb": 576 }],
+      "out": [{ "item": "Terrasteel Nugget", "n": 1, "chance": 0.5 }],
+      "fluidOut": [{ "item": "Molten Terrasteel", "mb": 144 }]
+    }
+  ],
+  "Thauminite Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Thauminite Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Thauminite Nugget", "n": 1, "chance": 0.2 },
+        { "item": "Tiny Pile of Thaumium Dust", "n": 1, "chance": 0.1 },
+        { "item": "Magic Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Thaumium Dust Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 120,
+      "ticks": 256,
+      "in": [{ "item": "Thaumium Dust Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Thaumium Dust", "n": 1 },
+        { "item": "Magic Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Thaumium Shard Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Thaumium Shard Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Breezey Propolis", "n": 1, "chance": 0.2 },
+        { "item": "Burning Propolis", "n": 1, "chance": 0.2 },
+        { "item": "Flowing Propolis", "n": 1, "chance": 0.2 },
+        { "item": "Stony Propolis", "n": 1, "chance": 0.2 },
+        { "item": "Ordered Propolis", "n": 1, "chance": 0.2 },
+        { "item": "Chaotic Propolis", "n": 1, "chance": 0.2 },
+        { "item": "Magic Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Thaumium Shard Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Breezey Propolis", "n": 1, "chance": 0.2 },
+        { "item": "Burning Propolis", "n": 1, "chance": 0.2 },
+        { "item": "Flowing Propolis", "n": 1, "chance": 0.2 },
+        { "item": "Stony Propolis", "n": 1, "chance": 0.2 },
+        { "item": "Ordered Propolis", "n": 1, "chance": 0.2 },
+        { "item": "Chaotic Propolis", "n": 1, "chance": 0.2 },
+        { "item": "Magic Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Thorium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 96,
+      "ticks": 128,
+      "in": [{ "item": "Thorium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phosphoric Acid", "mb": 768 }],
+      "out": [{ "item": "Purified Thorium Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Tin Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Tin Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Tin Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Tin Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Tin Dust", "n": 1, "chance": 0.6 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Tin Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Tin Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Tin Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Tin Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Tin Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Tin Dust", "n": 1, "chance": 0.6 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Titanium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 1536,
+      "ticks": 192,
+      "in": [{ "item": "Titanium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1536 }],
+      "out": [{ "item": "Purified Titanium Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Titanium Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Titanium Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Titanium Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Titanium Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Transmuting Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Transmuting Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Unstable Propolis", "n": 1, "chance": 0.15 },
+        { "item": "Magic Wax", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Transmuting Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Unstable Propolis", "n": 1, "chance": 0.15 },
+        { "item": "Magic Wax", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Trinium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 98304,
+      "ticks": 288,
+      "in": [{ "item": "Trinium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 2688 }],
+      "out": [{ "item": "Purified Trinium Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Tungsten Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 6144,
+      "ticks": 224,
+      "in": [{ "item": "Tungsten Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1920 }],
+      "out": [{ "item": "Purified Tungsten Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Tungsten Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Tungsten Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Tungsten Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Tungsten Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Unknown Liquid Comb": [
+    {
+      "machine": "Fluid Extractor",
+      "eut": 61440,
+      "ticks": 40000,
+      "in": [{ "item": "Unknown Liquid Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [],
+      "fluidOut": [{ "item": "Unknown Liquid", "mb": 250 }]
+    }
+  ],
+  "Unstable Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Unstable Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Saltpeter Dust", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Unstable Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Saltpeter Dust", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Ur Ghast Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 1920,
+      "ticks": 512,
+      "in": [{ "item": "Ur Ghast Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Burning Propolis", "n": 1, "chance": 0.05 },
+        { "item": "Carminite Chip", "n": 1, "chance": 0.33 },
+        { "item": "Carminite Fragment", "n": 1, "chance": 0.08 },
+        { "item": "Beeswax", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Uranium Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 1536,
+      "ticks": 192,
+      "in": [{ "item": "Uranium Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Phthalic Acid", "mb": 1536 }],
+      "out": [{ "item": "Purified Uranium 238 Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Uranus Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 7680,
+      "ticks": 300,
+      "in": [{ "item": "Uranus Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Miranda Stone Dust", "n": 1, "chance": 0.3 },
+        { "item": "Oberon Stone Dust", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Vega Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 122880,
+      "ticks": 300,
+      "in": [{ "item": "Vega Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Vega B Stone Dust", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Venomous Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Venomous Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Venomous Drop", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Venomous Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Venomous Drop", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Venus Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 1920,
+      "ticks": 300,
+      "in": [{ "item": "Venus Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Venus Stone Dust", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Vibrant Alloy Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 480,
+      "ticks": 384,
+      "in": [{ "item": "Vibrant Alloy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Vibrant Alloy Dust", "n": 1, "chance": 0.7 },
+        { "item": "Refractory Wax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Walrus Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 30,
+      "ticks": 128,
+      "in": [{ "item": "Walrus Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [{ "item": "Walrus", "n": 1 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 40,
+      "in": [{ "item": "Walrus Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [{ "item": "Walrus", "n": 1 }],
+      "fluidOut": []
+    }
+  ],
+  "Watery Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Watery Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Ink Sac", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Watery Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Ink Sac", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Wheaten Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Wheaten Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.2 },
+        { "item": "Beeswax", "n": 1, "chance": 0.2 },
+        { "item": "Wheat", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Wheaten Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.2 },
+        { "item": "Beeswax", "n": 1, "chance": 0.2 },
+        { "item": "Wheat", "n": 1, "chance": 0.8 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "White Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "White Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "White Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "White Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "White Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 },
+        { "item": "Beeswax", "n": 1, "chance": 0.5 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "White Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "White Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "White Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "White Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "White Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Windy Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Windy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Feather", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Windy Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Feather", "n": 1, "chance": 0.6 },
+        { "item": "Magic Wax", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Xenon Comb": [
+    {
+      "machine": "Fluid Extractor",
+      "eut": 7680,
+      "ticks": 50,
+      "in": [{ "item": "Xenon Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [],
+      "fluidOut": [{ "item": "Xenon", "mb": 250 }]
+    }
+  ],
+  "Yellorium Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Yellorium Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Yellorium Grains", "n": 1, "chance": 0.25 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Yellorium Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Yellorium Grains", "n": 1, "chance": 0.25 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Yellow Colored Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Yellow Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Yellow Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 10,
+      "in": [{ "item": "Yellow Colored Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Yellow Colored Honey Drop", "n": 1 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.3 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Yellow Garnet Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Yellow Garnet Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Yellow Garnet Ore", "n": 4 }],
+      "fluidOut": []
+    }
+  ],
+  "Yellow Tinted Comb": [
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Yellow Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Yellow Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Yellow Tinted Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Honey Drop", "n": 1, "chance": 0.8 },
+        { "item": "Beeswax", "n": 1, "chance": 0.8 },
+        { "item": "Yellow Tinted Honey", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ],
+  "Zinc Comb": [
+    {
+      "machine": "Chemical Reactor",
+      "eut": 24,
+      "ticks": 96,
+      "in": [{ "item": "Zinc Comb", "n": 4 }],
+      "fluidIn": [{ "item": "Hydrochloric Acid", "mb": 384 }],
+      "out": [{ "item": "Purified Zinc Ore", "n": 4 }],
+      "fluidOut": []
+    },
+    {
+      "machine": "Centrifuge",
+      "eut": 5,
+      "ticks": 128,
+      "in": [{ "item": "Zinc Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Zinc Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    },
+    {
+      "machine": "Forestry Centrifuge",
+      "eut": 0,
+      "ticks": 20,
+      "in": [{ "item": "Zinc Comb", "n": 1 }],
+      "fluidIn": [],
+      "out": [
+        { "item": "Beeswax", "n": 1, "chance": 0.5 },
+        { "item": "Honey Drop", "n": 1, "chance": 0.25 },
+        { "item": "Zinc Grains", "n": 1 }
+      ],
+      "fluidOut": []
+    }
+  ]
+}

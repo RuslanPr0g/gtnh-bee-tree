@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router';
 import { MODS, type Product } from '../lib/graph';
 import { BeeImg, Chip, Conditions, pct } from './Bee';
 import { BeeName } from './BeeName';
+import { CombInfo } from './CombInfo';
 import { BeeStepper, stepState, useStep } from './BeeStepper';
 import { useSwipe } from '../hooks/useSwipe';
 import { RecipeTree, useTreeState } from './RecipeTree';
@@ -18,7 +19,8 @@ function Products({ list }: { list: Product[] }) {
     <>
       {list.map((p) => (
         <span key={p.item} className="prod">
-          {p.item} <span className="sub">{Math.round(p.chance * 1000) / 10}%</span>
+          <CombInfo item={p.item}>{p.item}</CombInfo>{' '}
+          <span className="sub">{Math.round(p.chance * 1000) / 10}%</span>
         </span>
       ))}
     </>

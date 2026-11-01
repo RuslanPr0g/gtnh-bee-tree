@@ -3,6 +3,7 @@
 A fast, searchable bee breeding browser for **GregTech: New Horizons** (GTNH 2.9.0).
 
 - All 455 bee species and 543 breeding recipes, read straight from the game
+- Hover a comb to see what the centrifuge (and other machines) turn it into
 - "How to get it" breeding tree and "breeds into" list for every bee
 - The **Be(e) Breeding** quest book chapter as a map, with the full quest path to any quest
 - Track bees: ★ bookmark, ✓ I have this, ✗ not wanted (also hides bees that can only be bred from it)
@@ -38,6 +39,7 @@ All data is plain JSON in `src/data/` and can be edited by hand or regenerated:
 | File          | What                                                          | How it's made                                          |
 | ------------- | ------------------------------------------------------------- | ------------------------------------------------------ |
 | `bees.json`   | species (name, branch, climate, products, colors) + mutations | `tools/beedump-agent` (reads a running GTNH client)    |
+| `combs.json`  | what each comb turns into in machines                         | `tools/combdump-agent` (reads a running GTNH client)   |
 | `quests.json` | the Be(e) Breeding questline (layout, prerequisites, bees)    | `tools/extract-quests.py` (reads the quest book files) |
 
 See [`tools/README.md`](tools/README.md) for the steps.
