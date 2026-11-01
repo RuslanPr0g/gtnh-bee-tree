@@ -14,7 +14,7 @@ Run `npm run format`, `npm test` and `npm run build` before committing; CI (`.gi
 
 ## Layout
 
-React Router 8 **framework mode** with `ssr: false` and full prerendering (`react-router.config.ts`): every page (home, 450 bees, the quest map, 169 quests, import) is rendered to its own HTML file at build time, so clean URLs work on GitHub Pages. `buildEnd` turns the output into `build/pages/` (the folder that's deployed) with the SPA fallback as `404.html`.
+React Router 8 **framework mode** with `ssr: false` and full prerendering (`react-router.config.ts`): every page (home, 455 bees, the quest map, 190 quests, import) is rendered to its own HTML file at build time, so clean URLs work on GitHub Pages. `buildEnd` turns the output into `build/pages/` (the folder that's deployed) with the SPA fallback as `404.html`.
 
 - `src/data/*.json`: **all data**, plain JSON. Keep it JSON (no data in code). `src/data/index.ts` loads it once into `graph` and `questLine`.
 - `src/lib/graph.ts`: pure logic. Species/mutation graph with slugs (`bySlug`), `ancestors`, `computeUnwanted`, `unmarkNope`, `canBreed`, search. No DOM, so it is unit tested.

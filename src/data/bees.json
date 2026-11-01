@@ -476,8 +476,8 @@
       "color": 8947848,
       "color2": 2236962,
       "products": [
-        { "item": "Furtive Comb", "chance": 0.13 },
-        { "item": "String", "chance": 0.08 }
+        { "item": "String", "chance": 0.08 },
+        { "item": "Furtive Comb", "chance": 0.13 }
       ],
       "specialty": [{ "item": "Spider Eye", "chance": 0.08 }]
     },
@@ -520,8 +520,8 @@
       "color": 8650608,
       "color2": 14766646,
       "products": [
-        { "item": "Furtive Comb", "chance": 0.1 },
-        { "item": "Rotten Flesh", "chance": 0.06 }
+        { "item": "Rotten Flesh", "chance": 0.06 },
+        { "item": "Furtive Comb", "chance": 0.1 }
       ],
       "specialty": [{ "item": "Zombie Brain", "chance": 0.02 }]
     },
@@ -542,9 +542,9 @@
       "color": 11088971,
       "color2": 4535606,
       "products": [
+        { "item": "Raw Chicken", "chance": 0.12 },
         { "item": "Raw Beef", "chance": 0.12 },
-        { "item": "Furtive Comb", "chance": 0.18 },
-        { "item": "Raw Chicken", "chance": 0.12 }
+        { "item": "Furtive Comb", "chance": 0.18 }
       ],
       "specialty": [{ "item": "Melon Slice", "chance": 0.2 }]
     },
@@ -566,9 +566,9 @@
       "color2": 13882323,
       "products": [{ "item": "Furtive Comb", "chance": 0.23 }],
       "specialty": [
+        { "item": "Egg", "chance": 0.08 },
         { "item": "Chicken Nugget", "chance": 0.09 },
-        { "item": "Feather", "chance": 0.08 },
-        { "item": "Egg", "chance": 0.08 }
+        { "item": "Feather", "chance": 0.08 }
       ]
     },
     {
@@ -1249,8 +1249,8 @@
       "color": 14398028,
       "color2": 14734758,
       "products": [
-        { "item": "Parched Comb", "chance": 0.3 },
-        { "item": "Transmuting Comb", "chance": 0.1 }
+        { "item": "Transmuting Comb", "chance": 0.1 },
+        { "item": "Parched Comb", "chance": 0.3 }
       ],
       "specialty": []
     },
@@ -1271,9 +1271,9 @@
       "color": 14398028,
       "color2": 10670808,
       "products": [
-        { "item": "Transmuting Comb", "chance": 0.3 },
         { "item": "Silky Comb", "chance": 0.05 },
         { "item": "Parched Comb", "chance": 0.1 },
+        { "item": "Transmuting Comb", "chance": 0.3 },
         { "item": "Simmering Comb", "chance": 0.05 }
       ],
       "specialty": []
@@ -1295,10 +1295,10 @@
       "color": 14398028,
       "color2": 14394532,
       "products": [
-        { "item": "Powdery Comb", "chance": 0.1 },
-        { "item": "Transmuting Comb", "chance": 0.3 },
         { "item": "Parched Comb", "chance": 0.1 },
-        { "item": "Cocoa Comb", "chance": 0.15 }
+        { "item": "Powdery Comb", "chance": 0.1 },
+        { "item": "Cocoa Comb", "chance": 0.15 },
+        { "item": "Transmuting Comb", "chance": 0.3 }
       ],
       "specialty": []
     },
@@ -1766,22 +1766,22 @@
         { "item": "Mundane Comb", "chance": 0.1 }
       ],
       "specialty": [
-        { "item": "Mystical Orange Petal", "chance": 0.01 },
-        { "item": "Mystical Gray Petal", "chance": 0.01 },
-        { "item": "Mystical Cyan Petal", "chance": 0.01 },
-        { "item": "Mystical Brown Petal", "chance": 0.01 },
-        { "item": "Mystical Purple Petal", "chance": 0.01 },
-        { "item": "Mystical White Petal", "chance": 0.01 },
-        { "item": "Mystical Green Petal", "chance": 0.01 },
         { "item": "Mystical Yellow Petal", "chance": 0.01 },
-        { "item": "Mystical Lime Petal", "chance": 0.01 },
-        { "item": "Mystical Light Blue Petal", "chance": 0.01 },
-        { "item": "Mystical Pink Petal", "chance": 0.01 },
         { "item": "Mystical Red Petal", "chance": 0.01 },
-        { "item": "Mystical Light Gray Petal", "chance": 0.01 },
-        { "item": "Mystical Magenta Petal", "chance": 0.01 },
+        { "item": "Mystical Orange Petal", "chance": 0.01 },
+        { "item": "Mystical Pink Petal", "chance": 0.01 },
+        { "item": "Mystical Brown Petal", "chance": 0.01 },
         { "item": "Mystical Black Petal", "chance": 0.01 },
-        { "item": "Mystical Blue Petal", "chance": 0.01 }
+        { "item": "Mystical Purple Petal", "chance": 0.01 },
+        { "item": "Mystical Magenta Petal", "chance": 0.01 },
+        { "item": "Mystical White Petal", "chance": 0.01 },
+        { "item": "Mystical Lime Petal", "chance": 0.01 },
+        { "item": "Mystical Cyan Petal", "chance": 0.01 },
+        { "item": "Mystical Light Blue Petal", "chance": 0.01 },
+        { "item": "Mystical Blue Petal", "chance": 0.01 },
+        { "item": "Mystical Gray Petal", "chance": 0.01 },
+        { "item": "Mystical Green Petal", "chance": 0.01 },
+        { "item": "Mystical Light Gray Petal", "chance": 0.01 }
       ]
     },
     {
@@ -1805,22 +1805,22 @@
         { "item": "Mundane Comb", "chance": 0.2 }
       ],
       "specialty": [
-        { "item": "Mystical Orange Petal", "chance": 0.04 },
-        { "item": "Mystical Gray Petal", "chance": 0.04 },
-        { "item": "Mystical Cyan Petal", "chance": 0.04 },
-        { "item": "Mystical Brown Petal", "chance": 0.04 },
-        { "item": "Mystical Purple Petal", "chance": 0.04 },
-        { "item": "Mystical White Petal", "chance": 0.04 },
-        { "item": "Mystical Green Petal", "chance": 0.04 },
         { "item": "Mystical Yellow Petal", "chance": 0.04 },
-        { "item": "Mystical Lime Petal", "chance": 0.04 },
-        { "item": "Mystical Light Blue Petal", "chance": 0.04 },
-        { "item": "Mystical Pink Petal", "chance": 0.04 },
         { "item": "Mystical Red Petal", "chance": 0.04 },
-        { "item": "Mystical Light Gray Petal", "chance": 0.04 },
-        { "item": "Mystical Magenta Petal", "chance": 0.04 },
+        { "item": "Mystical Orange Petal", "chance": 0.04 },
+        { "item": "Mystical Pink Petal", "chance": 0.04 },
+        { "item": "Mystical Brown Petal", "chance": 0.04 },
         { "item": "Mystical Black Petal", "chance": 0.04 },
-        { "item": "Mystical Blue Petal", "chance": 0.04 }
+        { "item": "Mystical Purple Petal", "chance": 0.04 },
+        { "item": "Mystical Magenta Petal", "chance": 0.04 },
+        { "item": "Mystical White Petal", "chance": 0.04 },
+        { "item": "Mystical Lime Petal", "chance": 0.04 },
+        { "item": "Mystical Cyan Petal", "chance": 0.04 },
+        { "item": "Mystical Light Blue Petal", "chance": 0.04 },
+        { "item": "Mystical Blue Petal", "chance": 0.04 },
+        { "item": "Mystical Gray Petal", "chance": 0.04 },
+        { "item": "Mystical Green Petal", "chance": 0.04 },
+        { "item": "Mystical Light Gray Petal", "chance": 0.04 }
       ]
     },
     {
@@ -1840,26 +1840,26 @@
       "color": 2742298,
       "color2": 16757435,
       "products": [
-        { "item": "Mundane Comb", "chance": 0.25 },
-        { "item": "Transmuting Comb", "chance": 0.05 }
+        { "item": "Transmuting Comb", "chance": 0.05 },
+        { "item": "Mundane Comb", "chance": 0.25 }
       ],
       "specialty": [
-        { "item": "Mystical Orange Petal", "chance": 0.16 },
-        { "item": "Mystical Gray Petal", "chance": 0.16 },
-        { "item": "Mystical Cyan Petal", "chance": 0.16 },
-        { "item": "Mystical Brown Petal", "chance": 0.16 },
-        { "item": "Mystical Purple Petal", "chance": 0.16 },
-        { "item": "Mystical White Petal", "chance": 0.16 },
-        { "item": "Mystical Green Petal", "chance": 0.16 },
         { "item": "Mystical Yellow Petal", "chance": 0.16 },
-        { "item": "Mystical Lime Petal", "chance": 0.16 },
-        { "item": "Mystical Light Blue Petal", "chance": 0.16 },
-        { "item": "Mystical Pink Petal", "chance": 0.16 },
         { "item": "Mystical Red Petal", "chance": 0.16 },
-        { "item": "Mystical Light Gray Petal", "chance": 0.16 },
-        { "item": "Mystical Magenta Petal", "chance": 0.16 },
+        { "item": "Mystical Orange Petal", "chance": 0.16 },
+        { "item": "Mystical Pink Petal", "chance": 0.16 },
+        { "item": "Mystical Brown Petal", "chance": 0.16 },
         { "item": "Mystical Black Petal", "chance": 0.16 },
-        { "item": "Mystical Blue Petal", "chance": 0.16 }
+        { "item": "Mystical Purple Petal", "chance": 0.16 },
+        { "item": "Mystical Magenta Petal", "chance": 0.16 },
+        { "item": "Mystical White Petal", "chance": 0.16 },
+        { "item": "Mystical Lime Petal", "chance": 0.16 },
+        { "item": "Mystical Cyan Petal", "chance": 0.16 },
+        { "item": "Mystical Light Blue Petal", "chance": 0.16 },
+        { "item": "Mystical Blue Petal", "chance": 0.16 },
+        { "item": "Mystical Gray Petal", "chance": 0.16 },
+        { "item": "Mystical Green Petal", "chance": 0.16 },
+        { "item": "Mystical Light Gray Petal", "chance": 0.16 }
       ]
     },
     {
@@ -1879,11 +1879,11 @@
       "color": 16739228,
       "color2": 16757435,
       "products": [
-        { "item": "Soul Comb", "chance": 0.05 },
-        { "item": "Transmuting Comb", "chance": 0.15 },
-        { "item": "Pink Tulip", "chance": 0.06 },
         { "item": "Cyan Wool", "chance": 0.02 },
-        { "item": "Pink Dye", "chance": 0.2 }
+        { "item": "Soul Comb", "chance": 0.05 },
+        { "item": "Pink Dye", "chance": 0.2 },
+        { "item": "Pink Tulip", "chance": 0.06 },
+        { "item": "Transmuting Comb", "chance": 0.15 }
       ],
       "specialty": [
         { "item": "Infestation Spores", "chance": 0.04 },
@@ -1908,8 +1908,8 @@
       "color": 2717894,
       "color2": 16757435,
       "products": [
-        { "item": "Soul Comb", "chance": 0.15 },
-        { "item": "Watery Comb", "chance": 0.08 }
+        { "item": "Watery Comb", "chance": 0.08 },
+        { "item": "Soul Comb", "chance": 0.15 }
       ],
       "specialty": []
     },
@@ -1949,8 +1949,8 @@
       "dominant": false,
       "secret": true,
       "glow": false,
-      "color": -5845965,
-      "color2": -8630887,
+      "color": -3394676,
+      "color2": -6716851,
       "products": [{ "item": "Otherworldy Comb", "chance": 0.28 }],
       "specialty": []
     },
@@ -2104,8 +2104,8 @@
       "color": -6037457,
       "color2": -9194,
       "products": [
-        { "item": "Royal Jelly", "chance": 0.15 },
-        { "item": "Dripping Comb", "chance": 0.2 }
+        { "item": "Dripping Comb", "chance": 0.2 },
+        { "item": "Royal Jelly", "chance": 0.15 }
       ],
       "specialty": []
     },
@@ -2164,8 +2164,8 @@
       "color": -1,
       "color2": -9194,
       "products": [
-        { "item": "Pollen Cluster", "chance": 0.15 },
-        { "item": "Stringy Comb", "chance": 0.2 }
+        { "item": "Stringy Comb", "chance": 0.2 },
+        { "item": "Pollen Cluster", "chance": 0.15 }
       ],
       "specialty": []
     },
@@ -2262,8 +2262,8 @@
       "color": -2638107,
       "color2": -6675677,
       "products": [
-        { "item": "Ashes", "chance": 0.15 },
-        { "item": "Simmering Comb", "chance": 0.55 }
+        { "item": "Simmering Comb", "chance": 0.55 },
+        { "item": "Ashes", "chance": 0.15 }
       ],
       "specialty": []
     },
@@ -2496,8 +2496,8 @@
       "color": -6225921,
       "color2": -2427405,
       "products": [
-        { "item": "Frozen Comb", "chance": 0.2 },
-        { "item": "Ice Shard", "chance": 0.2 }
+        { "item": "Ice Shard", "chance": 0.2 },
+        { "item": "Frozen Comb", "chance": 0.2 }
       ],
       "specialty": []
     },
@@ -2597,8 +2597,8 @@
       "color": -65649,
       "color2": -12789929,
       "products": [
-        { "item": "Egg", "chance": 0.1 },
-        { "item": "Silky Comb", "chance": 0.3 }
+        { "item": "Silky Comb", "chance": 0.3 },
+        { "item": "Egg", "chance": 0.1 }
       ],
       "specialty": []
     },
@@ -2667,9 +2667,9 @@
         { "item": "Cookie", "chance": 0.15 }
       ],
       "specialty": [
-        { "item": "Head", "chance": 0.02 },
         { "item": "Skeleton Skull", "chance": 0.02 },
         { "item": "Creeper Head", "chance": 0.02 },
+        { "item": "Head", "chance": 0.02 },
         { "item": "Zombie Head", "chance": 0.02 }
       ]
     },
@@ -3811,8 +3811,8 @@
       "color": -241167,
       "color2": -9194,
       "products": [
-        { "item": "Honey Comb", "chance": 0.4 },
-        { "item": "Sugar", "chance": 0.1 }
+        { "item": "Sugar", "chance": 0.1 },
+        { "item": "Honey Comb", "chance": 0.4 }
       ],
       "specialty": []
     },
@@ -5241,13 +5241,13 @@
       "color": -11624875,
       "color2": -16711915,
       "products": [
-        { "item": "Mossy Comb", "chance": 0.3 },
         { "item": "Gelatinous Slime", "chance": 0.1 },
-        { "item": "Slimeball", "chance": 0.15 }
+        { "item": "Slimeball", "chance": 0.15 },
+        { "item": "Mossy Comb", "chance": 0.3 }
       ],
       "specialty": [
-        { "item": "Congealed Purple Slime", "chance": 0.02 },
-        { "item": "Sticky Resin Comb", "chance": 0.05 }
+        { "item": "Sticky Resin Comb", "chance": 0.05 },
+        { "item": "Congealed Purple Slime", "chance": 0.02 }
       ]
     },
     {
@@ -5293,8 +5293,8 @@
       "color2": -2309495,
       "products": [{ "item": "Honey Comb", "chance": 0.3 }],
       "specialty": [
-        { "item": "Sticky Resin", "chance": 0.15 },
-        { "item": "Sticky Resin Comb", "chance": 0.15 }
+        { "item": "Sticky Resin Comb", "chance": 0.15 },
+        { "item": "Sticky Resin", "chance": 0.15 }
       ]
     },
     {
@@ -5353,12 +5353,12 @@
       "color2": -2448096,
       "products": [{ "item": "Seedy Comb", "chance": 0.15 }],
       "specialty": [
+        { "item": "Steak", "chance": 0.05 },
         { "item": "Cucumber Slice", "chance": 0.05 },
-        { "item": "Cooked Porkchop", "chance": 0.05 },
         { "item": "Tomato Slice", "chance": 0.05 },
-        { "item": "Onion Slice", "chance": 0.05 },
         { "item": "Cheese Slice", "chance": 0.05 },
-        { "item": "Steak", "chance": 0.05 }
+        { "item": "Cooked Porkchop", "chance": 0.05 },
+        { "item": "Onion Slice", "chance": 0.05 }
       ]
     },
     {
@@ -5417,10 +5417,10 @@
       "color2": -10140379,
       "products": [{ "item": "Seedy Comb", "chance": 0.15 }],
       "specialty": [
-        { "item": "Tiny Pile of Ashes", "chance": 0.2 },
+        { "item": "Diluted Fertilizer", "chance": 0.3 },
         { "item": "Fertilizer", "chance": 0.3 },
         { "item": "Tiny Pile of Dark Ashes", "chance": 0.2 },
-        { "item": "Fertilizer", "chance": 0.3 }
+        { "item": "Tiny Pile of Ashes", "chance": 0.2 }
       ]
     },
     {
@@ -5638,8 +5638,8 @@
       "color2": -3342388,
       "products": [{ "item": "Stone Comb", "chance": 0.3 }],
       "specialty": [
-        { "item": "Magnesium Comb", "chance": 0.05 },
-        { "item": "Olivine Comb", "chance": 0.15 }
+        { "item": "Olivine Comb", "chance": 0.15 },
+        { "item": "Magnesium Comb", "chance": 0.05 }
       ]
     },
     {
@@ -5660,8 +5660,8 @@
       "color2": -13715410,
       "products": [{ "item": "Stone Comb", "chance": 0.3 }],
       "specialty": [
-        { "item": "Aluminium Comb", "chance": 0.05 },
-        { "item": "Emerald Comb", "chance": 0.15 }
+        { "item": "Emerald Comb", "chance": 0.15 },
+        { "item": "Aluminium Comb", "chance": 0.05 }
       ]
     },
     {
@@ -5763,8 +5763,8 @@
       "color": -39424,
       "color2": -1680384,
       "products": [
-        { "item": "Copper Comb", "chance": 0.15 },
-        { "item": "Slag Comb", "chance": 0.3 }
+        { "item": "Slag Comb", "chance": 0.3 },
+        { "item": "Copper Comb", "chance": 0.15 }
       ],
       "specialty": [{ "item": "Gold Comb", "chance": 0.05 }]
     },
@@ -5785,8 +5785,8 @@
       "color": -2829100,
       "color2": -2236963,
       "products": [
-        { "item": "Tin Comb", "chance": 0.15 },
-        { "item": "Slag Comb", "chance": 0.3 }
+        { "item": "Slag Comb", "chance": 0.3 },
+        { "item": "Tin Comb", "chance": 0.15 }
       ],
       "specialty": [{ "item": "Zinc Comb", "chance": 0.05 }]
     },
@@ -5829,8 +5829,8 @@
       "color": -2453177,
       "color2": -2188199,
       "products": [
-        { "item": "Slag Comb", "chance": 0.3 },
-        { "item": "Iron Comb", "chance": 0.15 }
+        { "item": "Iron Comb", "chance": 0.15 },
+        { "item": "Slag Comb", "chance": 0.3 }
       ],
       "specialty": [{ "item": "Tin Comb", "chance": 0.05 }]
     },
@@ -5851,8 +5851,8 @@
       "color": -8355712,
       "color2": -6710887,
       "products": [
-        { "item": "Steel Comb", "chance": 0.15 },
-        { "item": "Slag Comb", "chance": 0.3 }
+        { "item": "Slag Comb", "chance": 0.3 },
+        { "item": "Steel Comb", "chance": 0.15 }
       ],
       "specialty": [{ "item": "Iron Comb", "chance": 0.05 }]
     },
@@ -5873,9 +5873,9 @@
       "color": -8026707,
       "color2": -8026707,
       "products": [
-        { "item": "Slag Comb", "chance": 0.3 },
         { "item": "Nickel Comb", "chance": 0.15 },
-        { "item": "Platinum Comb", "chance": 0.02 }
+        { "item": "Platinum Comb", "chance": 0.02 },
+        { "item": "Slag Comb", "chance": 0.3 }
       ],
       "specialty": []
     },
@@ -5896,8 +5896,8 @@
       "color": -991504,
       "color2": -859662,
       "products": [
-        { "item": "Slag Comb", "chance": 0.3 },
-        { "item": "Zinc Comb", "chance": 0.15 }
+        { "item": "Zinc Comb", "chance": 0.15 },
+        { "item": "Slag Comb", "chance": 0.3 }
       ],
       "specialty": [{ "item": "Gallium Comb", "chance": 0.05 }]
     },
@@ -5940,8 +5940,8 @@
       "color": -4198401,
       "color2": -9193008,
       "products": [
-        { "item": "Slag Comb", "chance": 0.3 },
-        { "item": "Cryolite Comb", "chance": 0.15 }
+        { "item": "Cryolite Comb", "chance": 0.15 },
+        { "item": "Slag Comb", "chance": 0.3 }
       ],
       "specialty": [{ "item": "Silver Comb", "chance": 0.05 }]
     },
@@ -5962,8 +5962,8 @@
       "color": -1325517,
       "color2": -1192889,
       "products": [
-        { "item": "Slag Comb", "chance": 0.3 },
-        { "item": "Gold Comb", "chance": 0.15 }
+        { "item": "Gold Comb", "chance": 0.15 },
+        { "item": "Slag Comb", "chance": 0.3 }
       ],
       "specialty": [{ "item": "Nickel Comb", "chance": 0.05 }]
     },
@@ -6006,8 +6006,8 @@
       "color": -4671233,
       "color2": -2697473,
       "products": [
-        { "item": "Aluminium Comb", "chance": 0.15 },
-        { "item": "Slag Comb", "chance": 0.3 }
+        { "item": "Slag Comb", "chance": 0.3 },
+        { "item": "Aluminium Comb", "chance": 0.15 }
       ],
       "specialty": [{ "item": "Bauxite Comb", "chance": 0.05 }]
     },
@@ -6028,8 +6028,8 @@
       "color": -3368449,
       "color2": -2377473,
       "products": [
-        { "item": "Slag Comb", "chance": 0.3 },
-        { "item": "Titanium Comb", "chance": 0.15 }
+        { "item": "Titanium Comb", "chance": 0.15 },
+        { "item": "Slag Comb", "chance": 0.3 }
       ],
       "specialty": [{ "item": "Almandine Comb", "chance": 0.05 }]
     },
@@ -6088,8 +6088,8 @@
       "color": -1334805,
       "color2": -867342,
       "products": [
-        { "item": "Chrome Comb", "chance": 0.15 },
-        { "item": "Slag Comb", "chance": 0.3 }
+        { "item": "Slag Comb", "chance": 0.3 },
+        { "item": "Chrome Comb", "chance": 0.15 }
       ],
       "specialty": [{ "item": "Magnesium Comb", "chance": 0.05 }]
     },
@@ -6154,8 +6154,8 @@
       "color": -1644826,
       "color2": -52,
       "products": [
-        { "item": "Slag Comb", "chance": 0.3 },
-        { "item": "Platinum Comb", "chance": 0.3 }
+        { "item": "Platinum Comb", "chance": 0.3 },
+        { "item": "Slag Comb", "chance": 0.3 }
       ],
       "specialty": [{ "item": "Iridium Comb", "chance": 0.02 }]
     },
@@ -6180,8 +6180,8 @@
         { "item": "Iridium Comb", "chance": 0.3 }
       ],
       "specialty": [
-        { "item": "Osmium Comb", "chance": 0.05 },
-        { "item": "Palladium Comb", "chance": 0.3 }
+        { "item": "Palladium Comb", "chance": 0.3 },
+        { "item": "Osmium Comb", "chance": 0.05 }
       ]
     },
     {
@@ -6202,8 +6202,8 @@
       "color2": -7631989,
       "products": [{ "item": "Slag Comb", "chance": 0.3 }],
       "specialty": [
-        { "item": "Iridium Comb", "chance": 0.05 },
-        { "item": "Osmium Comb", "chance": 0.3 }
+        { "item": "Osmium Comb", "chance": 0.3 },
+        { "item": "Iridium Comb", "chance": 0.05 }
       ]
     },
     {
@@ -6224,9 +6224,9 @@
       "color2": -328966,
       "products": [{ "item": "Slag Comb", "chance": 0.3 }],
       "specialty": [
-        { "item": "Salt Comb", "chance": 0.35 },
         { "item": "Borax Dust", "chance": 0.1 },
-        { "item": "Lithium Comb", "chance": 0.05 }
+        { "item": "Lithium Comb", "chance": 0.05 },
+        { "item": "Salt Comb", "chance": 0.35 }
       ]
     },
     {
@@ -6269,8 +6269,8 @@
       "color2": -12798776,
       "products": [{ "item": "Slag Comb", "chance": 0.3 }],
       "specialty": [
-        { "item": "Electrotine Comb", "chance": 0.15 },
-        { "item": "Redstone Comb", "chance": 0.05 }
+        { "item": "Redstone Comb", "chance": 0.05 },
+        { "item": "Electrotine Comb", "chance": 0.15 }
       ]
     },
     {
@@ -6389,8 +6389,8 @@
       "color2": -15461121,
       "products": [{ "item": "Lapis Comb", "chance": 0.2 }],
       "specialty": [
-        { "item": "Energy Comb", "chance": 0.15 },
-        { "item": "Lapotron Comb", "chance": 0.1 }
+        { "item": "Lapotron Comb", "chance": 0.1 },
+        { "item": "Energy Comb", "chance": 0.15 }
       ]
     },
     {
@@ -6619,12 +6619,12 @@
       "color": -3618596,
       "color2": -8943463,
       "products": [
-        { "item": "Steel Comb", "chance": 0.1 },
-        { "item": "Slag Comb", "chance": 0.3 }
+        { "item": "Slag Comb", "chance": 0.3 },
+        { "item": "Steel Comb", "chance": 0.1 }
       ],
       "specialty": [
-        { "item": "Stainless Steel Comb", "chance": 0.15 },
-        { "item": "Chrome Comb", "chance": 0.05 }
+        { "item": "Chrome Comb", "chance": 0.05 },
+        { "item": "Stainless Steel Comb", "chance": 0.15 }
       ]
     },
     {
@@ -6895,8 +6895,8 @@
       "color2": -2302756,
       "products": [
         { "item": "Caelestis Green Comb", "chance": 0.6 },
-        { "item": "Caelestis Blue Comb", "chance": 0.6 },
-        { "item": "Caelestis Red Comb", "chance": 0.6 }
+        { "item": "Caelestis Red Comb", "chance": 0.6 },
+        { "item": "Caelestis Blue Comb", "chance": 0.6 }
       ],
       "specialty": []
     },
@@ -6921,7 +6921,7 @@
     },
     {
       "uid": "gregtech.bee.speciesEssentia",
-      "name": "Essentia",
+      "name": "Reanimus",
       "binomial": "Essentia",
       "authority": "GTNH",
       "description": "for.description.essentia",
@@ -6993,8 +6993,8 @@
       "color": -11075584,
       "color2": -14417920,
       "products": [
-        { "item": "Slag Comb", "chance": 0.3 },
-        { "item": "Lead Comb", "chance": 0.15 }
+        { "item": "Lead Comb", "chance": 0.15 },
+        { "item": "Slag Comb", "chance": 0.3 }
       ],
       "specialty": [{ "item": "Plutonium Comb", "chance": 0.15 }]
     },
@@ -7035,8 +7035,8 @@
       "color2": -16768000,
       "products": [{ "item": "Slag Comb", "chance": 0.3 }],
       "specialty": [
-        { "item": "Naquadah Comb", "chance": 0.2 },
-        { "item": "Naquadria Comb", "chance": 0.15 }
+        { "item": "Naquadria Comb", "chance": 0.15 },
+        { "item": "Naquadah Comb", "chance": 0.2 }
       ]
     },
     {
@@ -7450,7 +7450,7 @@
       "name": "Machinist",
       "binomial": "Machinist",
       "authority": "Aditya & Noila",
-      "description": "The Machinist Queen, born from the synergy of active machinery and roaring fire. It manufactures essential components needed to build and expand an apiarists empire.||Aditya & Noila",
+      "description": "The Machinist Queen, born from the synergy of active machinery and roaring fire. It manufactures essential components needed to build and expand an apiarist's empire.||Aditya & Noila",
       "branch": "for.genus.bees.organic",
       "branchSci": "Fuelis",
       "temp": "NORMAL",
@@ -7805,12 +7805,12 @@
       "color2": -3093564,
       "products": [{ "item": "Jupiter Comb", "chance": 0.35 }],
       "specialty": [
-        { "item": "Io Stone Dust", "chance": 0.05 },
-        { "item": "Callisto Ice Dust", "chance": 0.05 },
-        { "item": "Callisto Stone Dust", "chance": 0.05 },
+        { "item": "Europa Stone Dust", "chance": 0.05 },
         { "item": "Ganymede Stone Dust", "chance": 0.05 },
+        { "item": "Io Stone Dust", "chance": 0.05 },
+        { "item": "Callisto Stone Dust", "chance": 0.05 },
         { "item": "Europa Ice Dust", "chance": 0.05 },
-        { "item": "Europa Stone Dust", "chance": 0.05 }
+        { "item": "Callisto Ice Dust", "chance": 0.05 }
       ]
     },
     {
@@ -7850,13 +7850,13 @@
       "color2": -16042333,
       "products": [{ "item": "Jupiter Comb", "chance": 0.25 }],
       "specialty": [
-        { "item": "Europa Stone Dust", "chance": 0.1 },
-        { "item": "Europa Ice Dust", "chance": 0.1 }
+        { "item": "Europa Ice Dust", "chance": 0.1 },
+        { "item": "Europa Stone Dust", "chance": 0.1 }
       ]
     },
     {
       "uid": "gregtech.bee.speciesGanymede",
-      "name": "Ganymed",
+      "name": "Ganymede",
       "binomial": "Ganymede",
       "authority": "GTNH",
       "description": "for.description.ganymede",
@@ -7891,8 +7891,8 @@
       "color2": -15891291,
       "products": [{ "item": "Jupiter Comb", "chance": 0.25 }],
       "specialty": [
-        { "item": "Callisto Ice Dust", "chance": 0.1 },
-        { "item": "Callisto Stone Dust", "chance": 0.1 }
+        { "item": "Callisto Stone Dust", "chance": 0.1 },
+        { "item": "Callisto Ice Dust", "chance": 0.1 }
       ]
     },
     {
@@ -7913,9 +7913,9 @@
       "color2": -474245,
       "products": [{ "item": "Saturn Comb", "chance": 0.35 }],
       "specialty": [
+        { "item": "Enceladus Stone Dust", "chance": 0.05 },
         { "item": "Enceladus Slush Dust", "chance": 0.05 },
-        { "item": "Titan Stone Dust", "chance": 0.05 },
-        { "item": "Enceladus Stone Dust", "chance": 0.05 }
+        { "item": "Titan Stone Dust", "chance": 0.05 }
       ]
     },
     {
@@ -8037,8 +8037,8 @@
       "color2": -11047425,
       "products": [{ "item": "Neptune Comb", "chance": 0.35 }],
       "specialty": [
-        { "item": "Proteus Stone Dust", "chance": 0.05 },
-        { "item": "Triton Stone Dust", "chance": 0.05 }
+        { "item": "Triton Stone Dust", "chance": 0.05 },
+        { "item": "Proteus Stone Dust", "chance": 0.05 }
       ]
     },
     {
@@ -8103,7 +8103,7 @@
     },
     {
       "uid": "gregtech.bee.speciesHaumea",
-      "name": "Haume",
+      "name": "Haumea",
       "binomial": "Haumea",
       "authority": "GTNH",
       "description": "for.description.haumea",
@@ -8252,8 +8252,8 @@
       "color2": -1654387,
       "products": [{ "item": "Barnarda Comb", "chance": 0.35 }],
       "specialty": [
-        { "item": "Barnarda F Stone Dust", "chance": 0.05 },
-        { "item": "Barnarda E Stone Dust", "chance": 0.05 }
+        { "item": "Barnarda E Stone Dust", "chance": 0.05 },
+        { "item": "Barnarda F Stone Dust", "chance": 0.05 }
       ]
     },
     {
@@ -8464,8 +8464,8 @@
       "color2": -6112605,
       "products": [],
       "specialty": [
-        { "item": "Kevlar Nugget", "chance": 0.01 },
-        { "item": "Kevlar Comb", "chance": 0.075 }
+        { "item": "Kevlar Comb", "chance": 0.075 },
+        { "item": "Kevlar Nugget", "chance": 0.01 }
       ]
     },
     {
@@ -8868,6 +8868,101 @@
       "specialty": []
     },
     {
+      "uid": "gregtech.bee.speciesManasteel",
+      "name": "Manasteel",
+      "binomial": "ManaSteel",
+      "authority": "GTNH",
+      "description": "for.description.manasteel",
+      "branch": "for.genus.bees.botanic",
+      "branchSci": "Botanus",
+      "temp": "NORMAL",
+      "humidity": "NORMAL",
+      "nocturnal": false,
+      "dominant": true,
+      "secret": false,
+      "glow": false,
+      "color": -11816965,
+      "color2": -3216643,
+      "products": [{ "item": "Manasteel Comb", "chance": 0.3 }],
+      "specialty": []
+    },
+    {
+      "uid": "gregtech.bee.speciesMmm",
+      "name": "M-M-M",
+      "binomial": "MMM",
+      "authority": "ignThree",
+      "description": "for.description.mmm",
+      "branch": "for.genus.bees.botanic",
+      "branchSci": "Botanus",
+      "temp": "NORMAL",
+      "humidity": "NORMAL",
+      "nocturnal": false,
+      "dominant": true,
+      "secret": false,
+      "glow": true,
+      "color": -12608645,
+      "color2": -8978481,
+      "products": [{ "item": "M-M-M Comb", "chance": 0.33 }],
+      "specialty": []
+    },
+    {
+      "uid": "gregtech.bee.speciesElven",
+      "name": "Elven",
+      "binomial": "Elven",
+      "authority": "GTNH",
+      "description": "for.description.elven",
+      "branch": "for.genus.bees.botanic",
+      "branchSci": "Botanus",
+      "temp": "NORMAL",
+      "humidity": "NORMAL",
+      "nocturnal": false,
+      "dominant": true,
+      "secret": false,
+      "glow": false,
+      "color": -3723559,
+      "color2": -1064967,
+      "products": [{ "item": "Elven Comb", "chance": 0.33 }],
+      "specialty": []
+    },
+    {
+      "uid": "gregtech.bee.speciesTerrasteel",
+      "name": "Terrasteel",
+      "binomial": "TerraSteel",
+      "authority": "GTNH",
+      "description": "for.description.terrasteel",
+      "branch": "for.genus.bees.botanic",
+      "branchSci": "Botanus",
+      "temp": "NORMAL",
+      "humidity": "NORMAL",
+      "nocturnal": false,
+      "dominant": true,
+      "secret": false,
+      "glow": false,
+      "color": -11421184,
+      "color2": -5308565,
+      "products": [{ "item": "Terrasteel Comb", "chance": 0.1 }],
+      "specialty": []
+    },
+    {
+      "uid": "gregtech.bee.speciesGaiaspirit",
+      "name": "Gaia Spirit",
+      "binomial": "GAIASPIRIT",
+      "authority": "GTNH",
+      "description": "for.description.gaiaspirit",
+      "branch": "for.genus.bees.botanic",
+      "branchSci": "Botanus",
+      "temp": "NORMAL",
+      "humidity": "NORMAL",
+      "nocturnal": false,
+      "dominant": true,
+      "secret": false,
+      "glow": true,
+      "color": -9074281,
+      "color2": -4729109,
+      "products": [{ "item": "Gaia Spirit Comb", "chance": 0.15 }],
+      "specialty": []
+    },
+    {
       "uid": "gregtech.bee.speciesJaegermeister",
       "name": "Jaegermeister",
       "binomial": "JaegerMeister",
@@ -8888,7 +8983,7 @@
     },
     {
       "uid": "gtpp.bee.speciesDragon Blood",
-      "name": "Dragonblood",
+      "name": "Dragon Blood",
       "binomial": "Dragon Blood",
       "authority": "GT++",
       "description": "for.description.Dragon Blood",
@@ -8922,8 +9017,8 @@
       "color": 16448020,
       "color2": 13158405,
       "products": [
-        { "item": "Salt Comb", "chance": 0.15 },
-        { "item": "Stone Comb", "chance": 0.3 }
+        { "item": "Stone Comb", "chance": 0.3 },
+        { "item": "Salt Comb", "chance": 0.15 }
       ],
       "specialty": [{ "item": "Force Comb", "chance": 0.1 }]
     }
@@ -11532,7 +11627,7 @@
       "secret": true,
       "conditions": [
         "Requires Arid humidity.",
-        "Requires Ender Chest as a foundation.",
+        "Requires Advanced Ender Chest as a foundation.",
         "Required Dimension End"
       ]
     },
@@ -11763,7 +11858,7 @@
       "result": "gregtech.bee.speciesSaturn",
       "chance": 12.5,
       "secret": false,
-      "conditions": ["Requires Block of Quantium as a foundation.", "Required Dimension Asteriods"]
+      "conditions": ["Requires Block of Quantium as a foundation.", "Required Dimension Asteroids"]
     },
     {
       "a": "gregtech.bee.speciesSaturn",
@@ -11931,7 +12026,7 @@
       "secret": false,
       "conditions": [
         "Requires Barnarda E Surface Block as a foundation.",
-        "Required Dimension Kuiper Belt"
+        "Required Dimension Barnard E"
       ]
     },
     {
@@ -12215,13 +12310,53 @@
       "conditions": []
     },
     {
+      "a": "magicbees.speciesBotAlfheim",
+      "b": "gregtech.bee.speciesSteel",
+      "result": "gregtech.bee.speciesManasteel",
+      "chance": 15.0,
+      "secret": false,
+      "conditions": ["Requires Block of Manasteel as a foundation."]
+    },
+    {
+      "a": "gregtech.bee.speciesManasteel",
+      "b": "gregtech.bee.speciesMachinist",
+      "result": "gregtech.bee.speciesMmm",
+      "chance": 1.0,
+      "secret": false,
+      "conditions": ["Requires Block of Mana Diamond as a foundation."]
+    },
+    {
+      "a": "gregtech.bee.speciesManasteel",
+      "b": "magicbees.speciesTCVoid",
+      "result": "gregtech.bee.speciesElven",
+      "chance": 5.0,
+      "secret": false,
+      "conditions": ["Requires Block of Elementium as a foundation."]
+    },
+    {
+      "a": "gregtech.bee.speciesElven",
+      "b": "gregtech.bee.speciesShadowmetal",
+      "result": "gregtech.bee.speciesTerrasteel",
+      "chance": 5.0,
+      "secret": false,
+      "conditions": ["Requires Block of Terrasteel as a foundation."]
+    },
+    {
+      "a": "gregtech.bee.speciesNaquadah",
+      "b": "gregtech.bee.speciesTerrasteel",
+      "result": "gregtech.bee.speciesGaiaspirit",
+      "chance": 0.33333334,
+      "secret": false,
+      "conditions": ["Requires Gaia Spirit Frame Box as a foundation."]
+    },
+    {
       "a": "gregtech.bee.speciesInfinitycatalyst",
       "b": "gregtech.bee.speciesNaquadria",
       "result": "gregtech.bee.speciesJaegermeister",
       "chance": 5.0,
       "secret": false,
       "conditions": [
-        "Requires SpaceTime Frame Box (TileEntity) as a foundation.",
+        "Requires gt.oreprefix.spacetime_frame_box as a foundation.",
         "Required Dimension Deep Dark"
       ]
     },

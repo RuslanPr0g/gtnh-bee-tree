@@ -22,8 +22,8 @@ const set = (...xs: string[]) => new Set(xs);
 
 describe('graph', () => {
   it('loads every species and recipe', () => {
-    expect(g.species).toHaveLength(450);
-    expect(Object.values(g.makes).flat()).toHaveLength(538);
+    expect(g.species).toHaveLength(455);
+    expect(Object.values(g.makes).flat()).toHaveLength(543);
   });
 
   it('cleans untranslated branch names', () => {

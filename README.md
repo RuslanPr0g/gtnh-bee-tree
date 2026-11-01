@@ -1,8 +1,8 @@
 # GTNH Bee Tree
 
-A fast, searchable bee breeding browser for **GregTech: New Horizons** (GTNH 2.8.1).
+A fast, searchable bee breeding browser for **GregTech: New Horizons** (GTNH 2.9.0).
 
-- All 450 bee species and 538 breeding recipes, read straight from the game
+- All 455 bee species and 543 breeding recipes, read straight from the game
 - "How to get it" breeding tree and "breeds into" list for every bee
 - The **Be(e) Breeding** quest book chapter as a map, with the full quest path to any quest
 - Track bees: ★ bookmark, ✓ I have this, ✗ not wanted (also hides bees that can only be bred from it)
