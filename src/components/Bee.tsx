@@ -2,6 +2,7 @@ import { Link } from 'react-router';
 import { MODS, type Species } from '../lib/graph';
 import { g, useStore } from '../store';
 import { beePath } from '../links';
+import { EffectMark } from './BeeEffect';
 
 const ICONS = g.species.length;
 
@@ -33,6 +34,7 @@ export function Chip({ uid }: { uid: string }) {
     <Link className={cls} title={`${MODS[s.mod] ?? s.mod} · ${s.branch ?? ''}`} to={beePath(uid)}>
       <BeeImg s={s} />
       <span className="cl">{beeLabel(s)}</span>
+      <EffectMark uid={uid} />
     </Link>
   );
 }

@@ -1,0 +1,361 @@
+{
+  "extrabees.effect.acid": {
+    "name": "Acidic",
+    "level": "danger",
+    "text": "Corrodes blocks around the hive: stone and cobblestone turn into gravel, dirt and grass into sand."
+  },
+  "extrabees.effect.birthday": {
+    "name": "Birthday",
+    "level": "info",
+    "text": "Celebrates the birthdays of the Extra Bees team. Harmless."
+  },
+  "extrabees.effect.blindness": {
+    "name": "Darkness",
+    "level": "warn",
+    "text": "Blinds players near the hive.",
+    "suit": true
+  },
+  "extrabees.effect.bonemeal_fruit": {
+    "name": "Ripening",
+    "level": "good",
+    "text": "Works like bone meal on fruit near the hive."
+  },
+  "extrabees.effect.bonemeal_mushroom": {
+    "name": "Mushroom",
+    "level": "good",
+    "text": "Works like bone meal on mushrooms near the hive."
+  },
+  "extrabees.effect.bonemeal_sapling": {
+    "name": "Growth",
+    "level": "good",
+    "text": "Works like bone meal on saplings near the hive."
+  },
+  "extrabees.effect.ectoplasm": {
+    "name": "Ectoplasm",
+    "level": "danger",
+    "text": "Fills empty space around the hive with sticky Ectoplasm blocks."
+  },
+  "extrabees.effect.fireworks": {
+    "name": "Fireworks",
+    "level": "info",
+    "text": "Shoots fireworks in the bee's colours. Harmless."
+  },
+  "extrabees.effect.gravity": {
+    "name": "Gravity",
+    "level": "warn",
+    "text": "Pulls items, mobs and players near the hive towards it."
+  },
+  "extrabees.effect.hunger": {
+    "name": "Hunger",
+    "level": "warn",
+    "text": "Makes players near the hive hungry.",
+    "suit": true
+  },
+  "extrabees.effect.lightning": {
+    "name": "Lightning",
+    "level": "danger",
+    "text": "Calls lightning down near the hive. It hurts and can set things on fire."
+  },
+  "extrabees.effect.meteor": {
+    "name": "Meteor",
+    "level": "danger",
+    "text": "Rains fireballs around the hive. They set blocks and mobs on fire."
+  },
+  "extrabees.effect.power": {
+    "name": "Power",
+    "level": "good",
+    "text": "Charges RF machines next to the hive."
+  },
+  "extrabees.effect.radioactive": {
+    "name": "Unstable",
+    "level": "warn",
+    "text": "Radiation: hurts every living thing near the hive, you and your animals included. Doesn't break blocks.",
+    "suit": true
+  },
+  "extrabees.effect.slow": {
+    "name": "Slowness",
+    "level": "warn",
+    "text": "Gives Weakness to players near the hive (despite the name).",
+    "suit": true
+  },
+  "extrabees.effect.spawn_creeper": {
+    "name": "Creepers",
+    "level": "danger",
+    "text": "Spawns Creepers around the hive. They blow up blocks."
+  },
+  "extrabees.effect.spawn_skeleton": {
+    "name": "Skeletons",
+    "level": "danger",
+    "text": "Spawns Skeletons around the hive."
+  },
+  "extrabees.effect.spawn_zombie": {
+    "name": "Zombies",
+    "level": "danger",
+    "text": "Spawns Zombies around the hive."
+  },
+  "extrabees.effect.teleport": {
+    "name": "Teleport",
+    "level": "warn",
+    "text": "Teleports mobs near the hive to random spots and makes them dizzy."
+  },
+  "extrabees.effect.water": {
+    "name": "Water",
+    "level": "good",
+    "text": "Fills tanks next to the hive with water."
+  },
+  "extrabees.effect.wither": {
+    "name": "Wither",
+    "level": "warn",
+    "text": "Gives Wither to players near the hive.",
+    "suit": true
+  },
+  "forestry.effectAggressive": {
+    "name": "Aggressive",
+    "level": "warn",
+    "text": "Stings every living thing near the hive, you and your animals included.",
+    "suit": true
+  },
+  "forestry.effectBeatific": {
+    "name": "Beatific",
+    "level": "good",
+    "text": "Gives Regeneration to players near the hive."
+  },
+  "forestry.effectCreeper": {
+    "name": "Creeper",
+    "level": "danger",
+    "text": "Hisses and explodes next to players who aren't fully protected. It hurts you but doesn't break blocks.",
+    "suit": true
+  },
+  "forestry.effectDrunkard": {
+    "name": "Drunkard",
+    "level": "warn",
+    "text": "Gives Nausea to players near the hive.",
+    "suit": true
+  },
+  "forestry.effectExploration": {
+    "name": "Explorer",
+    "level": "good",
+    "text": "Gives experience to players near the hive."
+  },
+  "forestry.effectFertile": {
+    "name": "Fertile",
+    "level": "good",
+    "text": "Makes plants near the hive grow faster."
+  },
+  "forestry.effectFestiveEaster": {
+    "name": "Festive",
+    "level": "info",
+    "text": "No real effect. Harmless."
+  },
+  "forestry.effectGlacial": {
+    "name": "Freezing",
+    "level": "danger",
+    "text": "Freezes water near the hive into ice (depends on the climate). Can break water setups and farms."
+  },
+  "forestry.effectHeroic": {
+    "name": "Heroic",
+    "level": "good",
+    "text": "Hurts hostile mobs near the hive."
+  },
+  "forestry.effectIgnition": {
+    "name": "Flammable",
+    "level": "warn",
+    "text": "Sets players and mobs near the hive on fire. Blocks don't burn.",
+    "suit": true
+  },
+  "forestry.effectMiasmic": {
+    "name": "Poison",
+    "level": "warn",
+    "text": "Poisons players near the hive.",
+    "suit": true
+  },
+  "forestry.effectMisanthrope": {
+    "name": "Misanthrope",
+    "level": "warn",
+    "text": "Hurts players near the hive (not mobs).",
+    "suit": true
+  },
+  "forestry.effectMycophilic": {
+    "name": "Mycophilic",
+    "level": "danger",
+    "text": "Turns grass and dirt near the hive into mycelium, grows giant mushrooms and turns cows into mooshrooms."
+  },
+  "forestry.effectRadioactive": {
+    "name": "Radioactive",
+    "level": "danger",
+    "text": "Hurts everything near the hive and DESTROYS BLOCKS around it (not machines or chests). Only breaks blocks while the mobGriefing game rule is on.",
+    "suit": true
+  },
+  "forestry.effectReanimation": {
+    "name": "Reanimation",
+    "level": "danger",
+    "text": "Brings dropped items near the hive back to life: bones and arrows become Skeletons, rotten flesh Zombies, blaze rods Blazes."
+  },
+  "forestry.effectRepulsion": {
+    "name": "Repulsion",
+    "level": "good",
+    "text": "Makes hostile mobs near the hive run away from players."
+  },
+  "forestry.effectResurrection": {
+    "name": "Resurrection",
+    "level": "danger",
+    "text": "Brings dropped items near the hive back to life: gunpowder becomes Creepers, ender pearls Endermen, string and spider eyes Spiders, ghast tears Ghasts, and a Dragon Egg THE ENDER DRAGON."
+  },
+  "forestry.effectSnowing": {
+    "name": "Snow",
+    "level": "warn",
+    "text": "Covers the ground near the hive with snow layers (not in hot places)."
+  },
+  "gregtech.effectMachineBoost": {
+    "name": "Machine Booster",
+    "level": "good",
+    "text": "Speeds up working GregTech machines near the hive."
+  },
+  "gregtech.effectTreetwister": {
+    "name": "Treetwister",
+    "level": "info",
+    "text": "Turns saplings near the hive into other saplings, only in some dimensions."
+  },
+  "magicbees.effectAblaze": {
+    "name": "Ablaze",
+    "level": "danger",
+    "text": "Spawns Blazes around the hive. They shoot fireballs and set things on fire."
+  },
+  "magicbees.effectBatty": {
+    "name": "Batty",
+    "level": "info",
+    "text": "Spawns bats around the hive. Harmless, but they pile up."
+  },
+  "magicbees.effectBovine": {
+    "name": "Bovine",
+    "level": "info",
+    "text": "Spawns cows around the hive. Harmless, but they pile up."
+  },
+  "magicbees.effectBrainy": {
+    "name": "Brainy",
+    "level": "danger",
+    "text": "Spawns Brainy Zombies (Thaumcraft) when players come near. They attack you."
+  },
+  "magicbees.effectCanine": {
+    "name": "Howling",
+    "level": "warn",
+    "text": "Spawns wolves around the hive. They pile up."
+  },
+  "magicbees.effectCatty": {
+    "name": "Catty",
+    "level": "info",
+    "text": "Spawns ocelots around the hive. Harmless, but they pile up."
+  },
+  "magicbees.effectChicken": {
+    "name": "Plucky",
+    "level": "info",
+    "text": "Spawns chickens around the hive. Harmless, but they pile up."
+  },
+  "magicbees.effectCrumbling": {
+    "name": "Crumbling",
+    "level": "danger",
+    "text": "Crumbles stone blocks around the hive: stone into cobblestone, cobblestone into gravel, stone bricks into cracked ones."
+  },
+  "magicbees.effectCurative": {
+    "name": "Cleansing",
+    "level": "good",
+    "text": "Clears potion effects from players near the hive, like drinking milk."
+  },
+  "magicbees.effectDigSpeed": {
+    "name": "Mining",
+    "level": "good",
+    "text": "Gives Haste to players near the hive."
+  },
+  "magicbees.effectDreaming": {
+    "name": "Dreaming",
+    "level": "danger",
+    "text": "Changes blocks around the hive into Botania blocks (Livingrock, Livingwood)."
+  },
+  "magicbees.effectGhastly": {
+    "name": "Ghastly",
+    "level": "danger",
+    "text": "Spawns Ghasts around the hive. Their fireballs blow up blocks."
+  },
+  "magicbees.effectHorse": {
+    "name": "Neighsayer",
+    "level": "info",
+    "text": "Spawns horses around the hive. Harmless, but they pile up."
+  },
+  "magicbees.effectInvisibility": {
+    "name": "Invisibility",
+    "level": "good",
+    "text": "Makes players near the hive invisible."
+  },
+  "magicbees.effectMoveSpeed": {
+    "name": "Swiftness",
+    "level": "good",
+    "text": "Gives Speed to players near the hive."
+  },
+  "magicbees.effectNodeEmpower": {
+    "name": "Empowering",
+    "level": "good",
+    "text": "Makes Thaumcraft aura nodes near the hive stronger."
+  },
+  "magicbees.effectNodePurifying": {
+    "name": "Purifying",
+    "level": "good",
+    "text": "Turns Thaumcraft aura nodes near the hive into Pure nodes."
+  },
+  "magicbees.effectNodeRavening": {
+    "name": "Ravening",
+    "level": "danger",
+    "text": "Turns Thaumcraft aura nodes near the hive into Hungry nodes, which EAT blocks around them."
+  },
+  "magicbees.effectNodeRepair": {
+    "name": "Magnification",
+    "level": "good",
+    "text": "Heals damaged Thaumcraft aura nodes near the hive."
+  },
+  "magicbees.effectNodeTainting": {
+    "name": "Tainting",
+    "level": "danger",
+    "text": "Turns Thaumcraft aura nodes near the hive into Tainted nodes, which spread Taint."
+  },
+  "magicbees.effectPorcine": {
+    "name": "Porcine",
+    "level": "info",
+    "text": "Spawns pigs around the hive. Harmless, but they pile up."
+  },
+  "magicbees.effectSheep": {
+    "name": "Wooly",
+    "level": "info",
+    "text": "Spawns sheep around the hive. Harmless, but they pile up."
+  },
+  "magicbees.effectSlowSpeed": {
+    "name": "Time Warp",
+    "level": "warn",
+    "text": "Gives Slowness to players near the hive.",
+    "suit": true
+  },
+  "magicbees.effectSpidery": {
+    "name": "Spidery",
+    "level": "danger",
+    "text": "Spawns Spiders around the hive."
+  },
+  "magicbees.effectTransmuting": {
+    "name": "Transmuting",
+    "level": "danger",
+    "text": "Changes blocks around the hive to match the biome (dirt, sand, stone and so on)."
+  },
+  "magicbees.effectVisRecharge": {
+    "name": "Recharging",
+    "level": "good",
+    "text": "Recharges Thaumcraft aura nodes near the hive."
+  },
+  "magicbees.effectWispy": {
+    "name": "Wispy",
+    "level": "danger",
+    "text": "Spawns Thaumcraft Wisps around the hive. They attack you."
+  },
+  "magicbees.effectWithering": {
+    "name": "Withering",
+    "level": "warn",
+    "text": "Gives Wither to players near the hive.",
+    "suit": true
+  }
+}

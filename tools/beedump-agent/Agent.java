@@ -67,6 +67,14 @@ public class Agent {
         return b.append(']').toString();
     }
 
+    /** UID of the effect allele in the species' default genome, e.g. "forestry.effectIgnition" */
+    static String effect(Object root, String uid, int i) {
+        try {
+            Object[] tpl = (Object[]) call(root, "forestry.api.genetics.ISpeciesRoot", "getTemplate", uid);
+            return tpl == null || tpl.length <= i || tpl[i] == null ? "null" : s(tpl[i], "forestry.api.genetics.IAllele", "getUID");
+        } catch (Throwable t) { return "null"; }
+    }
+
     static String dump() throws Exception {
         final String SP = "forestry.api.genetics.IAlleleSpecies", BS = "forestry.api.apiculture.IAlleleBeeSpecies",
                 AL = "forestry.api.genetics.IAllele", REG = "forestry.api.genetics.IAlleleRegistry",
@@ -75,6 +83,7 @@ public class Agent {
         Object reg = am.getField("alleleRegistry").get(null);
         Class<?> beeIface = Class.forName(BS, false, cl);
         Object root = call(reg, REG, "getSpeciesRoot", "rootBees");
+        int effect = ((Enum<?>) Class.forName("forestry.api.apiculture.EnumBeeChromosome", false, cl).getField("EFFECT").get(null)).ordinal();
         StringBuilder sb = new StringBuilder("{\"species\":[");
         boolean first = true;
         for (Object a : ((Map<?, ?>) call(reg, REG, "getRegisteredAlleles")).values()) {
@@ -102,6 +111,7 @@ public class Agent {
               .append(",\"color2\":").append(call(a, SP, "getIconColour", 1))
               .append(",\"products\":").append(products(call(a, BS, "getProductChances")))
               .append(",\"specialty\":").append(products(call(a, BS, "getSpecialtyChances")))
+              .append(",\"effect\":").append(effect(root, uid, effect))
               .append('}');
         }
         sb.append("],\n\"mutations\":[");

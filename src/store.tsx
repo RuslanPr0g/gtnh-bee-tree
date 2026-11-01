@@ -20,6 +20,7 @@ export const VIEWS = {
   can: '⚗ Can breed now',
   base: '● Base only',
   nope: '✗ Not wanted',
+  risky: '⚠ Risky effect',
 } as const;
 export type View = keyof typeof VIEWS;
 

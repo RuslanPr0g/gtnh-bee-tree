@@ -24,6 +24,8 @@ export interface Species {
   color2: number;
   products: Product[];
   specialty: Product[];
+  /** UID of the effect allele in its default genome, e.g. "forestry.effectIgnition" */
+  effect: string | null;
   mod: string;
   /** URL path part: `<mod slug>/<name slug>`, e.g. `magic-bees/abandoned` */
   slug: string;

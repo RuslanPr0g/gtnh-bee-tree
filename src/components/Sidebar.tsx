@@ -3,6 +3,9 @@ import { createPortal } from 'react-dom';
 import { Link } from 'react-router';
 import { MODS, matchesSearch, searchWords, type Species } from '../lib/graph';
 import { BeeImg } from './Bee';
+import { EffectMark } from './BeeEffect';
+import { effectFor } from '../data';
+import { isRisky } from '../lib/effects';
 import { MOD_KEYS, VIEWS, g, useStore, type Filters, type View } from '../store';
 import { beePath } from '../links';
 import { settingsLink } from '../lib/settings';
@@ -31,6 +34,8 @@ export function useVisibleRows(): Species[] {
           return !g.makes[s.uid].length;
         case 'nope':
           return unwanted.has(s.uid);
+        case 'risky':
+          return isRisky(effectFor(s.uid));
       }
     };
     return g.sorted.filter(
@@ -337,6 +342,7 @@ function BeeList({ current, onPick }: { current: string; onPick: () => void }) {
               {!g.makes[s.uid].length && <span className="base"> ● base</span>}
               {have.has(s.uid) && <span className="have"> ✓</span>}
               {unwanted.has(s.uid) && <span className="nope"> ✗</span>}
+              <EffectMark uid={s.uid} />
               <span className="rsub">
                 {MODS[s.mod] ?? s.mod}
                 {s.branch ? ` · ${s.branch}` : ''}

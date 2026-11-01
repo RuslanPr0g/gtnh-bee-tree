@@ -4,6 +4,7 @@ import { MODS, type Product } from '../lib/graph';
 import { BeeImg, Chip, Conditions, pct } from './Bee';
 import { BeeName } from './BeeName';
 import { CombInfo } from './CombInfo';
+import { EffectBanner } from './BeeEffect';
 import { BeeStepper, stepState, useStep } from './BeeStepper';
 import { useSwipe } from '../hooks/useSwipe';
 import { RecipeTree, useTreeState } from './RecipeTree';
@@ -139,6 +140,8 @@ export function BeeDetail({ uid, onList }: { uid: string; onList: () => void }) 
           ))}
         </div>
       </div>
+
+      <EffectBanner uid={uid} />
 
       <div className="facts">
         <div className="fact">

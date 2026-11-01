@@ -17,7 +17,8 @@
       "color": 11534263,
       "color2": 16743462,
       "products": [{ "item": "Mundane Comb", "chance": 0.15 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesSorcerous",
@@ -36,7 +37,8 @@
       "color": 15375002,
       "color2": 16743462,
       "products": [{ "item": "Mundane Comb", "chance": 0.15 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesUnusual",
@@ -55,7 +57,8 @@
       "color": 7525217,
       "color2": 16743462,
       "products": [{ "item": "Mundane Comb", "chance": 0.15 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesAttuned",
@@ -74,7 +77,8 @@
       "color": 34472,
       "color2": 16743462,
       "products": [{ "item": "Mundane Comb", "chance": 0.15 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesEldritch",
@@ -93,7 +97,8 @@
       "color": 9270688,
       "color2": 16743462,
       "products": [{ "item": "Mundane Comb", "chance": 0.15 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesEsoteric",
@@ -112,7 +117,8 @@
       "color": 4249,
       "color2": 16751968,
       "products": [{ "item": "Occult Comb", "chance": 0.18 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesMysterious",
@@ -131,7 +137,8 @@
       "color": 7744450,
       "color2": 16751968,
       "products": [{ "item": "Occult Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesArcane",
@@ -150,7 +157,8 @@
       "color": 13779679,
       "color2": 16751968,
       "products": [{ "item": "Occult Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Enchanting Drop", "chance": 0.09 }]
+      "specialty": [{ "item": "Enchanting Drop", "chance": 0.09 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesCharmed",
@@ -169,7 +177,8 @@
       "color": 4779756,
       "color2": 16751968,
       "products": [{ "item": "Otherworldy Comb", "chance": 0.18 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesEnchanted",
@@ -188,7 +197,8 @@
       "color": 1632038,
       "color2": 16751968,
       "products": [{ "item": "Otherworldy Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesSupernatural",
@@ -207,7 +217,8 @@
       "color": 22036,
       "color2": 16751968,
       "products": [{ "item": "Otherworldy Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Unusual Pollen", "chance": 0.08 }]
+      "specialty": [{ "item": "Unusual Pollen", "chance": 0.08 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesEthereal",
@@ -229,7 +240,8 @@
         { "item": "Occult Comb", "chance": 0.1 },
         { "item": "Otherworldy Comb", "chance": 0.1 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesWatery",
@@ -248,7 +260,8 @@
       "color": 3226718,
       "color2": 16743462,
       "products": [{ "item": "Watery Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Ice", "chance": 0.025 }]
+      "specialty": [{ "item": "Ice", "chance": 0.025 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesEarthen",
@@ -267,7 +280,8 @@
       "color": 7897645,
       "color2": 16743462,
       "products": [{ "item": "Earthy Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesFirey",
@@ -286,7 +300,8 @@
       "color": 13848857,
       "color2": 16743462,
       "products": [{ "item": "Firey Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesWindy",
@@ -305,7 +320,8 @@
       "color": 16776634,
       "color2": 16743462,
       "products": [{ "item": "Windy Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesPupil",
@@ -324,7 +340,8 @@
       "color": 16776960,
       "color2": 16743462,
       "products": [{ "item": "Papery Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesScholarly",
@@ -343,7 +360,8 @@
       "color": 7208960,
       "color2": 16743462,
       "products": [{ "item": "Papery Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Lore Fragment", "chance": 0.02 }]
+      "specialty": [{ "item": "Lore Fragment", "chance": 0.02 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesSavant",
@@ -362,7 +380,8 @@
       "color": 16752706,
       "color2": 16743462,
       "products": [{ "item": "Papery Comb", "chance": 0.4 }],
-      "specialty": [{ "item": "Lore Fragment", "chance": 0.05 }]
+      "specialty": [{ "item": "Lore Fragment", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesAware",
@@ -381,7 +400,8 @@
       "color": 6198709,
       "color2": 16743462,
       "products": [{ "item": "Memory Comb", "chance": 0.18 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesSpirit",
@@ -400,7 +420,8 @@
       "color": 11703883,
       "color2": 16743462,
       "products": [{ "item": "Memory Comb", "chance": 0.22 }],
-      "specialty": [{ "item": "Soul Comb", "chance": 0.16 }]
+      "specialty": [{ "item": "Soul Comb", "chance": 0.16 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesSoul",
@@ -419,7 +440,8 @@
       "color": 8214811,
       "color2": 16743462,
       "products": [{ "item": "Memory Comb", "chance": 0.28 }],
-      "specialty": [{ "item": "Soul Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Soul Comb", "chance": 0.2 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesSkulking",
@@ -438,7 +460,8 @@
       "color": 5392423,
       "color2": 14766646,
       "products": [{ "item": "Furtive Comb", "chance": 0.1 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesGhastly",
@@ -457,7 +480,8 @@
       "color": 13421806,
       "color2": 12552060,
       "products": [{ "item": "Furtive Comb", "chance": 0.08 }],
-      "specialty": [{ "item": "Ghast Tear", "chance": 0.099 }]
+      "specialty": [{ "item": "Ghast Tear", "chance": 0.099 }],
+      "effect": "magicbees.effectGhastly"
     },
     {
       "uid": "magicbees.speciesSpidery",
@@ -479,7 +503,8 @@
         { "item": "String", "chance": 0.08 },
         { "item": "Furtive Comb", "chance": 0.13 }
       ],
-      "specialty": [{ "item": "Spider Eye", "chance": 0.08 }]
+      "specialty": [{ "item": "Spider Eye", "chance": 0.08 }],
+      "effect": "magicbees.effectSpidery"
     },
     {
       "uid": "magicbees.speciesSmouldering",
@@ -501,7 +526,8 @@
         { "item": "Molten Comb", "chance": 0.1 },
         { "item": "Furtive Comb", "chance": 0.1 }
       ],
-      "specialty": [{ "item": "Blaze Rod", "chance": 0.05 }]
+      "specialty": [{ "item": "Blaze Rod", "chance": 0.05 }],
+      "effect": "magicbees.effectAblaze"
     },
     {
       "uid": "magicbees.speciesTCBrainy",
@@ -523,7 +549,8 @@
         { "item": "Rotten Flesh", "chance": 0.06 },
         { "item": "Furtive Comb", "chance": 0.1 }
       ],
-      "specialty": [{ "item": "Zombie Brain", "chance": 0.02 }]
+      "specialty": [{ "item": "Zombie Brain", "chance": 0.02 }],
+      "effect": "magicbees.effectBrainy"
     },
     {
       "uid": "magicbees.speciesBigBad",
@@ -546,7 +573,8 @@
         { "item": "Raw Beef", "chance": 0.12 },
         { "item": "Furtive Comb", "chance": 0.18 }
       ],
-      "specialty": [{ "item": "Melon Slice", "chance": 0.2 }]
+      "specialty": [{ "item": "Melon Slice", "chance": 0.2 }],
+      "effect": "magicbees.effectCanine"
     },
     {
       "uid": "magicbees.speciesTCChicken",
@@ -569,7 +597,8 @@
         { "item": "Egg", "chance": 0.08 },
         { "item": "Chicken Nugget", "chance": 0.09 },
         { "item": "Feather", "chance": 0.08 }
-      ]
+      ],
+      "effect": "magicbees.effectChicken"
     },
     {
       "uid": "magicbees.speciesTCBeef",
@@ -591,7 +620,8 @@
       "specialty": [
         { "item": "Beef Nugget", "chance": 0.09 },
         { "item": "Leather", "chance": 0.165 }
-      ]
+      ],
+      "effect": "magicbees.effectBovine"
     },
     {
       "uid": "magicbees.speciesTCPork",
@@ -613,7 +643,8 @@
       "specialty": [
         { "item": "Pork Nugget", "chance": 0.09 },
         { "item": "Carrot", "chance": 0.165 }
-      ]
+      ],
+      "effect": "magicbees.effectPorcine"
     },
     {
       "uid": "magicbees.speciesTCBatty",
@@ -635,7 +666,8 @@
       "specialty": [
         { "item": "Gunpowder", "chance": 0.04 },
         { "item": "String", "chance": 0.2 }
-      ]
+      ],
+      "effect": "magicbees.effectBatty"
     },
     {
       "uid": "magicbees.speciesSheepish",
@@ -657,7 +689,8 @@
       "specialty": [
         { "item": "Wheat", "chance": 0.24 },
         { "item": "Wool", "chance": 0.16 }
-      ]
+      ],
+      "effect": "magicbees.effectSheep"
     },
     {
       "uid": "magicbees.speciesHorse",
@@ -679,7 +712,8 @@
       "specialty": [
         { "item": "Leather", "chance": 0.24 },
         { "item": "Apple", "chance": 0.38 }
-      ]
+      ],
+      "effect": "magicbees.effectHorse"
     },
     {
       "uid": "magicbees.speciesCatty",
@@ -698,7 +732,8 @@
       "color": 15525508,
       "color2": 5651492,
       "products": [{ "item": "Furtive Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Raw Cod", "chance": 0.24 }]
+      "specialty": [{ "item": "Raw Cod", "chance": 0.24 }],
+      "effect": "magicbees.effectCatty"
     },
     {
       "uid": "magicbees.speciesTimely",
@@ -717,7 +752,8 @@
       "color": 13021062,
       "color2": 16743462,
       "products": [{ "item": "Temporal Comb", "chance": 0.16 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "magicbees.effectSlowSpeed"
     },
     {
       "uid": "magicbees.speciesLordly",
@@ -736,7 +772,8 @@
       "color": 13021062,
       "color2": 9306643,
       "products": [{ "item": "Temporal Comb", "chance": 0.19 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectDrunkard"
     },
     {
       "uid": "magicbees.speciesDoctoral",
@@ -755,7 +792,8 @@
       "color": 14542332,
       "color2": 4943500,
       "products": [{ "item": "Temporal Comb", "chance": 0.24 }],
-      "specialty": [{ "item": "Handful of Jelly Babies", "chance": 0.078 }]
+      "specialty": [{ "item": "Handful of Jelly Babies", "chance": 0.078 }],
+      "effect": "forestry.effectHeroic"
     },
     {
       "uid": "magicbees.speciesInfernal",
@@ -774,7 +812,8 @@
       "color": 16718876,
       "color2": 9834240,
       "products": [{ "item": "Molten Comb", "chance": 0.12 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectAggressive"
     },
     {
       "uid": "magicbees.speciesHateful",
@@ -793,7 +832,8 @@
       "color": 14352603,
       "color2": 9834240,
       "products": [{ "item": "Molten Comb", "chance": 0.18 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectMisanthrope"
     },
     {
       "uid": "magicbees.speciesSpiteful",
@@ -812,7 +852,8 @@
       "color": 6278144,
       "color2": 9834240,
       "products": [{ "item": "Molten Comb", "chance": 0.24 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectMisanthrope"
     },
     {
       "uid": "magicbees.speciesWithering",
@@ -831,7 +872,8 @@
       "color": 5987163,
       "color2": 9834240,
       "products": [],
-      "specialty": [{ "item": "Wither Skeleton Bone Chip", "chance": 0.15 }]
+      "specialty": [{ "item": "Wither Skeleton Bone Chip", "chance": 0.15 }],
+      "effect": "magicbees.effectWithering"
     },
     {
       "uid": "magicbees.speciesOblivion",
@@ -850,7 +892,8 @@
       "color": 14009317,
       "color2": 16160511,
       "products": [{ "item": "Forgotten Comb", "chance": 0.14 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectAggressive"
     },
     {
       "uid": "magicbees.speciesNameless",
@@ -869,7 +912,8 @@
       "color": 9217995,
       "color2": 16160511,
       "products": [{ "item": "Forgotten Comb", "chance": 0.19 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectAggressive"
     },
     {
       "uid": "magicbees.speciesAbandoned",
@@ -888,7 +932,8 @@
       "color": 12962700,
       "color2": 16160511,
       "products": [{ "item": "Forgotten Comb", "chance": 0.24 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectRepulsion"
     },
     {
       "uid": "magicbees.speciesForlorn",
@@ -907,7 +952,8 @@
       "color": 13346956,
       "color2": 16160511,
       "products": [{ "item": "Forgotten Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectRepulsion"
     },
     {
       "uid": "magicbees.speciesDraconic",
@@ -926,7 +972,8 @@
       "color": 10442413,
       "color2": 5913442,
       "products": [],
-      "specialty": [{ "item": "Draconic Dust", "chance": 0.15 }]
+      "specialty": [{ "item": "Draconic Dust", "chance": 0.15 }],
+      "effect": "forestry.effectMisanthrope"
     },
     {
       "uid": "magicbees.speciesIron",
@@ -945,7 +992,8 @@
       "color": 6842472,
       "color2": 15329769,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Iron Nugget", "chance": 0.18 }]
+      "specialty": [{ "item": "Iron Nugget", "chance": 0.18 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesGold",
@@ -964,7 +1012,8 @@
       "color": 6834945,
       "color2": 16776971,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Gold Nugget", "chance": 0.16 }]
+      "specialty": [{ "item": "Gold Nugget", "chance": 0.16 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesCopper",
@@ -983,7 +1032,8 @@
       "color": 6834945,
       "color2": 16762906,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Copper Nugget", "chance": 0.2 }]
+      "specialty": [{ "item": "Copper Nugget", "chance": 0.2 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesTin",
@@ -1002,7 +1052,8 @@
       "color": 4086125,
       "color2": 10926795,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Tin Nugget", "chance": 0.2 }]
+      "specialty": [{ "item": "Tin Nugget", "chance": 0.2 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesSilver",
@@ -1021,7 +1072,8 @@
       "color": 7634049,
       "color2": 9879492,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Silver Nugget", "chance": 0.16 }]
+      "specialty": [{ "item": "Silver Nugget", "chance": 0.16 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesLead",
@@ -1040,7 +1092,8 @@
       "color": 9879492,
       "color2": 9546227,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Lead Nugget", "chance": 0.17 }]
+      "specialty": [{ "item": "Lead Nugget", "chance": 0.17 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesAluminum",
@@ -1059,7 +1112,8 @@
       "color": 15592941,
       "color2": 7763574,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Aluminum Oreberry", "chance": 0.2 }]
+      "specialty": [{ "item": "Aluminum Oreberry", "chance": 0.2 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesArdite",
@@ -1078,7 +1132,8 @@
       "color": 7471104,
       "color2": 16752128,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Ardite Nugget", "chance": 0.18 }]
+      "specialty": [{ "item": "Ardite Nugget", "chance": 0.18 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesCobalt",
@@ -1097,7 +1152,8 @@
       "color": 206431,
       "color2": 5876463,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Cobalt Nugget", "chance": 0.18 }]
+      "specialty": [{ "item": "Cobalt Nugget", "chance": 0.18 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesManyullyn",
@@ -1116,7 +1172,8 @@
       "color": 4726125,
       "color2": 12423921,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Manyullyn Nugget", "chance": 0.18 }]
+      "specialty": [{ "item": "Manyullyn Nugget", "chance": 0.18 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesDiamond",
@@ -1135,7 +1192,8 @@
       "color": 2135425,
       "color2": 9303523,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Diamond Shard", "chance": 0.06 }]
+      "specialty": [{ "item": "Diamond Shard", "chance": 0.06 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesEmerald",
@@ -1154,7 +1212,8 @@
       "color": 21248,
       "color2": 1564002,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Emerald Shard", "chance": 0.04 }]
+      "specialty": [{ "item": "Emerald Shard", "chance": 0.04 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesApatite",
@@ -1173,7 +1232,8 @@
       "color": 3057644,
       "color2": 7505,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Apatite Shard", "chance": 0.1 }]
+      "specialty": [{ "item": "Apatite Shard", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesSilicon",
@@ -1192,7 +1252,8 @@
       "color": 11379367,
       "color2": 7562869,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Raw Silicon Dust", "chance": 0.3 }]
+      "specialty": [{ "item": "Raw Silicon Dust", "chance": 0.3 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesCertus",
@@ -1211,7 +1272,8 @@
       "color": 9684991,
       "color2": 10926279,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Certus Quartz", "chance": 0.08 }]
+      "specialty": [{ "item": "Certus Quartz", "chance": 0.08 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesFluix",
@@ -1230,7 +1292,8 @@
       "color": 16540574,
       "color2": 5457815,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Fluix Crystal", "chance": 0.06 }]
+      "specialty": [{ "item": "Fluix Crystal", "chance": 0.06 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesMutable",
@@ -1252,7 +1315,8 @@
         { "item": "Transmuting Comb", "chance": 0.1 },
         { "item": "Parched Comb", "chance": 0.3 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesTransmuting",
@@ -1276,7 +1340,8 @@
         { "item": "Transmuting Comb", "chance": 0.3 },
         { "item": "Simmering Comb", "chance": 0.05 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "magicbees.effectTransmuting"
     },
     {
       "uid": "magicbees.speciesCrumbling",
@@ -1300,7 +1365,8 @@
         { "item": "Cocoa Comb", "chance": 0.15 },
         { "item": "Transmuting Comb", "chance": 0.3 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "magicbees.effectCrumbling"
     },
     {
       "uid": "magicbees.speciesInvisible",
@@ -1319,7 +1385,8 @@
       "color": 16764159,
       "color2": 16777215,
       "products": [{ "item": "Mundane Comb", "chance": 0.35 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "magicbees.effectInvisibility"
     },
     {
       "uid": "magicbees.speciesTCAir",
@@ -1338,7 +1405,8 @@
       "color": 14276150,
       "color2": 10066329,
       "products": [{ "item": "Glittering Windy Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Breezey Propolis", "chance": 0.18 }]
+      "specialty": [{ "item": "Breezey Propolis", "chance": 0.18 }],
+      "effect": "magicbees.effectMoveSpeed"
     },
     {
       "uid": "magicbees.speciesTCFire",
@@ -1357,7 +1425,8 @@
       "color": 15010571,
       "color2": 10066329,
       "products": [{ "item": "Glittering Firey Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Burning Propolis", "chance": 0.18 }]
+      "specialty": [{ "item": "Burning Propolis", "chance": 0.18 }],
+      "effect": "forestry.effectIgnition"
     },
     {
       "uid": "magicbees.speciesTCWater",
@@ -1376,7 +1445,8 @@
       "color": 3592153,
       "color2": 10066329,
       "products": [{ "item": "Glittering Watery Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Flowing Propolis", "chance": 0.18 }]
+      "specialty": [{ "item": "Flowing Propolis", "chance": 0.18 }],
+      "effect": "magicbees.effectCurative"
     },
     {
       "uid": "magicbees.speciesTCEarth",
@@ -1395,7 +1465,8 @@
       "color": 20736,
       "color2": 10066329,
       "products": [{ "item": "Glittering Earthy Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Stony Propolis", "chance": 0.18 }]
+      "specialty": [{ "item": "Stony Propolis", "chance": 0.18 }],
+      "effect": "magicbees.effectDigSpeed"
     },
     {
       "uid": "magicbees.speciesTCOrder",
@@ -1414,7 +1485,8 @@
       "color": 11154172,
       "color2": 10066329,
       "products": [{ "item": "Glittering Ordered Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Ordered Propolis", "chance": 0.18 }]
+      "specialty": [{ "item": "Ordered Propolis", "chance": 0.18 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesTCChaos",
@@ -1433,7 +1505,8 @@
       "color": 13421772,
       "color2": 10066329,
       "products": [{ "item": "Glittering Entropic Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Chaotic Propolis", "chance": 0.18 }]
+      "specialty": [{ "item": "Chaotic Propolis", "chance": 0.18 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesTCEssentia",
@@ -1452,7 +1525,8 @@
       "color": 13421772,
       "color2": 10066329,
       "products": [],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesTCVis",
@@ -1471,7 +1545,8 @@
       "color": 19609,
       "color2": 6774481,
       "products": [{ "item": "Memory Comb", "chance": 0.1 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesTCRejuvenating",
@@ -1490,7 +1565,8 @@
       "color": 9556185,
       "color2": 6774481,
       "products": [{ "item": "Memory Comb", "chance": 0.18 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "magicbees.effectVisRecharge"
     },
     {
       "uid": "magicbees.speciesTCEmpowering",
@@ -1509,7 +1585,8 @@
       "color": 9895868,
       "color2": 6774481,
       "products": [{ "item": "Memory Comb", "chance": 0.14 }],
-      "specialty": [{ "item": "Crystalline Pollen Cluster", "chance": 0.02 }]
+      "specialty": [{ "item": "Crystalline Pollen Cluster", "chance": 0.02 }],
+      "effect": "magicbees.effectNodeEmpower"
     },
     {
       "uid": "magicbees.speciesTCNexus",
@@ -1531,7 +1608,8 @@
         { "item": "Temporal Comb", "chance": 0.12 },
         { "item": "Memory Comb", "chance": 0.25 }
       ],
-      "specialty": [{ "item": "Crystalline Pollen Cluster", "chance": 0.02 }]
+      "specialty": [{ "item": "Crystalline Pollen Cluster", "chance": 0.02 }],
+      "effect": "magicbees.effectNodeRepair"
     },
     {
       "uid": "magicbees.speciesTCFlux",
@@ -1553,7 +1631,8 @@
         { "item": "Pulsating Mesh", "chance": 0.213 },
         { "item": "Memory Comb", "chance": 0.18 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "magicbees.effectNodeTainting"
     },
     {
       "uid": "magicbees.speciesTCPure",
@@ -1572,7 +1651,8 @@
       "color": 14827365,
       "color2": 6774481,
       "products": [{ "item": "Memory Comb", "chance": 0.16 }],
-      "specialty": [{ "item": "Soul Comb", "chance": 0.19 }]
+      "specialty": [{ "item": "Soul Comb", "chance": 0.19 }],
+      "effect": "magicbees.effectNodePurifying"
     },
     {
       "uid": "magicbees.speciesTCHungry",
@@ -1591,7 +1671,8 @@
       "color": 14460386,
       "color2": 6774481,
       "products": [{ "item": "Memory Comb", "chance": 0.28 }],
-      "specialty": [{ "item": "Temporal Comb", "chance": 0.195 }]
+      "specialty": [{ "item": "Temporal Comb", "chance": 0.195 }],
+      "effect": "magicbees.effectNodeRavening"
     },
     {
       "uid": "magicbees.speciesTCWispy",
@@ -1610,7 +1691,8 @@
       "color": 10270933,
       "color2": 14766646,
       "products": [{ "item": "Silky Comb", "chance": 0.22 }],
-      "specialty": [{ "item": "Silk Wisp", "chance": 0.04 }]
+      "specialty": [{ "item": "Silk Wisp", "chance": 0.04 }],
+      "effect": "magicbees.effectWispy"
     },
     {
       "uid": "magicbees.speciesTCVoid",
@@ -1629,7 +1711,8 @@
       "color": 1575465,
       "color2": 4926068,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Void Metal Nugget", "chance": 0.155 }]
+      "specialty": [{ "item": "Void Metal Nugget", "chance": 0.155 }],
+      "effect": "forestry.effectGlacial"
     },
     {
       "uid": "magicbees.speciesTEElectrum",
@@ -1648,7 +1731,8 @@
       "color": 15398814,
       "color2": 16743462,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Electrum Nugget", "chance": 0.18 }]
+      "specialty": [{ "item": "Electrum Nugget", "chance": 0.18 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesTEPlatinum",
@@ -1667,7 +1751,8 @@
       "color": 10414071,
       "color2": 16743462,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Platinum Nugget", "chance": 0.18 }]
+      "specialty": [{ "item": "Platinum Nugget", "chance": 0.18 }],
+      "effect": "forestry.effectIgnition"
     },
     {
       "uid": "magicbees.speciesTENickel",
@@ -1686,7 +1771,8 @@
       "color": 11848073,
       "color2": 16743462,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Nickel Nugget", "chance": 0.18 }]
+      "specialty": [{ "item": "Nickel Nugget", "chance": 0.18 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesTEInvar",
@@ -1705,7 +1791,8 @@
       "color": 13493153,
       "color2": 16743462,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Invar Nugget", "chance": 0.18 }]
+      "specialty": [{ "item": "Invar Nugget", "chance": 0.18 }],
+      "effect": "forestry.effectIgnition"
     },
     {
       "uid": "magicbees.speciesTEBronze",
@@ -1724,7 +1811,8 @@
       "color": 11889927,
       "color2": 16743462,
       "products": [{ "item": "Honey Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Bronze Nugget", "chance": 0.18 }]
+      "specialty": [{ "item": "Bronze Nugget", "chance": 0.18 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesBotRooted",
@@ -1743,7 +1831,8 @@
       "color": 43008,
       "color2": 16757435,
       "products": [{ "item": "Mundane Comb", "chance": 0.1 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesBotBotanic",
@@ -1782,7 +1871,8 @@
         { "item": "Mystical Gray Petal", "chance": 0.01 },
         { "item": "Mystical Green Petal", "chance": 0.01 },
         { "item": "Mystical Light Gray Petal", "chance": 0.01 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesBotBlossom",
@@ -1821,7 +1911,8 @@
         { "item": "Mystical Gray Petal", "chance": 0.04 },
         { "item": "Mystical Green Petal", "chance": 0.04 },
         { "item": "Mystical Light Gray Petal", "chance": 0.04 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesBotFloral",
@@ -1860,7 +1951,8 @@
         { "item": "Mystical Gray Petal", "chance": 0.16 },
         { "item": "Mystical Green Petal", "chance": 0.16 },
         { "item": "Mystical Light Gray Petal", "chance": 0.16 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesBotVazbee",
@@ -1889,7 +1981,8 @@
         { "item": "Infestation Spores", "chance": 0.04 },
         { "item": "Pasture Seeds", "chance": 0.04 },
         { "item": "Boreal Seeds", "chance": 0.04 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "magicbees.speciesBotSomnolent",
@@ -1911,7 +2004,8 @@
         { "item": "Watery Comb", "chance": 0.08 },
         { "item": "Soul Comb", "chance": 0.15 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "magicbees.effectSlowSpeed"
     },
     {
       "uid": "magicbees.speciesBotDreaming",
@@ -1933,7 +2027,8 @@
         { "item": "Soul Comb", "chance": 0.33 },
         { "item": "Watery Comb", "chance": 0.16 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "magicbees.effectSlowSpeed"
     },
     {
       "uid": "magicbees.speciesBotAlfheim",
@@ -1952,7 +2047,8 @@
       "color": -3394676,
       "color2": -6716851,
       "products": [{ "item": "Otherworldy Comb", "chance": 0.28 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "magicbees.effectDreaming"
     },
     {
       "uid": "magicbees.speciesAESkystone",
@@ -1971,7 +2067,8 @@
       "color": 4948865,
       "color2": 2435369,
       "products": [{ "item": "Earthy Comb", "chance": 0.19 }],
-      "specialty": [{ "item": "Sky Stone", "chance": 0.02 }]
+      "specialty": [{ "item": "Sky Stone", "chance": 0.02 }],
+      "effect": "forestry.effectIgnition"
     },
     {
       "uid": "forestry.speciesForest",
@@ -1990,7 +2087,8 @@
       "color": -15085332,
       "color2": -9194,
       "products": [{ "item": "Honey Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesMeadows",
@@ -2009,7 +2107,8 @@
       "color": -1109218,
       "color2": -9194,
       "products": [{ "item": "Honey Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesCommon",
@@ -2028,7 +2127,8 @@
       "color": -5066062,
       "color2": -9194,
       "products": [{ "item": "Honey Comb", "chance": 0.35 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesCultivated",
@@ -2047,7 +2147,8 @@
       "color": -11062036,
       "color2": -9194,
       "products": [{ "item": "Honey Comb", "chance": 0.4 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesNoble",
@@ -2066,7 +2167,8 @@
       "color": -1271271,
       "color2": -9194,
       "products": [{ "item": "Dripping Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesMajestic",
@@ -2085,7 +2187,8 @@
       "color": -8454144,
       "color2": -9194,
       "products": [{ "item": "Dripping Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesImperial",
@@ -2107,7 +2210,8 @@
         { "item": "Dripping Comb", "chance": 0.2 },
         { "item": "Royal Jelly", "chance": 0.15 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectBeatific"
     },
     {
       "uid": "forestry.speciesDiligent",
@@ -2126,7 +2230,8 @@
       "color": -4056596,
       "color2": -9194,
       "products": [{ "item": "Stringy Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesUnweary",
@@ -2145,7 +2250,8 @@
       "color": -15078310,
       "color2": -9194,
       "products": [{ "item": "Stringy Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesIndustrious",
@@ -2167,7 +2273,8 @@
         { "item": "Stringy Comb", "chance": 0.2 },
         { "item": "Pollen Cluster", "chance": 0.15 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesSteadfast",
@@ -2186,7 +2293,8 @@
       "color": -11719915,
       "color2": -9194,
       "products": [{ "item": "Cocoa Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesValiant",
@@ -2205,7 +2313,8 @@
       "color": -10327075,
       "color2": -9194,
       "products": [{ "item": "Cocoa Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Sugar", "chance": 0.15 }]
+      "specialty": [{ "item": "Sugar", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesHeroic",
@@ -2224,7 +2333,8 @@
       "color": -4991516,
       "color2": -9194,
       "products": [{ "item": "Cocoa Comb", "chance": 0.4 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectHeroic"
     },
     {
       "uid": "forestry.speciesSinister",
@@ -2243,7 +2353,8 @@
       "color": -4991516,
       "color2": -6675677,
       "products": [{ "item": "Simmering Comb", "chance": 0.45 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectAggressive"
     },
     {
       "uid": "forestry.speciesFiendish",
@@ -2265,7 +2376,8 @@
         { "item": "Simmering Comb", "chance": 0.55 },
         { "item": "Ashes", "chance": 0.15 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectAggressive"
     },
     {
       "uid": "forestry.speciesDemonic",
@@ -2287,7 +2399,8 @@
         { "item": "Glowstone Dust", "chance": 0.15 },
         { "item": "Simmering Comb", "chance": 0.45 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectIgnition"
     },
     {
       "uid": "forestry.speciesModest",
@@ -2306,7 +2419,8 @@
       "color": -3817850,
       "color2": -9194,
       "products": [{ "item": "Parched Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesFrugal",
@@ -2325,7 +2439,8 @@
       "color": -1516367,
       "color2": -9194,
       "products": [{ "item": "Parched Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesAustere",
@@ -2344,7 +2459,8 @@
       "color": -1342,
       "color2": -9194,
       "products": [{ "item": "Parched Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Powdery Comb", "chance": 0.5 }]
+      "specialty": [{ "item": "Powdery Comb", "chance": 0.5 }],
+      "effect": "forestry.effectCreeper"
     },
     {
       "uid": "forestry.speciesTropical",
@@ -2363,7 +2479,8 @@
       "color": -13139936,
       "color2": -9194,
       "products": [{ "item": "Silky Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectMiasmic"
     },
     {
       "uid": "forestry.speciesExotic",
@@ -2382,7 +2499,8 @@
       "color": -13612797,
       "color2": -9194,
       "products": [{ "item": "Silky Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectMiasmic"
     },
     {
       "uid": "forestry.speciesEdenic",
@@ -2401,7 +2519,8 @@
       "color": -13026035,
       "color2": -9194,
       "products": [{ "item": "Silky Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectExploration"
     },
     {
       "uid": "forestry.speciesEnded",
@@ -2420,7 +2539,8 @@
       "color": -2065926,
       "color2": -2498914,
       "products": [{ "item": "Mysterious Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectMisanthrope"
     },
     {
       "uid": "forestry.speciesSpectral",
@@ -2439,7 +2559,8 @@
       "color": -5665811,
       "color2": -2498914,
       "products": [{ "item": "Mysterious Comb", "chance": 0.5 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectReanimation"
     },
     {
       "uid": "forestry.speciesPhantasmal",
@@ -2458,7 +2579,8 @@
       "color": -3407622,
       "color2": -2498914,
       "products": [{ "item": "Mysterious Comb", "chance": 0.4 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectResurrection"
     },
     {
       "uid": "forestry.speciesWintry",
@@ -2477,7 +2599,8 @@
       "color": -6225976,
       "color2": -2427405,
       "products": [{ "item": "Frozen Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectGlacial"
     },
     {
       "uid": "forestry.speciesIcy",
@@ -2499,7 +2622,8 @@
         { "item": "Ice Shard", "chance": 0.2 },
         { "item": "Frozen Comb", "chance": 0.2 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectGlacial"
     },
     {
       "uid": "forestry.speciesGlacial",
@@ -2521,7 +2645,8 @@
         { "item": "Ice Shard", "chance": 0.4 },
         { "item": "Frozen Comb", "chance": 0.2 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectGlacial"
     },
     {
       "uid": "forestry.speciesVindictive",
@@ -2540,7 +2665,8 @@
       "color": -1376269,
       "color2": -9194,
       "products": [{ "item": "Irradiated Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectRadioactive"
     },
     {
       "uid": "forestry.speciesVengeful",
@@ -2559,7 +2685,8 @@
       "color": -4006400,
       "color2": -9194,
       "products": [{ "item": "Irradiated Comb", "chance": 0.4 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectRadioactive"
     },
     {
       "uid": "forestry.speciesAvenging",
@@ -2578,7 +2705,8 @@
       "color": -2228480,
       "color2": -9194,
       "products": [{ "item": "Irradiated Comb", "chance": 0.4 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectRadioactive"
     },
     {
       "uid": "forestry.speciesLeporine",
@@ -2600,7 +2728,8 @@
         { "item": "Silky Comb", "chance": 0.3 },
         { "item": "Egg", "chance": 0.1 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectFestiveEaster"
     },
     {
       "uid": "forestry.speciesMerry",
@@ -2622,7 +2751,8 @@
         { "item": "Frozen Comb", "chance": 0.3 },
         { "item": "Ice Shard", "chance": 0.2 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectSnowing"
     },
     {
       "uid": "forestry.speciesTipsy",
@@ -2644,7 +2774,8 @@
         { "item": "Ice Shard", "chance": 0.2 },
         { "item": "Frozen Comb", "chance": 0.3 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectDrunkard"
     },
     {
       "uid": "forestry.speciesTricky",
@@ -2671,7 +2802,8 @@
         { "item": "Creeper Head", "chance": 0.02 },
         { "item": "Head", "chance": 0.02 },
         { "item": "Zombie Head", "chance": 0.02 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesRural",
@@ -2690,7 +2822,8 @@
       "color": -65649,
       "color2": -9194,
       "products": [{ "item": "Wheaten Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesFarmerly",
@@ -2709,7 +2842,8 @@
       "color": -2910424,
       "color2": -9194,
       "products": [{ "item": "Wheaten Comb", "chance": 0.27 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesAgrarian",
@@ -2728,7 +2862,8 @@
       "color": -13707,
       "color2": -8121,
       "products": [{ "item": "Wheaten Comb", "chance": 0.35 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectFertile"
     },
     {
       "uid": "forestry.speciesMarshy",
@@ -2747,7 +2882,8 @@
       "color": -11246042,
       "color2": -9194,
       "products": [{ "item": "Mossy Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesMiry",
@@ -2766,7 +2902,8 @@
       "color": -7164094,
       "color2": -9194,
       "products": [{ "item": "Mossy Comb", "chance": 0.36 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesBoggy",
@@ -2785,7 +2922,8 @@
       "color": -9860792,
       "color2": -9194,
       "products": [{ "item": "Mossy Comb", "chance": 0.39 }],
-      "specialty": [{ "item": "Peat", "chance": 0.08 }]
+      "specialty": [{ "item": "Peat", "chance": 0.08 }],
+      "effect": "forestry.effectMycophilic"
     },
     {
       "uid": "forestry.speciesMonastic",
@@ -2804,7 +2942,8 @@
       "color": -12437732,
       "color2": -2122,
       "products": [{ "item": "Wheaten Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Mellow Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Mellow Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesSecluded",
@@ -2823,7 +2962,8 @@
       "color": -8690124,
       "color2": -2122,
       "products": [],
-      "specialty": [{ "item": "Mellow Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Mellow Comb", "chance": 0.2 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "forestry.speciesHermitic",
@@ -2842,7 +2982,8 @@
       "color": -11156,
       "color2": -2122,
       "products": [],
-      "specialty": [{ "item": "Mellow Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Mellow Comb", "chance": 0.2 }],
+      "effect": "forestry.effectRepulsion"
     },
     {
       "uid": "extrabees.species.arid",
@@ -2861,7 +3002,8 @@
       "color": -4265900,
       "color2": -3415180,
       "products": [{ "item": "Barren Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.barren",
@@ -2880,7 +3022,8 @@
       "color": -2043293,
       "color2": -3415180,
       "products": [{ "item": "Barren Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.desolate",
@@ -2899,7 +3042,8 @@
       "color": -3032944,
       "color2": -3415180,
       "products": [{ "item": "Barren Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.hunger"
     },
     {
       "uid": "extrabees.species.decomposing",
@@ -2918,7 +3062,8 @@
       "color": -11389167,
       "color2": -1,
       "products": [{ "item": "Barren Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Decomposed Comb", "chance": 0.08 }]
+      "specialty": [{ "item": "Decomposed Comb", "chance": 0.08 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.gnawing",
@@ -2937,7 +3082,8 @@
       "color": -1542992,
       "color2": -3415180,
       "products": [{ "item": "Barren Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Dusty Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Dusty Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.rotten",
@@ -2956,7 +3102,8 @@
       "color": -4202314,
       "color2": -3415180,
       "products": [{ "item": "Barren Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Rotten Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Rotten Comb", "chance": 0.1 }],
+      "effect": "extrabees.effect.spawn_zombie"
     },
     {
       "uid": "extrabees.species.bone",
@@ -2975,7 +3122,8 @@
       "color": -1446424,
       "color2": -3415180,
       "products": [{ "item": "Barren Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Bone Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Bone Comb", "chance": 0.1 }],
+      "effect": "extrabees.effect.spawn_skeleton"
     },
     {
       "uid": "extrabees.species.creeper",
@@ -2994,7 +3142,8 @@
       "color": -13834731,
       "color2": -3415180,
       "products": [{ "item": "Barren Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Powdery Comb", "chance": 0.08 }]
+      "specialty": [{ "item": "Powdery Comb", "chance": 0.08 }],
+      "effect": "extrabees.effect.spawn_creeper"
     },
     {
       "uid": "extrabees.species.rock",
@@ -3013,7 +3162,8 @@
       "color": -5723992,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.stone",
@@ -3032,7 +3182,8 @@
       "color": -9079435,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.granite",
@@ -3051,7 +3202,8 @@
       "color": -9874091,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.mineral",
@@ -3070,7 +3222,8 @@
       "color": -9538179,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.copper",
@@ -3089,7 +3242,8 @@
       "color": -3054840,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Copper Comb", "chance": 0.06 }]
+      "specialty": [{ "item": "Copper Comb", "chance": 0.06 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.tin",
@@ -3108,7 +3262,8 @@
       "color": -4345411,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Tin Comb", "chance": 0.06 }]
+      "specialty": [{ "item": "Tin Comb", "chance": 0.06 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.iron",
@@ -3127,7 +3282,8 @@
       "color": -5738408,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Iron Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Iron Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.lead",
@@ -3146,7 +3302,8 @@
       "color": -5403733,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Leaden Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Leaden Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.zinc",
@@ -3165,7 +3322,8 @@
       "color": -1184769,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Zinc Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Zinc Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.nickel",
@@ -3184,7 +3342,8 @@
       "color": -8452,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Nickel Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Nickel Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.gold",
@@ -3203,7 +3362,8 @@
       "color": -1651701,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Golden Comb", "chance": 0.02 }]
+      "specialty": [{ "item": "Golden Comb", "chance": 0.02 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.silver",
@@ -3222,7 +3382,8 @@
       "color": -12368549,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Silver Comb", "chance": 0.02 }]
+      "specialty": [{ "item": "Silver Comb", "chance": 0.02 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.platinum",
@@ -3241,7 +3402,8 @@
       "color": -2368549,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Platinum Comb", "chance": 0.01 }]
+      "specialty": [{ "item": "Platinum Comb", "chance": 0.01 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.lapis",
@@ -3260,7 +3422,8 @@
       "color": -12768037,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Lapis Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Lapis Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.emerald",
@@ -3279,7 +3442,8 @@
       "color": -14876925,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Emerald Comb", "chance": 0.04 }]
+      "specialty": [{ "item": "Emerald Comb", "chance": 0.04 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.ruby",
@@ -3298,7 +3462,8 @@
       "color": -2752512,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Ruby Comb", "chance": 0.03 }]
+      "specialty": [{ "item": "Ruby Comb", "chance": 0.03 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.sapphire",
@@ -3317,7 +3482,8 @@
       "color": -16103425,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Sapphire Comb", "chance": 0.03 }]
+      "specialty": [{ "item": "Sapphire Comb", "chance": 0.03 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.diamond",
@@ -3336,7 +3502,8 @@
       "color": -8405510,
       "color2": -6710887,
       "products": [{ "item": "Rocky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Diamond Comb", "chance": 0.01 }]
+      "specialty": [{ "item": "Diamond Comb", "chance": 0.01 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.unstable",
@@ -3355,7 +3522,8 @@
       "color": -12678092,
       "color2": -6710887,
       "products": [{ "item": "Barren Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.radioactive"
     },
     {
       "uid": "extrabees.species.nuclear",
@@ -3374,7 +3542,8 @@
       "color": -12465105,
       "color2": -6710887,
       "products": [{ "item": "Barren Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.radioactive"
     },
     {
       "uid": "extrabees.species.yellorium",
@@ -3393,7 +3562,8 @@
       "color": -2757376,
       "color2": -6710887,
       "products": [{ "item": "Barren Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Yellorium Comb", "chance": 0.02 }]
+      "specialty": [{ "item": "Yellorium Comb", "chance": 0.02 }],
+      "effect": "extrabees.effect.radioactive"
     },
     {
       "uid": "extrabees.species.cyanite",
@@ -3412,7 +3582,8 @@
       "color": -16742675,
       "color2": -6710887,
       "products": [{ "item": "Barren Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Cyanite Comb", "chance": 0.01 }]
+      "specialty": [{ "item": "Cyanite Comb", "chance": 0.01 }],
+      "effect": "extrabees.effect.radioactive"
     },
     {
       "uid": "extrabees.species.blutonium",
@@ -3431,7 +3602,8 @@
       "color": -15007514,
       "color2": -6710887,
       "products": [{ "item": "Barren Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Blutonium Comb", "chance": 0.01 }]
+      "specialty": [{ "item": "Blutonium Comb", "chance": 0.01 }],
+      "effect": "extrabees.effect.radioactive"
     },
     {
       "uid": "extrabees.species.ancient",
@@ -3450,7 +3622,8 @@
       "color": -861297,
       "color2": -9194,
       "products": [{ "item": "Old Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.primeval",
@@ -3469,7 +3642,8 @@
       "color": -5003653,
       "color2": -9194,
       "products": [{ "item": "Old Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.prehistoric",
@@ -3488,7 +3662,8 @@
       "color": -9545152,
       "color2": -9194,
       "products": [{ "item": "Old Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.relic",
@@ -3507,7 +3682,8 @@
       "color": -11715050,
       "color2": -9194,
       "products": [{ "item": "Old Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.coal",
@@ -3526,7 +3702,8 @@
       "color": -8751544,
       "color2": -9194,
       "products": [{ "item": "Old Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Fossilised Comb", "chance": 0.08 }]
+      "specialty": [{ "item": "Fossilised Comb", "chance": 0.08 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.resin",
@@ -3545,7 +3722,8 @@
       "color": -5868773,
       "color2": -9194,
       "products": [{ "item": "Old Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Amber Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Amber Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.oil",
@@ -3564,7 +3742,8 @@
       "color": -11057296,
       "color2": -9194,
       "products": [{ "item": "Old Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Oily Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Oily Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.distilled",
@@ -3583,7 +3762,8 @@
       "color": -13278378,
       "color2": -9194,
       "products": [{ "item": "Old Comb", "chance": 0.1 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.fuel",
@@ -3602,7 +3782,8 @@
       "color": -16381,
       "color2": -9194,
       "products": [{ "item": "Oily Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Petroleum Comb", "chance": 0.04 }]
+      "specialty": [{ "item": "Petroleum Comb", "chance": 0.04 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.creosote",
@@ -3621,7 +3802,8 @@
       "color": -6840813,
       "color2": -9194,
       "products": [{ "item": "Fossilised Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Tar Comb", "chance": 0.07 }]
+      "specialty": [{ "item": "Tar Comb", "chance": 0.07 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.latex",
@@ -3640,7 +3822,8 @@
       "color": -11974082,
       "color2": -9194,
       "products": [{ "item": "Amber Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Latex Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Latex Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.water",
@@ -3659,7 +3842,8 @@
       "color": -7036161,
       "color2": -9194,
       "products": [{ "item": "Damp Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.water"
     },
     {
       "uid": "extrabees.species.river",
@@ -3678,7 +3862,8 @@
       "color": -8145964,
       "color2": -9194,
       "products": [{ "item": "Damp Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Clay Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Clay Comb", "chance": 0.2 }],
+      "effect": "extrabees.effect.water"
     },
     {
       "uid": "extrabees.species.ocean",
@@ -3697,7 +3882,8 @@
       "color": -14864723,
       "color2": -9194,
       "products": [{ "item": "Damp Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.water"
     },
     {
       "uid": "extrabees.species.ink",
@@ -3716,7 +3902,8 @@
       "color": -15854521,
       "color2": -9194,
       "products": [{ "item": "Damp Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Ink Sac", "chance": 0.1 }]
+      "specialty": [{ "item": "Ink Sac", "chance": 0.1 }],
+      "effect": "extrabees.effect.water"
     },
     {
       "uid": "extrabees.species.growing",
@@ -3735,7 +3922,8 @@
       "color": -10753064,
       "color2": -9194,
       "products": [{ "item": "Honey Comb", "chance": 0.35 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.farm",
@@ -3754,7 +3942,8 @@
       "color": -9053344,
       "color2": -9194,
       "products": [{ "item": "Wheaten Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Seedy Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Seedy Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.thriving",
@@ -3773,7 +3962,8 @@
       "color": -13311107,
       "color2": -9194,
       "products": [{ "item": "Honey Comb", "chance": 0.35 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.blooming",
@@ -3792,7 +3982,8 @@
       "color": -16072908,
       "color2": -9194,
       "products": [{ "item": "Honey Comb", "chance": 0.35 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.bonemeal_sapling"
     },
     {
       "uid": "extrabees.species.sweet",
@@ -3814,7 +4005,8 @@
         { "item": "Sugar", "chance": 0.1 },
         { "item": "Honey Comb", "chance": 0.4 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.sugar",
@@ -3836,7 +4028,8 @@
         { "item": "Honey Comb", "chance": 0.4 },
         { "item": "Sugar", "chance": 0.2 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.ripening",
@@ -3858,7 +4051,8 @@
         { "item": "Sugar", "chance": 0.1 },
         { "item": "Honey Comb", "chance": 0.3 }
       ],
-      "specialty": [{ "item": "Fruity Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Fruity Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.fruit",
@@ -3880,7 +4074,8 @@
         { "item": "Sugar", "chance": 0.15 },
         { "item": "Honey Comb", "chance": 0.3 }
       ],
-      "specialty": [{ "item": "Fruity Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Fruity Comb", "chance": 0.2 }],
+      "effect": "extrabees.effect.bonemeal_fruit"
     },
     {
       "uid": "extrabees.species.alcohol",
@@ -3899,7 +4094,8 @@
       "color": -1537439,
       "color2": -9194,
       "products": [{ "item": "Wheaten Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Alcoholic Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Alcoholic Comb", "chance": 0.1 }],
+      "effect": "forestry.effectDrunkard"
     },
     {
       "uid": "extrabees.species.milk",
@@ -3918,7 +4114,8 @@
       "color": -1840920,
       "color2": -9194,
       "products": [{ "item": "Wheaten Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Milky Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Milky Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.coffee",
@@ -3937,7 +4134,8 @@
       "color": -7578064,
       "color2": -9194,
       "products": [{ "item": "Wheaten Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Caffeinated Comb", "chance": 0.08 }]
+      "specialty": [{ "item": "Caffeinated Comb", "chance": 0.08 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.swamp",
@@ -3956,7 +4154,8 @@
       "color": -13276877,
       "color2": -9194,
       "products": [{ "item": "Mossy Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.slow"
     },
     {
       "uid": "extrabees.species.boggy",
@@ -3975,7 +4174,8 @@
       "color": -8889303,
       "color2": -9194,
       "products": [{ "item": "Mossy Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.slow"
     },
     {
       "uid": "extrabees.species.fungal",
@@ -3994,7 +4194,8 @@
       "color": -3055104,
       "color2": -9194,
       "products": [{ "item": "Mossy Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Fungal Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Fungal Comb", "chance": 0.15 }],
+      "effect": "extrabees.effect.bonemeal_mushroom"
     },
     {
       "uid": "extrabees.species.basalt",
@@ -4013,7 +4214,8 @@
       "color": -7575191,
       "color2": -6675677,
       "products": [{ "item": "Simmering Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectAggressive"
     },
     {
       "uid": "extrabees.species.tempered",
@@ -4032,7 +4234,8 @@
       "color": -7714744,
       "color2": -6675677,
       "products": [{ "item": "Simmering Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.meteor"
     },
     {
       "uid": "extrabees.species.volcanic",
@@ -4051,7 +4254,8 @@
       "color": -11727860,
       "color2": -6675677,
       "products": [{ "item": "Simmering Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Blaze Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Blaze Comb", "chance": 0.1 }],
+      "effect": "extrabees.effect.meteor"
     },
     {
       "uid": "extrabees.species.glowstone",
@@ -4070,7 +4274,8 @@
       "color": -2046437,
       "color2": -6675677,
       "products": [{ "item": "Glowing Comb", "chance": 0.15 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectAggressive"
     },
     {
       "uid": "extrabees.species.malicious",
@@ -4089,7 +4294,8 @@
       "color": -8902025,
       "color2": -16345244,
       "products": [{ "item": "Silky Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectMiasmic"
     },
     {
       "uid": "extrabees.species.infectious",
@@ -4108,7 +4314,8 @@
       "color": -4706635,
       "color2": -16345244,
       "products": [{ "item": "Silky Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectMiasmic"
     },
     {
       "uid": "extrabees.species.virulent",
@@ -4127,7 +4334,8 @@
       "color": -1043476,
       "color2": -16345244,
       "products": [{ "item": "Silky Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Venomous Comb", "chance": 0.12 }]
+      "specialty": [{ "item": "Venomous Comb", "chance": 0.12 }],
+      "effect": "forestry.effectMiasmic"
     },
     {
       "uid": "extrabees.species.viscous",
@@ -4146,7 +4354,8 @@
       "color": -16169202,
       "color2": -16345244,
       "products": [{ "item": "Silky Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.ectoplasm"
     },
     {
       "uid": "extrabees.species.glutinous",
@@ -4165,7 +4374,8 @@
       "color": -14840793,
       "color2": -16345244,
       "products": [{ "item": "Silky Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.ectoplasm"
     },
     {
       "uid": "extrabees.species.sticky",
@@ -4184,7 +4394,8 @@
       "color": -15211736,
       "color2": -16345244,
       "products": [{ "item": "Silky Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Mucous Comb", "chance": 0.12 }]
+      "specialty": [{ "item": "Mucous Comb", "chance": 0.12 }],
+      "effect": "extrabees.effect.ectoplasm"
     },
     {
       "uid": "extrabees.species.corrosive",
@@ -4203,7 +4414,8 @@
       "color": -11903989,
       "color2": -16345244,
       "products": [{ "item": "Silky Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.acid"
     },
     {
       "uid": "extrabees.species.caustic",
@@ -4222,7 +4434,8 @@
       "color": -8085219,
       "color2": -16345244,
       "products": [{ "item": "Silky Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Brimstone Comb", "chance": 0.03 }]
+      "specialty": [{ "item": "Brimstone Comb", "chance": 0.03 }],
+      "effect": "extrabees.effect.acid"
     },
     {
       "uid": "extrabees.species.acidic",
@@ -4241,7 +4454,8 @@
       "color": -4132842,
       "color2": -16345244,
       "products": [{ "item": "Silky Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Brimstone Comb", "chance": 0.16 }]
+      "specialty": [{ "item": "Brimstone Comb", "chance": 0.16 }],
+      "effect": "extrabees.effect.acid"
     },
     {
       "uid": "extrabees.species.excited",
@@ -4260,7 +4474,8 @@
       "color": -47803,
       "color2": -9194,
       "products": [{ "item": "Energetic Comb", "chance": 0.1 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.lightning"
     },
     {
       "uid": "extrabees.species.energetic",
@@ -4279,7 +4494,8 @@
       "color": -1559097,
       "color2": -9194,
       "products": [{ "item": "Energetic Comb", "chance": 0.12 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.lightning"
     },
     {
       "uid": "extrabees.species.ecstatic",
@@ -4298,7 +4514,8 @@
       "color": -5294616,
       "color2": -9194,
       "products": [{ "item": "Energetic Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Static Comb", "chance": 0.08 }]
+      "specialty": [{ "item": "Static Comb", "chance": 0.08 }],
+      "effect": "extrabees.effect.power"
     },
     {
       "uid": "extrabees.species.artic",
@@ -4317,7 +4534,8 @@
       "color": -5381920,
       "color2": -2427405,
       "products": [{ "item": "Frozen Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectGlacial"
     },
     {
       "uid": "extrabees.species.freezing",
@@ -4336,7 +4554,8 @@
       "color": -8657949,
       "color2": -2427405,
       "products": [{ "item": "Frozen Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Glacial Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Glacial Comb", "chance": 0.1 }],
+      "effect": "forestry.effectGlacial"
     },
     {
       "uid": "extrabees.species.shadow",
@@ -4355,7 +4574,8 @@
       "color": -10921639,
       "color2": -13421773,
       "products": [{ "item": "Shadow Comb", "chance": 0.05 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.blindness"
     },
     {
       "uid": "extrabees.species.darkened",
@@ -4374,7 +4594,8 @@
       "color": -13423053,
       "color2": -13421773,
       "products": [{ "item": "Shadow Comb", "chance": 0.1 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.blindness"
     },
     {
       "uid": "extrabees.species.abyss",
@@ -4393,7 +4614,8 @@
       "color": -14612447,
       "color2": -13421773,
       "products": [{ "item": "Shadow Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.wither"
     },
     {
       "uid": "extrabees.species.red",
@@ -4412,7 +4634,8 @@
       "color": -65536,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Red Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Red Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.yellow",
@@ -4431,7 +4654,8 @@
       "color": -8960,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Yellow Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Yellow Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.blue",
@@ -4450,7 +4674,8 @@
       "color": -16768257,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Blue Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Blue Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.green",
@@ -4469,7 +4694,8 @@
       "color": -16738048,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Green Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Green Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.black",
@@ -4488,7 +4714,8 @@
       "color": -11053225,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Black Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Black Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.white",
@@ -4507,7 +4734,8 @@
       "color": -1,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "White Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "White Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.brown",
@@ -4526,7 +4754,8 @@
       "color": -10734321,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Brown Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Brown Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.orange",
@@ -4545,7 +4774,8 @@
       "color": -25344,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Orange Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Orange Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.cyan",
@@ -4564,7 +4794,8 @@
       "color": -16711707,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Cyan Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Cyan Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.purple",
@@ -4583,7 +4814,8 @@
       "color": -5373697,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Purple Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Purple Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.gray",
@@ -4602,7 +4834,8 @@
       "color": -4539718,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Gray Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Gray Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.lightblue",
@@ -4621,7 +4854,8 @@
       "color": -16736769,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Light Blue Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Light Blue Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.pink",
@@ -4640,7 +4874,8 @@
       "color": -32545,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Pink Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Pink Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.limegreen",
@@ -4659,7 +4894,8 @@
       "color": -16711928,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Lime Green Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Lime Green Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.magenta",
@@ -4678,7 +4914,8 @@
       "color": -65332,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Magenta Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Magenta Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.lightgray",
@@ -4697,7 +4934,8 @@
       "color": -3552823,
       "color2": -7536896,
       "products": [{ "item": "Honey Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Light Gray Tinted Comb", "chance": 0.25 }]
+      "specialty": [{ "item": "Light Gray Tinted Comb", "chance": 0.25 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.celebratory",
@@ -4716,7 +4954,8 @@
       "color": -390550,
       "color2": -2883584,
       "products": [],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.fireworks"
     },
     {
       "uid": "extrabees.species.jaded",
@@ -4738,7 +4977,8 @@
       "specialty": [
         { "item": "Purple Tinted Comb", "chance": 0.15 },
         { "item": "Pollen Cluster", "chance": 0.2 }
-      ]
+      ],
+      "effect": "forestry.effectBeatific"
     },
     {
       "uid": "extrabees.species.chad",
@@ -4760,7 +5000,8 @@
       "specialty": [
         { "item": "Unknown", "chance": 0.5 },
         { "item": "Milky Comb", "chance": 0.55 }
-      ]
+      ],
+      "effect": "extrabees.effect.birthday"
     },
     {
       "uid": "extrabees.species.hazardous",
@@ -4779,7 +5020,8 @@
       "color": -5215192,
       "color2": -9194,
       "products": [{ "item": "Unstable Comb", "chance": 0.12 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectCreeper"
     },
     {
       "uid": "extrabees.species.quantum",
@@ -4801,7 +5043,8 @@
       "specialty": [
         { "item": "Shimmering Comb", "chance": 0.15 },
         { "item": "Certus Comb", "chance": 0.15 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "extrabees.species.unusual",
@@ -4820,7 +5063,8 @@
       "color": -10902342,
       "color2": -4545813,
       "products": [{ "item": "Mellow Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.gravity"
     },
     {
       "uid": "extrabees.species.spatial",
@@ -4839,7 +5083,8 @@
       "color": -11789344,
       "color2": -6009140,
       "products": [{ "item": "Mellow Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Certus Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Certus Comb", "chance": 0.05 }],
+      "effect": "extrabees.effect.gravity"
     },
     {
       "uid": "extrabees.species.mystical",
@@ -4858,7 +5103,8 @@
       "color": -12146910,
       "color2": -1,
       "products": [{ "item": "Dripping Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.purple",
@@ -4877,7 +5123,8 @@
       "color": 8073150,
       "color2": 15258986,
       "products": [{ "item": "Purple Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.derpious",
@@ -4896,7 +5143,8 @@
       "color": 7322359,
       "color2": 15258986,
       "products": [{ "item": "Stringy Comb", "chance": 0.15 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.magenta",
@@ -4915,7 +5163,8 @@
       "color": 12801229,
       "color2": 15258986,
       "products": [{ "item": "Magenta Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.blue",
@@ -4934,7 +5183,8 @@
       "color": 2437522,
       "color2": 15258986,
       "products": [{ "item": "Blue Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.lightblue",
@@ -4953,7 +5203,8 @@
       "color": 6719955,
       "color2": 15258986,
       "products": [{ "item": "Light Blue Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.silver",
@@ -4972,7 +5223,8 @@
       "color": 11250603,
       "color2": 15258986,
       "products": [{ "item": "Light Gray Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.orange",
@@ -4991,7 +5243,8 @@
       "color": 15435844,
       "color2": 15258986,
       "products": [{ "item": "Orange Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.lime",
@@ -5010,7 +5263,8 @@
       "color": 4312372,
       "color2": 15258986,
       "products": [{ "item": "Lime Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.green",
@@ -5029,7 +5283,8 @@
       "color": 3887386,
       "color2": 15258986,
       "products": [{ "item": "Green Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.black",
@@ -5048,7 +5303,8 @@
       "color": 1973019,
       "color2": 15258986,
       "products": [{ "item": "Black Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.gray",
@@ -5067,7 +5323,8 @@
       "color": 4408131,
       "color2": 15258986,
       "products": [{ "item": "Gray Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.yellow",
@@ -5086,7 +5343,8 @@
       "color": 14602026,
       "color2": 15258986,
       "products": [{ "item": "Yellow Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.brown",
@@ -5105,7 +5363,8 @@
       "color": 5320730,
       "color2": 15258986,
       "products": [{ "item": "Brown Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.pink",
@@ -5124,7 +5383,8 @@
       "color": 14188952,
       "color2": 15258986,
       "products": [{ "item": "Pink Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.cyan",
@@ -5143,7 +5403,8 @@
       "color": 2651799,
       "color2": 15258986,
       "products": [{ "item": "Cyan Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.white",
@@ -5162,7 +5423,8 @@
       "color": 15790320,
       "color2": 15258986,
       "products": [{ "item": "White Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gendustry.bee.red",
@@ -5181,7 +5443,8 @@
       "color": 11743532,
       "color2": 15258986,
       "products": [{ "item": "Red Colored Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "computronics.speciesScummy",
@@ -5200,7 +5463,8 @@
       "color": 57119,
       "color2": 16768022,
       "products": [],
-      "specialty": [{ "item": "Caustic Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Caustic Comb", "chance": 0.2 }],
+      "effect": "forestry.effectDrunkard"
     },
     {
       "uid": "gregtech.bee.speciesClay",
@@ -5222,7 +5486,8 @@
         { "item": "Clay", "chance": 0.15 },
         { "item": "Honey Comb", "chance": 0.3 }
       ],
-      "specialty": [{ "item": "Mud Ball", "chance": 0.05 }]
+      "specialty": [{ "item": "Mud Ball", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesSlimeball",
@@ -5248,7 +5513,8 @@
       "specialty": [
         { "item": "Sticky Resin Comb", "chance": 0.05 },
         { "item": "Congealed Purple Slime", "chance": 0.02 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesPeat",
@@ -5273,7 +5539,8 @@
       "specialty": [
         { "item": "Peat", "chance": 0.15 },
         { "item": "Mulch", "chance": 0.05 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesStickyresin",
@@ -5295,7 +5562,8 @@
       "specialty": [
         { "item": "Sticky Resin Comb", "chance": 0.15 },
         { "item": "Sticky Resin", "chance": 0.15 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesCoal",
@@ -5314,7 +5582,8 @@
       "color": -10066330,
       "color2": -11382190,
       "products": [{ "item": "Lignite Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Coal Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Coal Comb", "chance": 0.15 }],
+      "effect": "forestry.effectCreeper"
     },
     {
       "uid": "gregtech.bee.speciesOil",
@@ -5333,7 +5602,8 @@
       "color": -11776948,
       "color2": -13421773,
       "products": [{ "item": "Honey Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Oil Comb", "chance": 0.75 }]
+      "specialty": [{ "item": "Oil Comb", "chance": 0.75 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesSandwich",
@@ -5359,7 +5629,8 @@
         { "item": "Cheese Slice", "chance": 0.05 },
         { "item": "Cooked Porkchop", "chance": 0.05 },
         { "item": "Onion Slice", "chance": 0.05 }
-      ]
+      ],
+      "effect": "forestry.effectFertile"
     },
     {
       "uid": "gregtech.bee.speciesAsh",
@@ -5378,7 +5649,8 @@
       "color": -14804456,
       "color2": -3750202,
       "products": [{ "item": "Seedy Comb", "chance": 0.15 }],
-      "specialty": [{ "item": "Ash Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Ash Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesApatite",
@@ -5397,7 +5669,8 @@
       "color": -4079114,
       "color2": -10000508,
       "products": [{ "item": "Seedy Comb", "chance": 0.15 }],
-      "specialty": [{ "item": "Apatite Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Apatite Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesFertilizer",
@@ -5421,7 +5694,8 @@
         { "item": "Fertilizer", "chance": 0.3 },
         { "item": "Tiny Pile of Dark Ashes", "chance": 0.2 },
         { "item": "Tiny Pile of Ashes", "chance": 0.2 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesPhosphorus",
@@ -5440,7 +5714,8 @@
       "color": -14298,
       "color2": -4079114,
       "products": [],
-      "specialty": [{ "item": "Phosphorus Comb", "chance": 0.35 }]
+      "specialty": [{ "item": "Phosphorus Comb", "chance": 0.35 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesTea",
@@ -5459,7 +5734,8 @@
       "color": -10104518,
       "color2": -6646151,
       "products": [{ "item": "Tea Leaf", "chance": 0.1 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesMica",
@@ -5478,7 +5754,8 @@
       "color": -14298,
       "color2": -4079114,
       "products": [{ "item": "Mica Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesRedstone",
@@ -5500,7 +5777,8 @@
       "specialty": [
         { "item": "Redstone Comb", "chance": 0.15 },
         { "item": "Rare Earth Comb", "chance": 0.15 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesLapis",
@@ -5519,7 +5797,8 @@
       "color": -15120431,
       "color2": -12096294,
       "products": [{ "item": "Stone Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Lapis Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Lapis Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesCertus",
@@ -5538,7 +5817,8 @@
       "color": -11022341,
       "color2": -4460801,
       "products": [{ "item": "Stone Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Certus Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Certus Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesFluix",
@@ -5557,7 +5837,8 @@
       "color": -6064641,
       "color2": -4877825,
       "products": [{ "item": "Stone Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Fluix Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Fluix Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesDiamond",
@@ -5576,7 +5857,8 @@
       "color": -3342337,
       "color2": -6042420,
       "products": [{ "item": "Stone Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Diamond Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Diamond Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesRuby",
@@ -5599,7 +5881,8 @@
         { "item": "Red Garnet Comb", "chance": 0.05 },
         { "item": "Ruby Comb", "chance": 0.15 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesSapphire",
@@ -5618,7 +5901,8 @@
       "color": -16763956,
       "color2": -16767857,
       "products": [{ "item": "Stone Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Sapphire Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Sapphire Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesOlivine",
@@ -5640,7 +5924,8 @@
       "specialty": [
         { "item": "Olivine Comb", "chance": 0.15 },
         { "item": "Magnesium Comb", "chance": 0.05 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesEmerald",
@@ -5662,7 +5947,8 @@
       "specialty": [
         { "item": "Emerald Comb", "chance": 0.15 },
         { "item": "Aluminium Comb", "chance": 0.05 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesRedgarnet",
@@ -5684,7 +5970,8 @@
       "specialty": [
         { "item": "Pyrope Comb", "chance": 0.05 },
         { "item": "Red Garnet Comb", "chance": 0.15 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesYellowgarnet",
@@ -5706,7 +5993,8 @@
       "specialty": [
         { "item": "Yellow Garnet Comb", "chance": 0.15 },
         { "item": "Grossular Comb", "chance": 0.05 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesFirestone",
@@ -5725,7 +6013,8 @@
       "color": -4194304,
       "color2": -65536,
       "products": [{ "item": "Stone Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Firestone Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Firestone Comb", "chance": 0.2 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesPrismatic",
@@ -5744,7 +6033,8 @@
       "color": -15632521,
       "color2": -3152668,
       "products": [],
-      "specialty": [{ "item": "Prismatic Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Prismatic Comb", "chance": 0.1 }],
+      "effect": "magicbees.effectSlowSpeed"
     },
     {
       "uid": "gregtech.bee.speciesCopper",
@@ -5766,7 +6056,8 @@
         { "item": "Slag Comb", "chance": 0.3 },
         { "item": "Copper Comb", "chance": 0.15 }
       ],
-      "specialty": [{ "item": "Gold Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Gold Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesTin",
@@ -5788,7 +6079,8 @@
         { "item": "Slag Comb", "chance": 0.3 },
         { "item": "Tin Comb", "chance": 0.15 }
       ],
-      "specialty": [{ "item": "Zinc Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Zinc Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesLead",
@@ -5810,7 +6102,8 @@
         { "item": "Slag Comb", "chance": 0.3 },
         { "item": "Lead Comb", "chance": 0.15 }
       ],
-      "specialty": [{ "item": "Sulfur Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Sulfur Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesIron",
@@ -5832,7 +6125,8 @@
         { "item": "Iron Comb", "chance": 0.15 },
         { "item": "Slag Comb", "chance": 0.3 }
       ],
-      "specialty": [{ "item": "Tin Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Tin Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesSteel",
@@ -5854,7 +6148,8 @@
         { "item": "Slag Comb", "chance": 0.3 },
         { "item": "Steel Comb", "chance": 0.15 }
       ],
-      "specialty": [{ "item": "Iron Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Iron Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesNickel",
@@ -5877,7 +6172,8 @@
         { "item": "Platinum Comb", "chance": 0.02 },
         { "item": "Slag Comb", "chance": 0.3 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesZinc",
@@ -5899,7 +6195,8 @@
         { "item": "Zinc Comb", "chance": 0.15 },
         { "item": "Slag Comb", "chance": 0.3 }
       ],
-      "specialty": [{ "item": "Gallium Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Gallium Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesSilver",
@@ -5921,7 +6218,8 @@
         { "item": "Slag Comb", "chance": 0.3 },
         { "item": "Silver Comb", "chance": 0.15 }
       ],
-      "specialty": [{ "item": "Sulfur Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Sulfur Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesCryolite",
@@ -5943,7 +6241,8 @@
         { "item": "Cryolite Comb", "chance": 0.15 },
         { "item": "Slag Comb", "chance": 0.3 }
       ],
-      "specialty": [{ "item": "Silver Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Silver Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesGold",
@@ -5965,7 +6264,8 @@
         { "item": "Gold Comb", "chance": 0.15 },
         { "item": "Slag Comb", "chance": 0.3 }
       ],
-      "specialty": [{ "item": "Nickel Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Nickel Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesArsenic",
@@ -5987,7 +6287,8 @@
         { "item": "Slag Comb", "chance": 0.3 },
         { "item": "Arsenic Comb", "chance": 0.15 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesAluminium",
@@ -6009,7 +6310,8 @@
         { "item": "Slag Comb", "chance": 0.3 },
         { "item": "Aluminium Comb", "chance": 0.15 }
       ],
-      "specialty": [{ "item": "Bauxite Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Bauxite Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesTitanium",
@@ -6031,7 +6333,8 @@
         { "item": "Titanium Comb", "chance": 0.15 },
         { "item": "Slag Comb", "chance": 0.3 }
       ],
-      "specialty": [{ "item": "Almandine Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Almandine Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesGlowstone",
@@ -6050,7 +6353,8 @@
       "color": -1717718,
       "color2": -17314,
       "products": [],
-      "specialty": [{ "item": "Glowstone Dust", "chance": 0.2 }]
+      "specialty": [{ "item": "Glowstone Dust", "chance": 0.2 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesSunnarium",
@@ -6069,7 +6373,8 @@
       "color": -17314,
       "color2": -1717718,
       "products": [{ "item": "Glowstone Dust", "chance": 0.3 }],
-      "specialty": [{ "item": "Sunnarium Dust", "chance": 0.05 }]
+      "specialty": [{ "item": "Sunnarium Dust", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesChrome",
@@ -6091,7 +6396,8 @@
         { "item": "Slag Comb", "chance": 0.3 },
         { "item": "Chrome Comb", "chance": 0.15 }
       ],
-      "specialty": [{ "item": "Magnesium Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Magnesium Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesManganese",
@@ -6113,7 +6419,8 @@
         { "item": "Manganese Comb", "chance": 0.15 },
         { "item": "Slag Comb", "chance": 0.3 }
       ],
-      "specialty": [{ "item": "Iron Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Iron Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesTungsten",
@@ -6135,7 +6442,8 @@
         { "item": "Slag Comb", "chance": 0.3 },
         { "item": "Tungsten Comb", "chance": 0.15 }
       ],
-      "specialty": [{ "item": "Molybdenum Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Molybdenum Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesPlatinum",
@@ -6157,7 +6465,8 @@
         { "item": "Platinum Comb", "chance": 0.3 },
         { "item": "Slag Comb", "chance": 0.3 }
       ],
-      "specialty": [{ "item": "Iridium Comb", "chance": 0.02 }]
+      "specialty": [{ "item": "Iridium Comb", "chance": 0.02 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesIridium",
@@ -6182,7 +6491,8 @@
       "specialty": [
         { "item": "Palladium Comb", "chance": 0.3 },
         { "item": "Osmium Comb", "chance": 0.05 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesOsmium",
@@ -6204,7 +6514,8 @@
       "specialty": [
         { "item": "Osmium Comb", "chance": 0.3 },
         { "item": "Iridium Comb", "chance": 0.05 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesSalty",
@@ -6227,7 +6538,8 @@
         { "item": "Borax Dust", "chance": 0.1 },
         { "item": "Lithium Comb", "chance": 0.05 },
         { "item": "Salt Comb", "chance": 0.35 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesLithium",
@@ -6249,7 +6561,8 @@
       "specialty": [
         { "item": "Lithium Comb", "chance": 0.15 },
         { "item": "Salt Comb", "chance": 0.05 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesElectrotine",
@@ -6271,7 +6584,8 @@
       "specialty": [
         { "item": "Redstone Comb", "chance": 0.05 },
         { "item": "Electrotine Comb", "chance": 0.15 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesSulfur",
@@ -6293,7 +6607,8 @@
       "specialty": [
         { "item": "Firestone Comb", "chance": 0.05 },
         { "item": "Pyrite Comb", "chance": 0.15 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesIndium",
@@ -6312,7 +6627,8 @@
       "color": -22017,
       "color2": -7381607,
       "products": [{ "item": "Indium Comb", "chance": 0.05 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesNetherite",
@@ -6331,7 +6647,8 @@
       "color": -13555430,
       "color2": -5396054,
       "products": [],
-      "specialty": [{ "item": "Netherite Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Netherite Comb", "chance": 0.1 }],
+      "effect": "forestry.effectCreeper"
     },
     {
       "uid": "gregtech.bee.speciesCoolant",
@@ -6350,7 +6667,8 @@
       "color": -15446182,
       "color2": -14379870,
       "products": [{ "item": "Frozen Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Coolant Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Coolant Comb", "chance": 0.15 }],
+      "effect": "forestry.effectGlacial"
     },
     {
       "uid": "gregtech.bee.speciesEnergy",
@@ -6369,7 +6687,8 @@
       "color": -4120801,
       "color2": -1328711,
       "products": [{ "item": "Energetic Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Energy Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Energy Comb", "chance": 0.15 }],
+      "effect": "forestry.effectIgnition"
     },
     {
       "uid": "gregtech.bee.speciesLapotron",
@@ -6391,7 +6710,8 @@
       "specialty": [
         { "item": "Lapotron Comb", "chance": 0.1 },
         { "item": "Energy Comb", "chance": 0.15 }
-      ]
+      ],
+      "effect": "forestry.effectIgnition"
     },
     {
       "uid": "gregtech.bee.speciesPyrotheum",
@@ -6410,7 +6730,8 @@
       "color": -5180,
       "color2": -1874944,
       "products": [{ "item": "Energy Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Pyrotheum Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Pyrotheum Comb", "chance": 0.15 }],
+      "effect": "forestry.effectIgnition"
     },
     {
       "uid": "gregtech.bee.speciesCryotheum",
@@ -6429,7 +6750,8 @@
       "color": -14262017,
       "color2": -10815489,
       "products": [{ "item": "Blizz Comb", "chance": 0.15 }],
-      "specialty": [{ "item": "Cryotheum Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Cryotheum Comb", "chance": 0.2 }],
+      "effect": "forestry.effectSnowing"
     },
     {
       "uid": "gregtech.bee.speciesExplosive",
@@ -6448,7 +6770,8 @@
       "color": -8509681,
       "color2": -9145228,
       "products": [{ "item": "Industrial TNT", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectSnowing"
     },
     {
       "uid": "gregtech.bee.speciesRedalloy",
@@ -6467,7 +6790,8 @@
       "color": -1703936,
       "color2": -4718592,
       "products": [{ "item": "Parched Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Red Alloy Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Red Alloy Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesRedstonealloy",
@@ -6486,7 +6810,8 @@
       "color": -5961720,
       "color2": -1572864,
       "products": [{ "item": "Parched Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Redstone Alloy Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Redstone Alloy Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesConductiveiron",
@@ -6505,7 +6830,8 @@
       "color": -3232349,
       "color2": -8292751,
       "products": [{ "item": "Parched Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Conductive Iron Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Conductive Iron Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesEnergeticalloy",
@@ -6524,7 +6850,8 @@
       "color": -26317,
       "color2": -21156,
       "products": [{ "item": "Parched Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Energetic Alloy Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Energetic Alloy Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesVibrantalloy",
@@ -6543,7 +6870,8 @@
       "color": -7954131,
       "color2": -3870034,
       "products": [{ "item": "Parched Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Vibrant Alloy Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Vibrant Alloy Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesElectricalsteel",
@@ -6562,7 +6890,8 @@
       "color": -8882056,
       "color2": -2565928,
       "products": [{ "item": "Parched Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Electrical Steel Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Electrical Steel Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesDarksteel",
@@ -6581,7 +6910,8 @@
       "color": -14342875,
       "color2": -12305596,
       "products": [{ "item": "Parched Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Dark Steel Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Dark Steel Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesPulsatingiron",
@@ -6600,7 +6930,8 @@
       "color": -9579900,
       "color2": -16751104,
       "products": [{ "item": "Parched Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Pulsating Iron Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Pulsating Iron Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesStainlesssteel",
@@ -6625,7 +6956,8 @@
       "specialty": [
         { "item": "Chrome Comb", "chance": 0.05 },
         { "item": "Stainless Steel Comb", "chance": 0.15 }
-      ]
+      ],
+      "effect": "forestry.effectIgnition"
     },
     {
       "uid": "gregtech.bee.speciesEnderium",
@@ -6647,7 +6979,8 @@
       "specialty": [
         { "item": "Chrome Comb", "chance": 0.05 },
         { "item": "Enderium Comb", "chance": 0.15 }
-      ]
+      ],
+      "effect": "extrabees.effect.teleport"
     },
     {
       "uid": "gregtech.bee.speciesBedrockium",
@@ -6666,7 +6999,8 @@
       "color": -15987700,
       "color2": -3750202,
       "products": [{ "item": "Slag Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Bedrockium Comb", "chance": 0.55 }]
+      "specialty": [{ "item": "Bedrockium Comb", "chance": 0.55 }],
+      "effect": "extrabees.effect.gravity"
     },
     {
       "uid": "gregtech.bee.speciesThaumiumdust",
@@ -6685,7 +7019,8 @@
       "color": -8781702,
       "color2": -10747812,
       "products": [{ "item": "Stringy Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Thaumium Dust Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Thaumium Dust Comb", "chance": 0.2 }],
+      "effect": "forestry.effectExploration"
     },
     {
       "uid": "gregtech.bee.speciesThaumiumshard",
@@ -6704,7 +7039,8 @@
       "color": -6723841,
       "color2": -5405185,
       "products": [{ "item": "Thaumium Dust Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Thaumium Shard Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Thaumium Shard Comb", "chance": 0.2 }],
+      "effect": "forestry.effectGlacial"
     },
     {
       "uid": "gregtech.bee.speciesAmber",
@@ -6723,7 +7059,8 @@
       "color": -1149184,
       "color2": -8959211,
       "products": [{ "item": "Stringy Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Amber Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Amber Comb", "chance": 0.2 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesQuicksilver",
@@ -6742,7 +7079,8 @@
       "color": -8781702,
       "color2": -10747812,
       "products": [{ "item": "Stringy Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Quicksilver Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Quicksilver Comb", "chance": 0.2 }],
+      "effect": "forestry.effectMiasmic"
     },
     {
       "uid": "gregtech.bee.speciesSalismundus",
@@ -6761,7 +7099,8 @@
       "color": -545314,
       "color2": -10934910,
       "products": [{ "item": "Stringy Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Salis Mundus Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Salis Mundus Comb", "chance": 0.2 }],
+      "effect": "forestry.effectMiasmic"
     },
     {
       "uid": "gregtech.bee.speciesTainted",
@@ -6780,7 +7119,8 @@
       "color": -7320648,
       "color2": -1572609,
       "products": [{ "item": "Stringy Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Tainted Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Tainted Comb", "chance": 0.2 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesMithril",
@@ -6799,7 +7139,8 @@
       "color": -989556,
       "color2": -46,
       "products": [{ "item": "Platinum Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Mithril Comb", "chance": 0.125 }]
+      "specialty": [{ "item": "Mithril Comb", "chance": 0.125 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesAstralsilver",
@@ -6818,7 +7159,8 @@
       "color": -5247250,
       "color2": -1644801,
       "products": [{ "item": "Silver Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Astral Silver Comb", "chance": 0.125 }]
+      "specialty": [{ "item": "Astral Silver Comb", "chance": 0.125 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesThauminite",
@@ -6837,7 +7179,8 @@
       "color": -13750919,
       "color2": -9076256,
       "products": [{ "item": "Glittering Ordered Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Thauminite Comb", "chance": 0.125 }]
+      "specialty": [{ "item": "Thauminite Comb", "chance": 0.125 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesShadowmetal",
@@ -6856,7 +7199,8 @@
       "color": -15727838,
       "color2": -15727806,
       "products": [{ "item": "Glittering Entropic Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Shadow Metal Comb", "chance": 0.125 }]
+      "specialty": [{ "item": "Shadow Metal Comb", "chance": 0.125 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesDivided",
@@ -6875,7 +7219,8 @@
       "color": -986896,
       "color2": -2302756,
       "products": [{ "item": "Unstable Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Divided Comb", "chance": 0.125 }]
+      "specialty": [{ "item": "Divided Comb", "chance": 0.125 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesCaelestis",
@@ -6898,7 +7243,8 @@
         { "item": "Caelestis Red Comb", "chance": 0.6 },
         { "item": "Caelestis Blue Comb", "chance": 0.6 }
       ],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesSparkeling",
@@ -6917,7 +7263,8 @@
       "color": -8781702,
       "color2": -1,
       "products": [{ "item": "Wither Skeleton Bone Chip", "chance": 0.2 }],
-      "specialty": [{ "item": "Nether Star Comb", "chance": 0.125 }]
+      "specialty": [{ "item": "Nether Star Comb", "chance": 0.125 }],
+      "effect": "forestry.effectAggressive"
     },
     {
       "uid": "gregtech.bee.speciesEssentia",
@@ -6936,7 +7283,8 @@
       "color": -8781702,
       "color2": -1,
       "products": [{ "item": "Wither Skeleton Bone Chip", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectReanimation"
     },
     {
       "uid": "gregtech.bee.speciesDrake",
@@ -6955,7 +7303,8 @@
       "color": -15727838,
       "color2": -8781702,
       "products": [{ "item": "Draconium Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Awakened Draconium Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Awakened Draconium Comb", "chance": 0.2 }],
+      "effect": "forestry.effectDrunkard"
     },
     {
       "uid": "gregtech.bee.speciesUranium",
@@ -6974,7 +7323,8 @@
       "color": -15093991,
       "color2": -15294954,
       "products": [{ "item": "Slag Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Uranium Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Uranium Comb", "chance": 0.15 }],
+      "effect": "extrabees.effect.radioactive"
     },
     {
       "uid": "gregtech.bee.speciesPlutonium",
@@ -6996,7 +7346,8 @@
         { "item": "Lead Comb", "chance": 0.15 },
         { "item": "Slag Comb", "chance": 0.3 }
       ],
-      "specialty": [{ "item": "Plutonium Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Plutonium Comb", "chance": 0.15 }],
+      "effect": "extrabees.effect.radioactive"
     },
     {
       "uid": "gregtech.bee.speciesNaquadah",
@@ -7015,7 +7366,8 @@
       "color": -16764160,
       "color2": -16768000,
       "products": [{ "item": "Slag Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Naquadah Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Naquadah Comb", "chance": 0.15 }],
+      "effect": "extrabees.effect.radioactive"
     },
     {
       "uid": "gregtech.bee.speciesNaquadria",
@@ -7037,7 +7389,8 @@
       "specialty": [
         { "item": "Naquadria Comb", "chance": 0.15 },
         { "item": "Naquadah Comb", "chance": 0.2 }
-      ]
+      ],
+      "effect": "extrabees.effect.radioactive"
     },
     {
       "uid": "gregtech.bee.speciesDob",
@@ -7056,7 +7409,8 @@
       "color": -16764160,
       "color2": -16768000,
       "products": [{ "item": "D-o-b Comb", "chance": 0.75 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.radioactive"
     },
     {
       "uid": "gregtech.bee.speciesThorium",
@@ -7075,7 +7429,8 @@
       "color": -16756736,
       "color2": -16769536,
       "products": [{ "item": "Thorium Comb", "chance": 0.75 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.radioactive"
     },
     {
       "uid": "gregtech.bee.speciesLutetium",
@@ -7094,7 +7449,8 @@
       "color": -1638426,
       "color2": -1,
       "products": [{ "item": "Lutetium Comb", "chance": 0.15 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.radioactive"
     },
     {
       "uid": "gregtech.bee.speciesAmericium",
@@ -7113,7 +7469,8 @@
       "color": -1644801,
       "color2": -3618616,
       "products": [],
-      "specialty": [{ "item": "Americium Comb", "chance": 0.075 }]
+      "specialty": [{ "item": "Americium Comb", "chance": 0.075 }],
+      "effect": "extrabees.effect.radioactive"
     },
     {
       "uid": "gregtech.bee.speciesNeutronium",
@@ -7132,7 +7489,8 @@
       "color": -3856,
       "color2": -328966,
       "products": [{ "item": "Neutronium Comb", "chance": 0.02 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "extrabees.effect.radioactive"
     },
     {
       "uid": "gregtech.bee.speciesNaga",
@@ -7151,7 +7509,8 @@
       "color": -15902195,
       "color2": -14121141,
       "products": [{ "item": "Salis Mundus Comb", "chance": 0.02 }],
-      "specialty": [{ "item": "Naga Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Naga Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesLich",
@@ -7170,7 +7529,8 @@
       "color": -3815995,
       "color2": -10723234,
       "products": [{ "item": "Salis Mundus Comb", "chance": 0.04 }],
-      "specialty": [{ "item": "Lich Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Lich Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesHydra",
@@ -7189,7 +7549,8 @@
       "color": -7919562,
       "color2": -4713684,
       "products": [{ "item": "Salis Mundus Comb", "chance": 0.06 }],
-      "specialty": [{ "item": "Hydra Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Hydra Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesUrghast",
@@ -7208,7 +7569,8 @@
       "color": -5831652,
       "color2": -8649192,
       "products": [{ "item": "Salis Mundus Comb", "chance": 0.08 }],
-      "specialty": [{ "item": "Ur Ghast Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Ur Ghast Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesSnowqueen",
@@ -7227,7 +7589,8 @@
       "color": -3137535,
       "color2": -6553576,
       "products": [{ "item": "Salis Mundus Comb", "chance": 0.15 }],
-      "specialty": [{ "item": "Snow Queen Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Snow Queen Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesEnddust",
@@ -7246,7 +7609,8 @@
       "color": -3407622,
       "color2": -16762243,
       "products": [{ "item": "Mysterious Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "End Dust Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "End Dust Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesEndium",
@@ -7269,7 +7633,8 @@
         { "item": "Endium Propolis", "chance": 0.15 },
         { "item": "Endium Comb", "chance": 0.1 },
         { "item": "Ender Goo Drop", "chance": 0.1 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesStardust",
@@ -7288,7 +7653,8 @@
       "color": -256,
       "color2": -2310637,
       "products": [{ "item": "Mysterious Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Stardust Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Stardust Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesEctoplasma",
@@ -7307,7 +7673,8 @@
       "color": -2314011,
       "color2": -13099968,
       "products": [{ "item": "Mysterious Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Ectoplasma Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Ectoplasma Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesArcaneshards",
@@ -7326,7 +7693,8 @@
       "color": -7335763,
       "color2": -13419134,
       "products": [{ "item": "Mysterious Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Arcane Shard Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Arcane Shard Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesDragonessence",
@@ -7345,7 +7713,8 @@
       "color": -24277,
       "color2": -7266610,
       "products": [{ "item": "Mysterious Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Dragon Essence Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Dragon Essence Comb", "chance": 0.1 }],
+      "effect": "forestry.effectBeatific"
     },
     {
       "uid": "gregtech.bee.speciesFireessence",
@@ -7364,7 +7733,8 @@
       "color": -2878920,
       "color2": -24233,
       "products": [{ "item": "Mysterious Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Fire Essence Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Fire Essence Comb", "chance": 0.1 }],
+      "effect": "forestry.effectIgnition"
     },
     {
       "uid": "gregtech.bee.speciesEndermanhead",
@@ -7383,7 +7753,8 @@
       "color": -15329770,
       "color2": -10354457,
       "products": [{ "item": "Mysterious Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Enderman Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Enderman Comb", "chance": 0.1 }],
+      "effect": "extrabees.effect.teleport"
     },
     {
       "uid": "gregtech.bee.speciesSilverfish",
@@ -7402,7 +7773,8 @@
       "color": -1178307,
       "color2": -16777216,
       "products": [{ "item": "Mysterious Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Silverfish Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Silverfish Comb", "chance": 0.1 }],
+      "effect": "magicbees.effectSlowSpeed"
     },
     {
       "uid": "gregtech.bee.speciesRune",
@@ -7424,7 +7796,8 @@
       "specialty": [
         { "item": "Rune Type 1 Comb", "chance": 0.025 },
         { "item": "Rune Type 2 Comb", "chance": 0.0125 }
-      ]
+      ],
+      "effect": "magicbees.effectSlowSpeed"
     },
     {
       "uid": "gregtech.bee.speciesWalrus",
@@ -7443,7 +7816,8 @@
       "color": -2697856,
       "color2": -4862007,
       "products": [{ "item": "Walrus Comb", "chance": 1.0 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesMachinist",
@@ -7462,7 +7836,8 @@
       "color": -11197054,
       "color2": -149209,
       "products": [{ "item": "Machinist Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "gregtech.effectMachineBoost"
     },
     {
       "uid": "gregtech.bee.speciesSpace",
@@ -7481,7 +7856,8 @@
       "color": -16764058,
       "color2": -4144960,
       "products": [{ "item": "Space Comb", "chance": 0.02 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesMeteoriciron",
@@ -7500,7 +7876,8 @@
       "color": -13493976,
       "color2": -10210736,
       "products": [{ "item": "Space Comb", "chance": 0.04 }],
-      "specialty": [{ "item": "Meteoric Iron Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Meteoric Iron Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesDesh",
@@ -7519,7 +7896,8 @@
       "color": -13487566,
       "color2": -14145496,
       "products": [{ "item": "Space Comb", "chance": 0.06 }],
-      "specialty": [{ "item": "Desh Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Desh Comb", "chance": 0.1 }],
+      "effect": "forestry.effectIgnition"
     },
     {
       "uid": "gregtech.bee.speciesLedox",
@@ -7538,7 +7916,8 @@
       "color": -16777011,
       "color2": -16747265,
       "products": [{ "item": "Space Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Ledox Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Ledox Comb", "chance": 0.1 }],
+      "effect": "forestry.effectGlacial"
     },
     {
       "uid": "gregtech.bee.speciesCallistoice",
@@ -7557,7 +7936,8 @@
       "color": -16747265,
       "color2": -14765569,
       "products": [{ "item": "Space Comb", "chance": 0.1 }],
-      "specialty": [{ "item": "Callisto Ice Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Callisto Ice Comb", "chance": 0.1 }],
+      "effect": "forestry.effectGlacial"
     },
     {
       "uid": "gregtech.bee.speciesMytryl",
@@ -7576,7 +7956,8 @@
       "color": -2448096,
       "color2": -891900,
       "products": [{ "item": "Space Comb", "chance": 0.16 }],
-      "specialty": [{ "item": "Mytryl Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Mytryl Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesQuantium",
@@ -7595,7 +7976,8 @@
       "color": -16711936,
       "color2": -16723701,
       "products": [{ "item": "Space Comb", "chance": 0.16 }],
-      "specialty": [{ "item": "Quantium Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Quantium Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesOriharukon",
@@ -7614,7 +7996,8 @@
       "color": -14513374,
       "color2": -9994904,
       "products": [{ "item": "Space Comb", "chance": 0.26 }],
-      "specialty": [{ "item": "Oriharukon Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Oriharukon Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesInfusedgold",
@@ -7633,7 +8016,8 @@
       "color": -8362978,
       "color2": -14276,
       "products": [{ "item": "Gold Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Infused Gold Comb", "chance": 0.3 }]
+      "specialty": [{ "item": "Infused Gold Comb", "chance": 0.3 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesMysteriouscrystal",
@@ -7652,7 +8036,8 @@
       "color": -12799119,
       "color2": -15301268,
       "products": [{ "item": "Space Comb", "chance": 0.42 }],
-      "specialty": [{ "item": "Mysterious Crystal Comb", "chance": 0.3 }]
+      "specialty": [{ "item": "Mysterious Crystal Comb", "chance": 0.3 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesBlackplutonium",
@@ -7671,7 +8056,8 @@
       "color": -16777216,
       "color2": -13487566,
       "products": [{ "item": "Space Comb", "chance": 0.68 }],
-      "specialty": [{ "item": "Black Plutonium Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Black Plutonium Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesTrinium",
@@ -7690,7 +8076,8 @@
       "color": -5185306,
       "color2": -3618606,
       "products": [{ "item": "Trinium Comb", "chance": 0.75 }],
-      "specialty": [{ "item": "Quantium Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Quantium Comb", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesMoon",
@@ -7709,7 +8096,8 @@
       "color": -13158603,
       "color2": -8487304,
       "products": [{ "item": "Moon Comb", "chance": 0.35 }],
-      "specialty": [{ "item": "Moon Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Moon Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesMars",
@@ -7728,7 +8116,8 @@
       "color": -14545659,
       "color2": -12970747,
       "products": [{ "item": "Mars Comb", "chance": 0.35 }],
-      "specialty": [{ "item": "Mars Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Mars Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesPhobos",
@@ -7747,7 +8136,8 @@
       "color": -14545659,
       "color2": -8759546,
       "products": [{ "item": "Mars Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Phobos Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Phobos Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesDeimos",
@@ -7766,7 +8156,8 @@
       "color": -14545659,
       "color2": -8769018,
       "products": [{ "item": "Mars Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Deimos Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Deimos Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesCeres",
@@ -7785,7 +8176,8 @@
       "color": -12802633,
       "color2": -14781849,
       "products": [{ "item": "Jupiter Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Ceres Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Ceres Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesJupiter",
@@ -7811,7 +8203,8 @@
         { "item": "Callisto Stone Dust", "chance": 0.05 },
         { "item": "Europa Ice Dust", "chance": 0.05 },
         { "item": "Callisto Ice Dust", "chance": 0.05 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesIo",
@@ -7830,7 +8223,8 @@
       "color": -9221330,
       "color2": -1740773,
       "products": [{ "item": "Jupiter Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Io Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Io Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesEuropa",
@@ -7852,7 +8246,8 @@
       "specialty": [
         { "item": "Europa Ice Dust", "chance": 0.1 },
         { "item": "Europa Stone Dust", "chance": 0.1 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesGanymede",
@@ -7871,7 +8266,8 @@
       "color": -12772592,
       "color2": -15135737,
       "products": [{ "item": "Jupiter Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Ganymede Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Ganymede Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesCallisto",
@@ -7893,7 +8289,8 @@
       "specialty": [
         { "item": "Callisto Stone Dust", "chance": 0.1 },
         { "item": "Callisto Ice Dust", "chance": 0.1 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesSaturn",
@@ -7916,7 +8313,8 @@
         { "item": "Enceladus Stone Dust", "chance": 0.05 },
         { "item": "Enceladus Slush Dust", "chance": 0.05 },
         { "item": "Titan Stone Dust", "chance": 0.05 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesEnceladus",
@@ -7938,7 +8336,8 @@
       "specialty": [
         { "item": "Enceladus Slush Dust", "chance": 0.1 },
         { "item": "Enceladus Stone Dust", "chance": 0.1 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesTitan",
@@ -7957,7 +8356,8 @@
       "color": -6265829,
       "color2": -8646620,
       "products": [{ "item": "Saturn Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Titan Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Titan Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesUranus",
@@ -7979,7 +8379,8 @@
       "specialty": [
         { "item": "Miranda Stone Dust", "chance": 0.05 },
         { "item": "Oberon Stone Dust", "chance": 0.05 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesMiranda",
@@ -7998,7 +8399,8 @@
       "color": -9060151,
       "color2": -15916772,
       "products": [{ "item": "Uranus Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Miranda Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Miranda Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesOberon",
@@ -8017,7 +8419,8 @@
       "color": -11911117,
       "color2": -4873592,
       "products": [{ "item": "Uranus Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Oberon Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Oberon Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesNeptune",
@@ -8039,7 +8442,8 @@
       "specialty": [
         { "item": "Triton Stone Dust", "chance": 0.05 },
         { "item": "Proteus Stone Dust", "chance": 0.05 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesProteus",
@@ -8058,7 +8462,8 @@
       "color": -13415169,
       "color2": -10934768,
       "products": [{ "item": "Neptune Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Proteus Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Proteus Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesTriton",
@@ -8077,7 +8482,8 @@
       "color": -13415169,
       "color2": -12447464,
       "products": [{ "item": "Neptune Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Triton Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Triton Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesPluto",
@@ -8099,7 +8505,8 @@
       "specialty": [
         { "item": "Pluto Ice Dust", "chance": 0.1 },
         { "item": "Pluto Stone Dust", "chance": 0.1 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesHaumea",
@@ -8118,7 +8525,8 @@
       "color": -14937069,
       "color2": -13030616,
       "products": [{ "item": "Haumea Comb", "chance": 0.35 }],
-      "specialty": [{ "item": "Haumea Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Haumea Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesMakemake",
@@ -8137,7 +8545,8 @@
       "color": -13625327,
       "color2": -15595001,
       "products": [{ "item": "Makemake Comb", "chance": 0.35 }],
-      "specialty": [{ "item": "MakeMake Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "MakeMake Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesCentauri",
@@ -8156,7 +8565,8 @@
       "color": -13686252,
       "color2": -5215438,
       "products": [{ "item": "Centauri Comb", "chance": 0.35 }],
-      "specialty": [{ "item": "α Centauri Bb Surface Dust", "chance": 0.05 }]
+      "specialty": [{ "item": "α Centauri Bb Surface Dust", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesAcentauri",
@@ -8175,7 +8585,8 @@
       "color": -13686252,
       "color2": -6283756,
       "products": [{ "item": "Centauri Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "α Centauri Bb Surface Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "α Centauri Bb Surface Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesTceti",
@@ -8194,7 +8605,8 @@
       "color": -12180454,
       "color2": -8699601,
       "products": [{ "item": "Tceti Comb", "chance": 0.35 }],
-      "specialty": [{ "item": "Tceti E Stone Dust", "chance": 0.05 }]
+      "specialty": [{ "item": "Tceti E Stone Dust", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesTcetie",
@@ -8213,7 +8625,8 @@
       "color": -13806053,
       "color2": -15986848,
       "products": [{ "item": "Tceti Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Tceti E Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Tceti E Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesSeaweed",
@@ -8232,7 +8645,8 @@
       "color": -3421237,
       "color2": -8126589,
       "products": [{ "item": "Seaweed Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Tceti E Stone Dust", "chance": 0.15 }]
+      "specialty": [{ "item": "Tceti E Stone Dust", "chance": 0.15 }],
+      "effect": "forestry.effectMycophilic"
     },
     {
       "uid": "gregtech.bee.speciesBarnarda",
@@ -8254,7 +8668,8 @@
       "specialty": [
         { "item": "Barnarda E Stone Dust", "chance": 0.05 },
         { "item": "Barnarda F Stone Dust", "chance": 0.05 }
-      ]
+      ],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesBarnardac",
@@ -8273,7 +8688,8 @@
       "color": -15902195,
       "color2": -12108022,
       "products": [{ "item": "Barnarda Comb", "chance": 0.25 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "gregtech.effectTreetwister"
     },
     {
       "uid": "gregtech.bee.speciesBarnardae",
@@ -8292,7 +8708,8 @@
       "color": -15902195,
       "color2": -11788534,
       "products": [{ "item": "Barnarda Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Barnarda E Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Barnarda E Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesBarnardaf",
@@ -8311,7 +8728,8 @@
       "color": -15902195,
       "color2": -14808247,
       "products": [{ "item": "Barnarda Comb", "chance": 0.25 }],
-      "specialty": [{ "item": "Barnarda F Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Barnarda F Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesVega",
@@ -8330,7 +8748,8 @@
       "color": -15065034,
       "color2": -4865826,
       "products": [{ "item": "Vega Comb", "chance": 0.35 }],
-      "specialty": [{ "item": "Vega B Stone Dust", "chance": 0.05 }]
+      "specialty": [{ "item": "Vega B Stone Dust", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesVegab",
@@ -8349,7 +8768,8 @@
       "color": -15065034,
       "color2": -8265119,
       "products": [{ "item": "Vega Comb", "chance": 0.35 }],
-      "specialty": [{ "item": "Vega B Stone Dust", "chance": 0.1 }]
+      "specialty": [{ "item": "Vega B Stone Dust", "chance": 0.1 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesMercury",
@@ -8368,7 +8788,8 @@
       "color": -11911117,
       "color2": -4873592,
       "products": [{ "item": "Mercury Comb", "chance": 0.35 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesVenus",
@@ -8387,7 +8808,8 @@
       "color": -11911117,
       "color2": -4873592,
       "products": [{ "item": "Venus Comb", "chance": 0.35 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesCosmicneutronium",
@@ -8406,7 +8828,8 @@
       "color": -12040120,
       "color2": -13487566,
       "products": [],
-      "specialty": [{ "item": "Cosmic Neutronium Comb", "chance": 0.375 }]
+      "specialty": [{ "item": "Cosmic Neutronium Comb", "chance": 0.375 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesInfinitycatalyst",
@@ -8425,7 +8848,8 @@
       "color": -1,
       "color2": -1,
       "products": [],
-      "specialty": [{ "item": "Infinity Catalyst Comb", "chance": 0.015 }]
+      "specialty": [{ "item": "Infinity Catalyst Comb", "chance": 0.015 }],
+      "effect": "extrabees.effect.blindness"
     },
     {
       "uid": "gregtech.bee.speciesInfinity",
@@ -8444,7 +8868,8 @@
       "color": -1,
       "color2": -1,
       "products": [],
-      "specialty": [{ "item": "Infinity Comb", "chance": 0.015 }]
+      "specialty": [{ "item": "Infinity Comb", "chance": 0.015 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesKevlar",
@@ -8466,7 +8891,8 @@
       "specialty": [
         { "item": "Kevlar Comb", "chance": 0.075 },
         { "item": "Kevlar Nugget", "chance": 0.01 }
-      ]
+      ],
+      "effect": "forestry.effectSnowing"
     },
     {
       "uid": "gregtech.bee.speciesHelium",
@@ -8485,7 +8911,8 @@
       "color": -22017,
       "color2": -3622732,
       "products": [{ "item": "Helium Comb", "chance": 0.35 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesArgon",
@@ -8504,7 +8931,8 @@
       "color": -7743007,
       "color2": -4348478,
       "products": [{ "item": "Argon Comb", "chance": 0.35 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesNeon",
@@ -8523,7 +8951,8 @@
       "color": -14298,
       "color2": -36352,
       "products": [{ "item": "Neon Comb", "chance": 0.35 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesKrypton",
@@ -8542,7 +8971,8 @@
       "color": -7694416,
       "color2": -15333342,
       "products": [{ "item": "Krypton Comb", "chance": 0.35 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesXenon",
@@ -8561,7 +8991,8 @@
       "color": -7694416,
       "color2": -15333342,
       "products": [],
-      "specialty": [{ "item": "Xenon Comb", "chance": 0.525 }]
+      "specialty": [{ "item": "Xenon Comb", "chance": 0.525 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesOxygen",
@@ -8580,7 +9011,8 @@
       "color": -1,
       "color2": -7368705,
       "products": [{ "item": "Oxygen Comb", "chance": 0.45 }],
-      "specialty": [{ "item": "Hydrogen Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Hydrogen Comb", "chance": 0.2 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesHydrogen",
@@ -8599,7 +9031,8 @@
       "color": -1,
       "color2": -60269,
       "products": [{ "item": "Hydrogen Comb", "chance": 0.45 }],
-      "specialty": [{ "item": "Nitrogen Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Nitrogen Comb", "chance": 0.2 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesNitrogen",
@@ -8618,7 +9051,8 @@
       "color": -14286,
       "color2": -5952982,
       "products": [{ "item": "Nitrogen Comb", "chance": 0.45 }],
-      "specialty": [{ "item": "Fluorine Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Fluorine Comb", "chance": 0.2 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesFluorine",
@@ -8637,7 +9071,8 @@
       "color": -7950352,
       "color2": -37632,
       "products": [{ "item": "Fluorine Comb", "chance": 0.45 }],
-      "specialty": [{ "item": "Oxygen Comb", "chance": 0.2 }]
+      "specialty": [{ "item": "Oxygen Comb", "chance": 0.2 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesRareearth",
@@ -8656,7 +9091,8 @@
       "color": -11184573,
       "color2": -13355992,
       "products": [{ "item": "Rare Earth Comb", "chance": 0.2 }],
-      "specialty": [{ "item": "Refined Rare Earth Comb", "chance": 0.05 }]
+      "specialty": [{ "item": "Refined Rare Earth Comb", "chance": 0.05 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesNeodymium",
@@ -8675,7 +9111,8 @@
       "color": -11184811,
       "color2": -11579569,
       "products": [{ "item": "Rare Earth Comb", "chance": 0.15 }],
-      "specialty": [{ "item": "Neodymium Comb", "chance": 0.15 }]
+      "specialty": [{ "item": "Neodymium Comb", "chance": 0.15 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesEuropium",
@@ -8694,7 +9131,8 @@
       "color": -2449182,
       "color2": -5538127,
       "products": [{ "item": "Europium III Oxide Dust", "chance": 0.1 }],
-      "specialty": [{ "item": "Europium Comb", "chance": 0.075 }]
+      "specialty": [{ "item": "Europium Comb", "chance": 0.075 }],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesAir",
@@ -8713,7 +9151,8 @@
       "color": -130,
       "color2": -10461137,
       "products": [{ "item": "Infused Air Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesFire",
@@ -8732,7 +9171,8 @@
       "color": -1230847,
       "color2": -12907008,
       "products": [{ "item": "Infused Ignis Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesWater",
@@ -8751,7 +9191,8 @@
       "color": -16740097,
       "color2": -16767678,
       "products": [{ "item": "Infused Aqua Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesEarth",
@@ -8770,7 +9211,8 @@
       "color": -16742912,
       "color2": -16764160,
       "products": [{ "item": "Infused Terra Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesOrder",
@@ -8789,7 +9231,8 @@
       "color": -7694416,
       "color2": -10723486,
       "products": [{ "item": "Infused Ordo Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesChaos",
@@ -8808,7 +9251,8 @@
       "color": -13750719,
       "color2": -14474967,
       "products": [{ "item": "Infused Perditio Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesNethershard",
@@ -8827,7 +9271,8 @@
       "color": -4325067,
       "color2": -13303279,
       "products": [{ "item": "Nether Shard Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesEndshard",
@@ -8846,7 +9291,8 @@
       "color": -13750719,
       "color2": -14474967,
       "products": [{ "item": "Ender Shard Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesUnknownwater",
@@ -8865,7 +9311,8 @@
       "color": -12373083,
       "color2": -13194241,
       "products": [{ "item": "Unknown Liquid Comb", "chance": 0.2 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesManasteel",
@@ -8884,7 +9331,8 @@
       "color": -11816965,
       "color2": -3216643,
       "products": [{ "item": "Manasteel Comb", "chance": 0.3 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesMmm",
@@ -8903,7 +9351,8 @@
       "color": -12608645,
       "color2": -8978481,
       "products": [{ "item": "M-M-M Comb", "chance": 0.33 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesElven",
@@ -8922,7 +9371,8 @@
       "color": -3723559,
       "color2": -1064967,
       "products": [{ "item": "Elven Comb", "chance": 0.33 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesTerrasteel",
@@ -8941,7 +9391,8 @@
       "color": -11421184,
       "color2": -5308565,
       "products": [{ "item": "Terrasteel Comb", "chance": 0.1 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesGaiaspirit",
@@ -8960,7 +9411,8 @@
       "color": -9074281,
       "color2": -4729109,
       "products": [{ "item": "Gaia Spirit Comb", "chance": 0.15 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gregtech.bee.speciesJaegermeister",
@@ -8979,7 +9431,8 @@
       "color": -16405224,
       "color2": -1582397,
       "products": [{ "item": "Real Bottled Jägermeister!", "chance": 0.01 }],
-      "specialty": []
+      "specialty": [],
+      "effect": "forestry.effectNone"
     },
     {
       "uid": "gtpp.bee.speciesDragon Blood",
@@ -8998,7 +9451,8 @@
       "color": 14423060,
       "color2": 1315860,
       "products": [{ "item": "Mysterious Comb", "chance": 0.3 }],
-      "specialty": [{ "item": "Dragonblood Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Dragonblood Comb", "chance": 0.1 }],
+      "effect": "forestry.effectAggressive"
     },
     {
       "uid": "gtpp.bee.speciesForce",
@@ -9020,7 +9474,8 @@
         { "item": "Stone Comb", "chance": 0.3 },
         { "item": "Salt Comb", "chance": 0.15 }
       ],
-      "specialty": [{ "item": "Force Comb", "chance": 0.1 }]
+      "specialty": [{ "item": "Force Comb", "chance": 0.1 }],
+      "effect": "forestry.effectAggressive"
     }
   ],
   "mutations": [

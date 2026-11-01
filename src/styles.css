@@ -1744,3 +1744,59 @@ a.btn {
     animation: none;
   }
 }
+
+/* bee effects: a warning box in the detail, ⚠ after names */
+.fx {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 0 14px;
+  line-height: 1.45;
+}
+.fxhead {
+  margin-bottom: 2px;
+}
+.fxsub {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 4px;
+}
+.fx.danger {
+  background: #3a1616;
+  border: 2px solid #e05252;
+  color: #ffd0d0;
+}
+.fx.danger .fxhead {
+  color: #ff7a7a;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+.fx.warn {
+  background: #34241a;
+  border-color: var(--warn);
+  color: #f6d2b8;
+}
+.fx.warn .fxhead {
+  color: var(--warn);
+}
+.fx.good .fxhead {
+  color: var(--good);
+}
+.fx.danger .fxsub,
+.fx.warn .fxsub {
+  color: inherit;
+  opacity: 0.75;
+}
+.fxmark {
+  font-size: 12px;
+  cursor: help;
+}
+.fxmark.danger {
+  color: #ff6b6b;
+}
+.fxmark.warn {
+  color: var(--warn);
+}

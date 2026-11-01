@@ -19,6 +19,7 @@ $JDK/jcmd $PID JVMTI.agent_load /tmp/beedump/agent.jar "$PWD/src/data/bees.json"
 ```
 
 If something fails, the agent writes `bees.json.err` with the stack trace.
+Each species also gets its `effect` (the effect allele of its default genome). What an effect does is written by hand in `src/data/effects.json`; `src/lib/effects.test.ts` fails when a bee has an effect with no entry there.
 Names are dumped in the client's language. Some GregTech branch names come out as raw keys (`for.genus.bees.radioactive`), and the app cleans those up (`src/lib/graph.ts`).
 
 ## `combdump-agent/` → `src/data/combs.json`
