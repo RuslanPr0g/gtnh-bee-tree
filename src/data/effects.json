@@ -7,7 +7,7 @@
   "extrabees.effect.birthday": {
     "name": "Birthday",
     "level": "info",
-    "text": "Celebrates the birthdays of the Extra Bees team. Harmless."
+    "text": "Shoots gold star fireworks, with extra colours on the Extra Bees team's birthdays. Harmless."
   },
   "extrabees.effect.blindness": {
     "name": "Darkness",
@@ -64,7 +64,7 @@
   "extrabees.effect.power": {
     "name": "Power",
     "level": "good",
-    "text": "Charges RF machines next to the hive."
+    "text": "Charges RF machines near the hive."
   },
   "extrabees.effect.radioactive": {
     "name": "Unstable",
@@ -81,17 +81,17 @@
   "extrabees.effect.spawn_creeper": {
     "name": "Creepers",
     "level": "danger",
-    "text": "Spawns Creepers around the hive. They blow up blocks."
+    "text": "Spawns Creepers around the hive when a player is near (in the dark). They blow up blocks."
   },
   "extrabees.effect.spawn_skeleton": {
     "name": "Skeletons",
     "level": "danger",
-    "text": "Spawns Skeletons around the hive."
+    "text": "Spawns Skeletons around the hive when a player is near (in the dark)."
   },
   "extrabees.effect.spawn_zombie": {
     "name": "Zombies",
     "level": "danger",
-    "text": "Spawns Zombies around the hive."
+    "text": "Spawns Zombies around the hive when a player is near (in the dark)."
   },
   "extrabees.effect.teleport": {
     "name": "Teleport",
@@ -101,13 +101,12 @@
   "extrabees.effect.water": {
     "name": "Water",
     "level": "good",
-    "text": "Fills tanks next to the hive with water."
+    "text": "Fills tanks near the hive with water."
   },
   "extrabees.effect.wither": {
     "name": "Wither",
-    "level": "warn",
-    "text": "Gives Wither to players near the hive.",
-    "suit": true
+    "level": "info",
+    "text": "No real effect in this pack, only particles. Harmless."
   },
   "forestry.effectAggressive": {
     "name": "Aggressive",
@@ -123,13 +122,13 @@
   "forestry.effectCreeper": {
     "name": "Creeper",
     "level": "danger",
-    "text": "Hisses and explodes next to players who aren't fully protected. It hurts you but doesn't break blocks.",
+    "text": "Hisses, then explodes at the hive when a player without a full suit is near. It hurts you but doesn't break blocks.",
     "suit": true
   },
   "forestry.effectDrunkard": {
     "name": "Drunkard",
     "level": "warn",
-    "text": "Gives Nausea to players near the hive.",
+    "text": "Gives Nausea to every living thing near the hive, players included.",
     "suit": true
   },
   "forestry.effectExploration": {
@@ -150,7 +149,7 @@
   "forestry.effectGlacial": {
     "name": "Freezing",
     "level": "danger",
-    "text": "Freezes water near the hive into ice (depends on the climate). Can break water setups and farms."
+    "text": "Freezes water near the hive into ice (water with air above it, only when the climate is Normal or colder). Can break water setups and farms."
   },
   "forestry.effectHeroic": {
     "name": "Heroic",
@@ -166,11 +165,11 @@
   "forestry.effectMiasmic": {
     "name": "Poison",
     "level": "warn",
-    "text": "Poisons players near the hive.",
+    "text": "Poisons every living thing near the hive, players included.",
     "suit": true
   },
   "forestry.effectMisanthrope": {
-    "name": "Misanthrope",
+    "name": "Ends (Misanthrope)",
     "level": "warn",
     "text": "Hurts players near the hive (not mobs).",
     "suit": true
@@ -199,22 +198,22 @@
   "forestry.effectResurrection": {
     "name": "Resurrection",
     "level": "danger",
-    "text": "Brings dropped items near the hive back to life: gunpowder becomes Creepers, ender pearls Endermen, string and spider eyes Spiders, ghast tears Ghasts, and a Dragon Egg THE ENDER DRAGON."
+    "text": "Brings dropped items near the hive back to life: gunpowder becomes Creepers, ender pearls Endermen, string and spider eyes Spiders and Cave Spiders, ghast tears Ghasts, and a Dragon Egg THE ENDER DRAGON."
   },
   "forestry.effectSnowing": {
     "name": "Snow",
-    "level": "warn",
-    "text": "Covers the ground near the hive with snow layers (not in hot places)."
+    "level": "danger",
+    "text": "Covers the ground near the hive with snow and piles it up into full blocks. Can replace water and lava sources and tall grass with snow. Only when the climate is Normal or colder."
   },
   "gregtech.effectMachineBoost": {
     "name": "Machine Booster",
     "level": "good",
-    "text": "Speeds up working GregTech machines near the hive."
+    "text": "Every 30 s, adds 2 s of progress to a random working single-block GregTech machine (up to EV) near the hive, if its recipe takes over 3 s."
   },
   "gregtech.effectTreetwister": {
     "name": "Treetwister",
     "level": "info",
-    "text": "Turns saplings near the hive into other saplings, only in some dimensions."
+    "text": "Turns a Twilight Forest Sapling of Transformation near the hive into a Barnarda C sapling, only in some dimensions."
   },
   "magicbees.effectAblaze": {
     "name": "Ablaze",
@@ -223,38 +222,40 @@
   },
   "magicbees.effectBatty": {
     "name": "Batty",
-    "level": "info",
-    "text": "Spawns bats around the hive. Harmless, but they pile up."
+    "level": "danger",
+    "text": "Spawns Thaumcraft Fire Bats when a player is near without a full suit (they attack you), otherwise ordinary bats.",
+    "suit": true
   },
   "magicbees.effectBovine": {
     "name": "Bovine",
     "level": "info",
-    "text": "Spawns cows around the hive. Harmless, but they pile up."
+    "text": "Spawns cows around the hive (stops after a few). Harmless."
   },
   "magicbees.effectBrainy": {
     "name": "Brainy",
     "level": "danger",
-    "text": "Spawns Brainy Zombies (Thaumcraft) when players come near. They attack you."
+    "text": "Spawns Brainy Zombies (Thaumcraft) when a player is near without a full suit. They go after that player.",
+    "suit": true
   },
   "magicbees.effectCanine": {
     "name": "Howling",
     "level": "warn",
-    "text": "Spawns wolves around the hive. They pile up."
+    "text": "Spawns wolves around the hive (up to 2 nearby)."
   },
   "magicbees.effectCatty": {
     "name": "Catty",
     "level": "info",
-    "text": "Spawns ocelots around the hive. Harmless, but they pile up."
+    "text": "Spawns ocelots around the hive (stops after a few). Harmless."
   },
   "magicbees.effectChicken": {
     "name": "Plucky",
     "level": "info",
-    "text": "Spawns chickens around the hive. Harmless, but they pile up."
+    "text": "Spawns chickens around the hive (stops after a few). Harmless."
   },
   "magicbees.effectCrumbling": {
     "name": "Crumbling",
     "level": "danger",
-    "text": "Crumbles stone blocks around the hive: stone into cobblestone, cobblestone into gravel, stone bricks into cracked ones."
+    "text": "Ages stone blocks around the hive: stone → cobblestone → mossy cobblestone, stone bricks → cracked → mossy, cobblestone walls → mossy walls, gravel → sand."
   },
   "magicbees.effectCurative": {
     "name": "Cleansing",
@@ -269,7 +270,7 @@
   "magicbees.effectDreaming": {
     "name": "Dreaming",
     "level": "danger",
-    "text": "Changes blocks around the hive into Botania blocks (Livingrock, Livingwood)."
+    "text": "Changes blocks around the hive into Botania blocks: logs and trees → Livingwood, stone → Livingrock, Livingwood → Dreamwood."
   },
   "magicbees.effectGhastly": {
     "name": "Ghastly",
@@ -279,7 +280,7 @@
   "magicbees.effectHorse": {
     "name": "Neighsayer",
     "level": "info",
-    "text": "Spawns horses around the hive. Harmless, but they pile up."
+    "text": "Spawns horses around the hive (stops after a few). Harmless."
   },
   "magicbees.effectInvisibility": {
     "name": "Invisibility",
@@ -309,7 +310,7 @@
   "magicbees.effectNodeRepair": {
     "name": "Magnification",
     "level": "good",
-    "text": "Heals damaged Thaumcraft aura nodes near the hive."
+    "text": "Stabilises Thaumcraft aura nodes near the hive and makes faded ones brighter."
   },
   "magicbees.effectNodeTainting": {
     "name": "Tainting",
@@ -319,17 +320,17 @@
   "magicbees.effectPorcine": {
     "name": "Porcine",
     "level": "info",
-    "text": "Spawns pigs around the hive. Harmless, but they pile up."
+    "text": "Spawns pigs around the hive (stops after a few). Harmless."
   },
   "magicbees.effectSheep": {
     "name": "Wooly",
     "level": "info",
-    "text": "Spawns sheep around the hive. Harmless, but they pile up."
+    "text": "Spawns sheep around the hive (stops after a few). Harmless."
   },
   "magicbees.effectSlowSpeed": {
     "name": "Time Warp",
     "level": "warn",
-    "text": "Gives Slowness to players near the hive.",
+    "text": "Gives Slowness to every living thing near the hive, players included.",
     "suit": true
   },
   "magicbees.effectSpidery": {
@@ -340,7 +341,7 @@
   "magicbees.effectTransmuting": {
     "name": "Transmuting",
     "level": "danger",
-    "text": "Changes blocks around the hive to match the biome (dirt, sand, stone and so on)."
+    "text": "Changes blocks around the hive by biome: sand → sandstone in sandy biomes, stone and cobblestone → Railcraft Quarried Stone in forests or Abyssal Stone in oceans."
   },
   "magicbees.effectVisRecharge": {
     "name": "Recharging",
@@ -355,7 +356,7 @@
   "magicbees.effectWithering": {
     "name": "Withering",
     "level": "warn",
-    "text": "Gives Wither to players near the hive.",
+    "text": "Gives Wither to every living thing near the hive, players included.",
     "suit": true
   }
 }
